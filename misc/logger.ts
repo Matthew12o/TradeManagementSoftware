@@ -37,3 +37,5 @@ class Log {
         this.message = log
     }
 };
+
+export { Log, ApplicationLogger };
