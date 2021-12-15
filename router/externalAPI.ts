@@ -5,9 +5,7 @@ const externalAPIRouter = express.Router();
 
 
 // Interactive Broker API (RESPful)
-const IBAPI_baseurl = 'https://localhost:8080' 
-
-externalAPIRouter.route('/IB')
+const IBAPI_baseurl = 'https://localhost:8080/v1/api' 
 
 // IB Session Logic
 externalAPIRouter.get('/IB/Session/Validate', (req, res, next) => {
@@ -48,16 +46,17 @@ externalAPIRouter.get('/IB/Session/AuthenticateStatus', (req, res, next) => {
     next();
 });
 
-externalAPIRouter.get('/IB/Ping', (req, res, next) => {
+externalAPIRouter.all('/IB/Ping', (req, res, next) => {
     const api_url = `${IBAPI_baseurl}/tickle`;
     var options = {
         method: 'POST',
-        url: api_url,
+        uri: api_url,
         json: true,
     }
     request(options)
         .then((parseBody) => {
             // Do something 
+            console.log(parseBody);
         })
         .catch((err) => {
 
@@ -85,3 +84,11 @@ externalAPIRouter.get('/IB/Logout', (req, res, next) => {
     next();
 });
 // Bloomberg API
+
+
+
+
+
+// Export Module
+
+export {externalAPIRouter}
