@@ -23,17 +23,28 @@ const IBAPI_baseurl = 'https://127.0.0.1:8080/v1/api';
 const agent = new https_1.default.Agent({
     rejectUnauthorized: false
 });
+// Middleware Script
+const getRequest = (url) => {
+    const returnPromise = new Promise((resolve, reject) => {
+        axios_1.default.get(url, {
+            httpsAgent: agent
+        })
+            .then((response) => {
+            resolve(response);
+        })
+            .catch((error) => {
+            reject(error);
+        });
+    });
+    return returnPromise;
+};
+new Promise((resolve, reject) => {
+});
 // Test Script
 externalAPIRouter.get('/TEST', (req, res, next) => __awaiter(void 0, void 0, void 0, function* () {
-    yield axios_1.default.get('https://127.0.0.1:8080/v1/api/sso/validate', {
-        httpsAgent: agent
-    })
-        .then((response) => {
-        res.send(response.data);
-    })
-        .catch((err) => {
-        console.error(err);
-    });
+    let url = 'https://127.0.0.1:8080/v1/api/sso/validate';
+    const data = yield getRequest(url);
+    res.send(data.data);
     next();
 }));
 // Test Script - End
@@ -69,7 +80,7 @@ externalAPIRouter.get('/IB/Session/AuthenticateStatus', (req, res, next) => __aw
     next();
 }));
 // IB Session Ping (Tickle)
-externalAPIRouter.all('/IB/Ping', (req, res, next) => __awaiter(void 0, void 0, void 0, function* () {
+externalAPIRouter.all('/IB/Session/Ping', (req, res, next) => __awaiter(void 0, void 0, void 0, function* () {
     const api_url = `${IBAPI_baseurl}/tickle`;
     yield axios_1.default.post(api_url, {
         httpsAgent: agent
@@ -83,7 +94,7 @@ externalAPIRouter.all('/IB/Ping', (req, res, next) => __awaiter(void 0, void 0, 
     next();
 }));
 // IB Session Logout
-externalAPIRouter.get('/IB/Logout', (req, res, next) => __awaiter(void 0, void 0, void 0, function* () {
+externalAPIRouter.get('/IB/Session/Logout', (req, res, next) => __awaiter(void 0, void 0, void 0, function* () {
     const api_url = `${IBAPI_baseurl}/logout`;
     yield axios_1.default.post(api_url, {
         httpsAgent: agent

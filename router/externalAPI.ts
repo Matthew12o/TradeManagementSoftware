@@ -13,19 +13,34 @@ const agent = new https.Agent({
     rejectUnauthorized: false
 });
 
+// Middleware Script
+const getRequest = (url: string) => {
+    const returnPromise = new Promise((resolve, reject) => {
+        axios.get(url, {
+            httpsAgent: agent
+        })
+        .then((response) => {
+            resolve(response);
+        })
+        .catch((error) => {
+            reject(error);
+        })
+    })
+    return returnPromise
+}
+    new Promise((resolve, reject) => {
+
+}) 
+
+
 // Test Script
 externalAPIRouter.get('/TEST', async (req, res, next) => {
-    await axios.get('https://127.0.0.1:8080/v1/api/sso/validate', {
-        httpsAgent: agent
-    })
-        .then((response) => {
-            res.send(response.data);
-        })
-        .catch((err) => {
-            console.error(err);
-        });
+    let url = 'https://127.0.0.1:8080/v1/api/sso/validate'
+    const data = await getRequest(url);
+    res.send(data.data);
     next();
 });
+
 // Test Script - End
 
 //////////////
@@ -63,7 +78,7 @@ externalAPIRouter.get('/IB/Session/AuthenticateStatus', async (req, res, next) =
 });
 
 // IB Session Ping (Tickle)
-externalAPIRouter.all('/IB/Ping', async (req, res, next) => {
+externalAPIRouter.all('/IB/Session/Ping', async (req, res, next) => {
     const api_url = `${IBAPI_baseurl}/tickle`;
     await axios.post(api_url, {
         httpsAgent: agent
@@ -78,7 +93,7 @@ externalAPIRouter.all('/IB/Ping', async (req, res, next) => {
 });
 
 // IB Session Logout
-externalAPIRouter.get('/IB/Logout', async (req, res, next) => {
+externalAPIRouter.get('/IB/Session/Logout', async (req, res, next) => {
     const api_url = `${IBAPI_baseurl}/logout`;
     await axios.post(api_url, {
         httpsAgent: agent
@@ -91,11 +106,12 @@ externalAPIRouter.get('/IB/Logout', async (req, res, next) => {
         });
     next();
 });
-// Bloomberg API
+
 
 //////////////
 //  Account 
 //////////////
+
 
 
 ///////////////
@@ -162,6 +178,8 @@ externalAPIRouter.get('/IB/Logout', async (req, res, next) => {
 //  MarketData (Beta) 
 ///////////////
 
+
+// Bloomberg API
 
 // Export Module
 

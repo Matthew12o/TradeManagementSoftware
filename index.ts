@@ -12,5 +12,10 @@ app.get('/test', (req, res, next) => {
     res.send({'message': 'hello'});
     next();
 })
-
-app.listen(PORT);
+app.get('/', (req, res, next) => {
+    res.send('home');
+    next();
+})
+app.listen(PORT, ()=> {
+    console.log(`Application is running: https://localhost:${PORT}`);
+});
