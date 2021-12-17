@@ -9,10 +9,6 @@ const externalAPI_1 = require("./router/externalAPI");
 const app = (0, express_1.default)();
 const PORT = 8000;
 app.use('/API', externalAPI_1.externalAPIRouter);
-app.get('/test', (req, res, next) => {
-    res.send({ 'message': 'hello' });
-    next();
-});
 app.get('/', (req, res, next) => {
     res.send('home');
     next();

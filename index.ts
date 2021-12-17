@@ -8,10 +8,6 @@ const app = express();
 const PORT = 8000;
 
 app.use('/API', externalAPIRouter);
-app.get('/test', (req, res, next) => {
-    res.send({'message': 'hello'});
-    next();
-})
 app.get('/', (req, res, next) => {
     res.send('home');
     next();

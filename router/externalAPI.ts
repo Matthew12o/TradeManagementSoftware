@@ -2,6 +2,8 @@ import express, { response } from 'express';
 import request from 'request';
 import axios from 'axios';
 import https from 'https';
+import { resolve } from 'path';
+import { rejects } from 'assert';
 
 const externalAPIRouter = express.Router();
 
@@ -13,8 +15,12 @@ const agent = new https.Agent({
     rejectUnauthorized: false
 });
 
-// Middleware Script
-const getRequest = (url: string) => {
+//////////////////
+// Axios Requests
+//////////////////
+
+// GET
+const getRequest = (url: string): any => {
     const returnPromise = new Promise((resolve, reject) => {
         axios.get(url, {
             httpsAgent: agent
@@ -25,12 +31,39 @@ const getRequest = (url: string) => {
         .catch((error) => {
             reject(error);
         })
-    })
+    });
+    return returnPromise
+};
+// POST
+const postRequest = (url: string): any => {
+    const returnPromise = new Promise((resolve, rejects) => {
+        axios.post(url, {
+            httpsAgent: agent
+        })
+        .then((response) => {
+            resolve(response);
+        })
+        .catch((error) => {
+            rejects(error);
+        });
+    });
+    return returnPromise;
+}
+// DELETE
+const deleteRequest = (url: string): any => {
+    const returnPromise = new Promise((resolve, rejects) => {
+        axios.delete(url, {
+            httpsAgent: agent
+        })
+        .then((response) => {
+            resolve(response);
+        })
+        .catch((error) => {
+            rejects(error);
+        });
+    });
     return returnPromise
 }
-    new Promise((resolve, reject) => {
-
-}) 
 
 
 // Test Script
@@ -50,30 +83,16 @@ externalAPIRouter.get('/TEST', async (req, res, next) => {
 // IB Session Validate
 externalAPIRouter.get('/IB/Session/Validate', async (req, res, next) =>{
     const api_url = `${IBAPI_baseurl}/sso/validate`;
-    await axios.get(api_url, {
-        httpsAgent: agent
-    })
-        .then((response) => {
-            res.send(response.data)
-        })
-        .catch((err) => {
-            console.error(err);
-        });
+    const data = await getRequest(api_url);
+    res.send(data.data);
     next();
 })
 
 // IB Session Authenticate Status
 externalAPIRouter.get('/IB/Session/AuthenticateStatus', async (req, res, next) => {
     const api_url = `${IBAPI_baseurl}/iserver/auth/status`;
-    await axios.post(api_url, {
-        httpsAgent: agent
-    })
-        .then((response) => {
-            res.send(response.data);
-        })
-        .catch((err) => {
-            console.error(err);
-        });
+    const data = await postRequest(api_url);
+    res.send(data.data)
     next();
 });
 

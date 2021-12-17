@@ -23,7 +23,10 @@ const IBAPI_baseurl = 'https://127.0.0.1:8080/v1/api';
 const agent = new https_1.default.Agent({
     rejectUnauthorized: false
 });
-// Middleware Script
+//////////////////
+// Axios Requests
+//////////////////
+// GET
 const getRequest = (url) => {
     const returnPromise = new Promise((resolve, reject) => {
         axios_1.default.get(url, {
@@ -38,8 +41,36 @@ const getRequest = (url) => {
     });
     return returnPromise;
 };
-new Promise((resolve, reject) => {
-});
+// POST
+const postRequest = (url) => {
+    const returnPromise = new Promise((resolve, rejects) => {
+        axios_1.default.post(url, {
+            httpsAgent: agent
+        })
+            .then((response) => {
+            resolve(response);
+        })
+            .catch((error) => {
+            rejects(error);
+        });
+    });
+    return returnPromise;
+};
+// DELETE
+const deleteRequest = (url) => {
+    const returnPromise = new Promise((resolve, rejects) => {
+        axios_1.default.delete(url, {
+            httpsAgent: agent
+        })
+            .then((response) => {
+            resolve(response);
+        })
+            .catch((error) => {
+            rejects(error);
+        });
+    });
+    return returnPromise;
+};
 // Test Script
 externalAPIRouter.get('/TEST', (req, res, next) => __awaiter(void 0, void 0, void 0, function* () {
     let url = 'https://127.0.0.1:8080/v1/api/sso/validate';
@@ -54,29 +85,15 @@ externalAPIRouter.get('/TEST', (req, res, next) => __awaiter(void 0, void 0, voi
 // IB Session Validate
 externalAPIRouter.get('/IB/Session/Validate', (req, res, next) => __awaiter(void 0, void 0, void 0, function* () {
     const api_url = `${IBAPI_baseurl}/sso/validate`;
-    yield axios_1.default.get(api_url, {
-        httpsAgent: agent
-    })
-        .then((response) => {
-        res.send(response.data);
-    })
-        .catch((err) => {
-        console.error(err);
-    });
+    const data = yield getRequest(api_url);
+    res.send(data.data);
     next();
 }));
 // IB Session Authenticate Status
 externalAPIRouter.get('/IB/Session/AuthenticateStatus', (req, res, next) => __awaiter(void 0, void 0, void 0, function* () {
     const api_url = `${IBAPI_baseurl}/iserver/auth/status`;
-    yield axios_1.default.post(api_url, {
-        httpsAgent: agent
-    })
-        .then((response) => {
-        res.send(response.data);
-    })
-        .catch((err) => {
-        console.error(err);
-    });
+    const data = yield postRequest(api_url);
+    res.send(data.data);
     next();
 }));
 // IB Session Ping (Tickle)
