@@ -1,11 +1,19 @@
 import express from 'express';
 import request from 'request-promise';
+import request_2 from 'request';
 
 const externalAPIRouter = express.Router();
 
 
 // Interactive Broker API (RESPful)
 const IBAPI_baseurl = 'https://localhost:8080/v1/api' 
+
+// Test Script
+externalAPIRouter.get('/TEST', (req, res, next) => {
+    request_2({
+        uri: 'https://ghibliapi.herokuapp.com/films',
+    }).pipe(res);
+});
 
 // IB Session Logic
 externalAPIRouter.get('/IB/Session/Validate', (req, res, next) => {
