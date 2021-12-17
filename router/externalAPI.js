@@ -6,10 +6,17 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.externalAPIRouter = void 0;
 const express_1 = __importDefault(require("express"));
 const request_promise_1 = __importDefault(require("request-promise"));
+const request_1 = __importDefault(require("request"));
 const externalAPIRouter = express_1.default.Router();
 exports.externalAPIRouter = externalAPIRouter;
 // Interactive Broker API (RESPful)
 const IBAPI_baseurl = 'https://localhost:8080/v1/api';
+// Test Script
+externalAPIRouter.get('/TEST', (req, res, next) => {
+    (0, request_1.default)({
+        uri: 'https://ghibliapi.herokuapp.com/films',
+    }).pipe(res);
+});
 // IB Session Logic
 externalAPIRouter.get('/IB/Session/Validate', (req, res, next) => {
     const api_url = `${IBAPI_baseurl}/sso/validate`;

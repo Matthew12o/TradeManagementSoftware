@@ -8,5 +8,9 @@ const express_1 = __importDefault(require("express"));
 const externalAPI_1 = require("./router/externalAPI");
 const app = (0, express_1.default)();
 const PORT = 8000;
+
 app.use('/API', externalAPI_1.externalAPIRouter);
+
+console.log(`listening at ${PORT}`)
+
 app.listen(PORT);
