@@ -1,6 +1,7 @@
 import { rejects } from 'assert';
 import axios from 'axios';
 import https from 'https';
+import { type } from 'os';
 import { resolve } from 'path/posix';
 
 const baseURL = 'https://127.0.0.1:8080/v1/api';
@@ -10,11 +11,11 @@ const agent = new https.Agent({
 });
 
 // GET Request
-const getRequest = (url: string): any => {
+const getRequest = (url: string, options = {}): any => {
+    const default_payload = {httpsAgent: agent};
+    const final_payload = {...default_payload, ...options}
     const returnPromise = new Promise((resolve, rejects) => {
-        axios.get(url, {
-            httpsAgent: agent
-        })
+        axios.get(url, final_payload)
         .then((res) => {
             resolve(res);
         })
@@ -27,10 +28,10 @@ const getRequest = (url: string): any => {
 
 // POST
 const postRequest = (url: string, options = {}): any => {
-    const default_load = {httpsAgent: agent};
-    const final_load = {...default_load, ...options}
+    const default_payload = {httpsAgent: agent};
+    const final_payload = {...default_payload, ...options}
     const returnPromise = new Promise((resolve, rejects) => {
-        axios.post(url, final_load)
+        axios.post(url, final_payload)
         .then((res) => {
             resolve(res);
         })
@@ -66,7 +67,7 @@ class IB_API {
     Account: Account;
     PnL: PnL;
     Trades: Trades;
-    
+
     constructor(PORT=8080) {
         this.PORT = PORT;
         this.baseURL = `https://127.0.0.1:${this.PORT}/v1/api`;
@@ -187,7 +188,7 @@ class Account {
     };
     
     Switch = async (accountID: string) => {
-        const payload = { 'acctId' : accountID };
+        const payload = { data: { 'acctId' : accountID }};
         return await postRequest(`${this.url}${Account.url_accounts_switch}`, payload);
     };
 
@@ -195,8 +196,12 @@ class Account {
         return await getRequest(`${this.url}${Account.url_accounts_pnl}`);
     };
 
-
 }
+
+
+//////////////////
+// PnL
+//////////////////
 
 class PnL {
     private static url_pnl = '/iserver/account/pnl/partitioned';
@@ -211,6 +216,9 @@ class PnL {
     };
 }
 
+//////////////////
+// Trades
+//////////////////
 class Trades {
     private static url_trades = '/iserver/account/trades';
 
@@ -223,4 +231,83 @@ class Trades {
         return await getRequest(`${this.url}${Trades.url_trades}`);
     }
 }
+
+
+/////////////////
+// Contract
+/////////////////
+class Contract {
+    private static url_secdec_by_conid = '/trsrv/secdef';
+    private static url_trading_schedule = '/trsrv/secdef/schedule';
+    private static url_futures_by_symbol = '/trsrv/futures';
+    private static url_stock_by_symbol = '/trsrv/stocks';
+    private static url_search_symbol = '/iserver/secdef/search';
+
+    url: string;
+    constructor(baseURL: string) {
+        this.url = baseURL;
+    }
+
+    Secdef = async (contract_id: [any]) => {
+        const payload = {'body' : {'conids' : contract_id}};
+        return await postRequest(`${this.url}${Contract.url_secdec_by_conid}`, payload);
+    };
+
+    TradingSchedule = async (asset_class: string, symbol: string, exchange?: string, exchange_filter?: string) => {
+        let initial_payload = {
+            'assetClass' : asset_class,
+            'symbol' : symbol
+        };
+        if (typeof exchange !== 'undefined') {
+            initial_payload = {...initial_payload, ...{'exchange' : exchange}}
+        }
+        if (typeof exchange_filter !== 'undefined') {
+            initial_payload = {...initial_payload, ...{'exchangeFilter' : exchange_filter}}
+        }
+        const payload = {'body' : initial_payload};
+        return await getRequest(`${this.url}${Contract.url_trading_schedule}`, payload);
+    };
+
+    FuturesBySymbol = async (symbols: any) => {
+        let single_string_symbol: string;
+        if (symbols.isArray) {
+            single_string_symbol = symbols.concat();
+        } else {
+            single_string_symbol = symbols;
+        }
+        const payload = { body: {'symbols' : single_string_symbol} };
+        return await getRequest(`${this.url}${Contract.url_futures_by_symbol}`, payload);
+    };
+
+    StockBySymbol = async (symbols: any) => {
+        let single_string_symbol: string;
+        if (symbols.isArray) {
+            single_string_symbol = symbols.concat();
+        } else {
+            single_string_symbol = symbols;
+        }
+        const payload = { body: {'symbols' : single_string_symbol}};
+        return await getRequest(`${this.url}${Contract.url_stock_by_symbol}`, payload);
+    }
+
+    // dynamic url
+    ContractDetails = async (contract_id: string) => {
+        const url = `/iserver/contract/${contract_id}/info`;
+        return await getRequest(`${this.url}${url}`);
+    };
+
+    SearchBySymbol = async (symbol: string, name?: boolean, secType?: string) => {
+        let initial_payload = { 'symbol' : symbol };
+        if (typeof name !== 'undefined') {
+            initial_payload = {...initial_payload, ...{'name' : name}};
+        };
+        if (typeof secType !== 'undefined') {
+            initial_payload = {...initial_payload, ...{'secType' : secType}};
+        };
+        const payload = { body: initial_payload };
+        return await postRequest(`${this.url}${Contract.url_search_symbol}`, payload);
+
+    }
+}
+
 export {IB_API}
