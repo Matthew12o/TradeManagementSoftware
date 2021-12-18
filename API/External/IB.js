@@ -72,6 +72,7 @@ class IB_API {
         this.Account = new Account(this.baseURL);
         this.PnL = new PnL(this.baseURL);
         this.Trades = new Trades(this.baseURL);
+        this.Contract = new Contract(this.baseURL);
     }
 }
 exports.IB_API = IB_API;
@@ -111,6 +112,7 @@ class Account {
     constructor(baseURL) {
         this.Accounts_List = () => __awaiter(this, void 0, void 0, function* () {
             const data = yield getRequest(`${this.url}${Account.url_account_portfolio_accounts}`);
+            console.log(data);
             this.calledPortfolioAccounts = true;
             return data;
         });

@@ -59,7 +59,7 @@ const deleteRequest = (url: string): any => {
 }
 
 class IB_API {
-    PORT: number ;
+    private PORT: number ;
     private baseURL: string;
     
     // Session
@@ -67,6 +67,7 @@ class IB_API {
     Account: Account;
     PnL: PnL;
     Trades: Trades;
+    Contract: Contract;
 
     constructor(PORT=8080) {
         this.PORT = PORT;
@@ -75,8 +76,8 @@ class IB_API {
         this.Account = new Account(this.baseURL);
         this.PnL = new PnL(this.baseURL);
         this.Trades = new Trades(this.baseURL);
-
-    }
+        this.Contract = new Contract(this.baseURL);
+    }   
 
     // Session
 
@@ -134,8 +135,8 @@ class Account {
     private static url_accounts_switch = `/iserver/account`; // POST
     private static url_accounts_pnl = `/iserver/account/pnl/partitioned`
 
-    url: String;
-    calledPortfolioAccounts: boolean;
+    private url: String;
+    private calledPortfolioAccounts: boolean;
     constructor(baseURL: string) {
         this.url = baseURL;
         this.calledPortfolioAccounts = false;
@@ -143,6 +144,7 @@ class Account {
 
     Accounts_List = async () => {
         const data = await getRequest(`${this.url}${Account.url_account_portfolio_accounts}`);
+        console.log(data)
         this.calledPortfolioAccounts = true;
         return data;
     };
