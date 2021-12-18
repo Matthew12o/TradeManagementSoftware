@@ -64,12 +64,16 @@ class IB_API {
     // Session
     Session: Session;    
     Account: Account;
-
+    PnL: PnL;
+    Trades: Trades;
     constructor(PORT=8080) {
         this.PORT = PORT;
         this.baseURL = `https://127.0.0.1:${this.PORT}/v1/api`;
         this.Session = new Session(this.baseURL);
         this.Account = new Account(this.baseURL);
+        this.PnL = new PnL(this.baseURL);
+        this.Trades = new Trades(this.baseURL);
+
     }
 
     // Session
@@ -191,5 +195,31 @@ class Account {
     };
 
 
+}
+
+class PnL {
+    private static url_pnl = '/iserver/account/pnl/partitioned';
+
+    url: string;
+    constructor(baseURL: string) {
+        this.url = baseURL;
+    }
+
+    PnL = async () => {
+        return await getRequest(`${this.url}${PnL.url_pnl}`);
+    };
+}
+
+class Trades {
+    private static url_trades = '/iserver/account/trades';
+
+    url: string;
+    constructor(baseURL: string) {
+        this.url = baseURL;
+    }
+
+    Trades = async () => {
+        return await getRequest(`${this.url}${Trades.url_trades}`);
+    }
 }
 export {IB_API}
