@@ -66,6 +66,7 @@ class IB_API {
     Account: Account;
     PnL: PnL;
     Trades: Trades;
+    
     constructor(PORT=8080) {
         this.PORT = PORT;
         this.baseURL = `https://127.0.0.1:${this.PORT}/v1/api`;
