@@ -20,11 +20,11 @@ const agent = new https_1.default.Agent({
     rejectUnauthorized: false
 });
 // GET Request
-const getRequest = (url) => {
+const getRequest = (url, options = {}) => {
+    const default_payload = { httpsAgent: agent };
+    const final_payload = Object.assign(Object.assign({}, default_payload), options);
     const returnPromise = new Promise((resolve, rejects) => {
-        axios_1.default.get(url, {
-            httpsAgent: agent
-        })
+        axios_1.default.get(url, final_payload)
             .then((res) => {
             resolve(res);
         })
@@ -36,10 +36,10 @@ const getRequest = (url) => {
 };
 // POST
 const postRequest = (url, options = {}) => {
-    const default_load = { httpsAgent: agent };
-    const final_load = Object.assign(Object.assign({}, default_load), options);
+    const default_payload = { httpsAgent: agent };
+    const final_payload = Object.assign(Object.assign({}, default_payload), options);
     const returnPromise = new Promise((resolve, rejects) => {
-        axios_1.default.post(url, final_load)
+        axios_1.default.post(url, final_payload)
             .then((res) => {
             resolve(res);
         })
@@ -149,7 +149,7 @@ class Account {
             return yield getRequest(`${this.url}${Account.url_accounts}`);
         });
         this.Switch = (accountID) => __awaiter(this, void 0, void 0, function* () {
-            const payload = { 'acctId': accountID };
+            const payload = { data: { 'acctId': accountID } };
             return yield postRequest(`${this.url}${Account.url_accounts_switch}`, payload);
         });
         this.PnL = () => __awaiter(this, void 0, void 0, function* () {
@@ -165,6 +165,9 @@ Account.url_account_subaccounts2 = `/portfolio/subaccounts2`;
 Account.url_accounts = `/iserver/accounts`;
 Account.url_accounts_switch = `/iserver/account`; // POST
 Account.url_accounts_pnl = `/iserver/account/pnl/partitioned`;
+//////////////////
+// PnL
+//////////////////
 class PnL {
     constructor(baseURL) {
         this.PnL = () => __awaiter(this, void 0, void 0, function* () {
@@ -174,6 +177,9 @@ class PnL {
     }
 }
 PnL.url_pnl = '/iserver/account/pnl/partitioned';
+//////////////////
+// Trades
+//////////////////
 class Trades {
     constructor(baseURL) {
         this.Trades = () => __awaiter(this, void 0, void 0, function* () {
@@ -183,3 +189,140 @@ class Trades {
     }
 }
 Trades.url_trades = '/iserver/account/trades';
+/////////////////
+// Contract
+/////////////////
+class Contract {
+    constructor(baseURL) {
+        this.Secdef = (contract_id) => __awaiter(this, void 0, void 0, function* () {
+            const payload = { body: { conids: contract_id } };
+            return yield postRequest(`${this.url}${Contract.url_secdec_by_conid}`, payload);
+        });
+        this.TradingSchedule = (asset_class, symbol, exchange, exchange_filter) => __awaiter(this, void 0, void 0, function* () {
+            let initial_payload = {
+                assetClass: asset_class,
+                symbol: symbol
+            };
+            if (typeof exchange !== 'undefined') {
+                initial_payload = Object.assign(Object.assign({}, initial_payload), { 'exchange': exchange });
+            }
+            if (typeof exchange_filter !== 'undefined') {
+                initial_payload = Object.assign(Object.assign({}, initial_payload), { 'exchangeFilter': exchange_filter });
+            }
+            const payload = { 'body': initial_payload };
+            return yield getRequest(`${this.url}${Contract.url_trading_schedule}`, payload);
+        });
+        this.FuturesBySymbol = (symbols) => __awaiter(this, void 0, void 0, function* () {
+            let single_string_symbol;
+            if (symbols.isArray) {
+                single_string_symbol = symbols.concat();
+            }
+            else {
+                single_string_symbol = symbols;
+            }
+            const payload = { body: { symbols: single_string_symbol } };
+            return yield getRequest(`${this.url}${Contract.url_futures_by_symbol}`, payload);
+        });
+        this.StockBySymbol = (symbols) => __awaiter(this, void 0, void 0, function* () {
+            let single_string_symbol;
+            if (symbols.isArray) {
+                single_string_symbol = symbols.concat();
+            }
+            else {
+                single_string_symbol = symbols;
+            }
+            const payload = { body: { symbols: single_string_symbol } };
+            return yield getRequest(`${this.url}${Contract.url_stock_by_symbol}`, payload);
+        });
+        // dynamic url
+        this.ContractDetails = (contract_id) => __awaiter(this, void 0, void 0, function* () {
+            const url = `/iserver/contract/${contract_id}/info`;
+            return yield getRequest(`${this.url}${url}`);
+        });
+        this.SearchBySymbol = (symbol, name, secType) => __awaiter(this, void 0, void 0, function* () {
+            let initial_payload = { symbol: symbol };
+            if (typeof name !== 'undefined') {
+                initial_payload = Object.assign(Object.assign({}, initial_payload), { name: name });
+            }
+            ;
+            if (typeof secType !== 'undefined') {
+                initial_payload = Object.assign(Object.assign({}, initial_payload), { secType: secType });
+            }
+            ;
+            const payload = { body: initial_payload };
+            return yield postRequest(`${this.url}${Contract.url_search_symbol}`, payload);
+        });
+        this.SearchStrike = (contract_id, sectype, month, exchange) => __awaiter(this, void 0, void 0, function* () {
+            let initial_payload = {
+                conid: contract_id,
+                sectype: sectype,
+                month: month
+            };
+            if (typeof exchange !== 'undefined') {
+                initial_payload = Object.assign(Object.assign({}, initial_payload), { exchange: exchange });
+            }
+            const payload = { body: initial_payload };
+            return yield getRequest(`${this.url}${Contract.url_search_strike}`);
+        });
+        this.SecdefInfo = (contract_id, sectype, month, exchange, strike, right) => __awaiter(this, void 0, void 0, function* () {
+            let initial_payload = {
+                conid: contract_id,
+                sectype: sectype
+            };
+            if (typeof month !== 'undefined') {
+                initial_payload = Object.assign(Object.assign({}, initial_payload), { month: month });
+            }
+            if (typeof exchange !== 'undefined') {
+                initial_payload = Object.assign(Object.assign({}, initial_payload), { exchange: exchange });
+            }
+            if (typeof strike !== 'undefined') {
+                initial_payload = Object.assign(Object.assign({}, initial_payload), { strike: strike });
+            }
+            if (typeof right !== 'undefined') {
+                initial_payload = Object.assign(Object.assign({}, initial_payload), { right: right });
+            }
+            const payload = { body: initial_payload };
+            return yield getRequest(`${this.url}${Contract.url_secdef_info}`, payload);
+        });
+        this.IBAlgoParams = (contract_id, algos, addDescription, addParams) => __awaiter(this, void 0, void 0, function* () {
+            const url = `/iserver/contract/${contract_id}/algos`;
+            let initial_payload = {};
+            if (typeof algos !== 'undefined') {
+                initial_payload = Object.assign(Object.assign({}, initial_payload), { algos: algos });
+            }
+            if (typeof addDescription !== 'undefined') {
+                initial_payload = Object.assign(Object.assign({}, initial_payload), { addDescription: addDescription });
+            }
+            if (typeof addParams !== 'undefined') {
+                initial_payload = Object.assign(Object.assign({}, initial_payload), { addParams: addParams });
+            }
+            const payload = { body: initial_payload };
+            return yield getRequest(`${this.url}${url}`, payload);
+        });
+        this.ContractRules = (contract_id, isBuy) => __awaiter(this, void 0, void 0, function* () {
+            let initial_payload = {
+                conid: contract_id,
+                isBuy: isBuy
+            };
+            const payload = { body: initial_payload };
+            return yield postRequest(`${this.url}${Contract.url_contract_rules}`);
+        });
+        this.ContractInfoAndRules = (contract_id, isBuy) => __awaiter(this, void 0, void 0, function* () {
+            const url = `/iserver/contract/${contract_id}/info-and-rules`;
+            let initial_payload = {
+                isBuy: isBuy
+            };
+            const payload = { body: initial_payload };
+            return yield getRequest(`${this.url}${url}`, payload);
+        });
+        this.url = baseURL;
+    }
+}
+Contract.url_secdec_by_conid = '/trsrv/secdef';
+Contract.url_trading_schedule = '/trsrv/secdef/schedule';
+Contract.url_futures_by_symbol = '/trsrv/futures';
+Contract.url_stock_by_symbol = '/trsrv/stocks';
+Contract.url_search_symbol = '/iserver/secdef/search';
+Contract.url_search_strike = '/iserver/secdef/strikes';
+Contract.url_secdef_info = '/iserver/secdef/info';
+Contract.url_contract_rules = '/iserver/contract/rules';

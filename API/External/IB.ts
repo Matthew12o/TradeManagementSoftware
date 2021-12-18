@@ -347,9 +347,9 @@ class Contract {
     };
 
     IBAlgoParams = async (contract_id: string, algos?: string, addDescription?: string, addParams?: string) => {
-        const url = `/iserver/contract/${}/algos`;
+        const url = `/iserver/contract/${contract_id}/algos`;
         let initial_payload = {};
-        if (typeof algo !== 'undefined') {
+        if (typeof algos !== 'undefined') {
             initial_payload = {...initial_payload, ...{algos : algos}}
         }
         if (typeof addDescription !== 'undefined') {
