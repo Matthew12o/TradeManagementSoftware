@@ -73,7 +73,11 @@ class IB_API {
         this.PnL = new PnL(this.baseURL);
         this.Trades = new Trades(this.baseURL);
         this.Contract = new Contract(this.baseURL);
+        this.Order = new Order(this.baseURL);
+        this.MarketData = new MarketData(this.baseURL);
+        this.PortfolioAnalyst = new PortfolioAnalyst(this.baseURL);
     }
+    ;
 }
 exports.IB_API = IB_API;
 ;
@@ -112,7 +116,6 @@ class Account {
     constructor(baseURL) {
         this.Accounts_List = () => __awaiter(this, void 0, void 0, function* () {
             const data = yield getRequest(`${this.url}${Account.url_account_portfolio_accounts}`);
-            console.log(data);
             this.calledPortfolioAccounts = true;
             return data;
         });
@@ -328,3 +331,183 @@ Contract.url_search_symbol = '/iserver/secdef/search';
 Contract.url_search_strike = '/iserver/secdef/strikes';
 Contract.url_secdef_info = '/iserver/secdef/info';
 Contract.url_contract_rules = '/iserver/contract/rules';
+class Order {
+    constructor(baseURL) {
+        this.LiveOrder = (filters) => __awaiter(this, void 0, void 0, function* () {
+            // filters enum : inactive, pending_submit, pre_submitted, submitted, filled, pending_cancel, cancelled, warn_state, sort_by_time;
+            let initial_payload = {};
+            if (typeof filters !== 'undefined') {
+                initial_payload = Object.assign(Object.assign({}, initial_payload), { filters: filters });
+            }
+            const payload = { body: initial_payload };
+            return yield getRequest(`${this.url}${Order.url_order_live_order}`, payload);
+        });
+        this.PlaceOrders = (acccount_id, orders) => __awaiter(this, void 0, void 0, function* () {
+            const url = `/iserver/account/${acccount_id}/orders`;
+            let initial_payload = {};
+            if (typeof orders !== 'undefined') {
+                initial_payload = Object.assign(Object.assign({}, initial_payload), { orders: orders });
+            }
+            const payload = { body: initial_payload };
+            return yield postRequest(`${this.url}${url}`, payload);
+        });
+        // PlaceOrdersForFA - Not included
+        this.PlaceOrderReply = (replyid, confirmed) => __awaiter(this, void 0, void 0, function* () {
+            const url = `/iserver/reply/${replyid}`;
+            let initial_payload = {};
+            if (typeof confirmed !== 'undefined') {
+                initial_payload = Object.assign(Object.assign({}, initial_payload), { confirmed: confirmed });
+            }
+            const payload = { body: initial_payload };
+            return yield postRequest(`${this.url}${url}`, payload);
+        });
+        this.PreviewOrders = (account_id, orders) => __awaiter(this, void 0, void 0, function* () {
+            const url = `/iserver/account/${account_id}/orders/whatif`;
+            let initial_payload = {};
+            if (typeof orders !== 'undefined') {
+                initial_payload = Object.assign(Object.assign({}, initial_payload), { orders: orders });
+            }
+            const payload = { body: initial_payload };
+            return yield postRequest(`${this.url}${url}`, payload);
+        });
+        this.OrderStatus = (order_id) => __awaiter(this, void 0, void 0, function* () {
+            const url = `/iserver/account/order/status/${order_id}`;
+            return yield getRequest(`${this.url}${url}`);
+        });
+        // ModifyOrder - skipped for now 
+        this.DeleteOrder = (account_id, order_id) => __awaiter(this, void 0, void 0, function* () {
+            const url = `/iserver/account/${account_id}/order/${order_id}`;
+            return yield deleteRequest(`${this.url}${url}`);
+        });
+        this.url = baseURL;
+    }
+}
+Order.url_order_live_order = '/iserver/account/orders';
+class MarketData {
+    constructor(baseURL) {
+        // check api reference for contract_id
+        this.Snapshot = (contract_ids, fields) => __awaiter(this, void 0, void 0, function* () {
+            let initial_payload = { conids: contract_ids };
+            if (typeof fields !== 'undefined') {
+                initial_payload = Object.assign(Object.assign({}, initial_payload), { fields: fields });
+            }
+            const payload = { body: initial_payload };
+            return yield getRequest(`${this.url}${MarketData.url_marketdata_snapshot}`, payload);
+        });
+        this.MarketData = (contract_ids, since, fields) => __awaiter(this, void 0, void 0, function* () {
+            let single_string_conids;
+            if (contract_ids.isArray) {
+                single_string_conids = contract_ids.concat();
+            }
+            else {
+                single_string_conids = contract_ids;
+            }
+            ;
+            let initial_payload = { conids: single_string_conids };
+            if (typeof since !== 'undefined') {
+                initial_payload = Object.assign(Object.assign({}, initial_payload), { since: since });
+            }
+            ;
+            let single_string_fields;
+            if (typeof fields !== 'undefined') {
+                if (fields.isArray) {
+                    single_string_fields = fields.concat();
+                }
+                else {
+                    single_string_fields = fields;
+                }
+            }
+            ;
+            const payload = { body: initial_payload };
+            return yield getRequest(`${this.url}${MarketData.url_marketdata}`, payload);
+        });
+        this.MarketDataCancel = (contract_id) => __awaiter(this, void 0, void 0, function* () {
+            const url = `/iserver/marketdata/${contract_id}/unsubscribe`;
+            return yield getRequest(`${this.url}${url}`);
+        });
+        this.MarketDataCancel_All = () => __awaiter(this, void 0, void 0, function* () {
+            return yield getRequest(`${this.url}${MarketData.url_unsubscribeall}`);
+        });
+        this.MarketDataHistory = (contract_id, period, exchange, bar, outsideRth) => __awaiter(this, void 0, void 0, function* () {
+            let initial_payload = {
+                conid: contract_id,
+                period: period
+            };
+            if (typeof exchange !== 'undefined') {
+                initial_payload = Object.assign(Object.assign({}, initial_payload), { exchange: exchange });
+            }
+            ;
+            if (typeof bar !== 'undefined') {
+                initial_payload = Object.assign(Object.assign({}, initial_payload), { bar: bar });
+            }
+            ;
+            if (typeof outsideRth !== 'undefined') {
+                initial_payload = Object.assign(Object.assign({}, initial_payload), { outsideRth: outsideRth });
+            }
+            ;
+            const payload = { body: initial_payload };
+            return yield getRequest(`${this.url}${MarketData.url_marketdata_history}`, payload);
+        });
+        this.url = baseURL;
+    }
+}
+MarketData.url_marketdata_snapshot = '/md/snapshot';
+MarketData.url_marketdata = '/iserver/marketdata/snapshot';
+MarketData.url_unsubscribeall = '/iserver/marketdata/unsubscribeall';
+MarketData.url_marketdata_history = '/iserver/marketdata/history';
+;
+class PortfolioAnalyst {
+    constructor(baseURL) {
+        this.AccountPerformance = (account_ids, freq = 'D') => __awaiter(this, void 0, void 0, function* () {
+            if (typeof account_ids == 'string') {
+                account_ids = [account_ids];
+            }
+            ;
+            let initial_payload = {
+                acctIds: account_ids,
+                freq: freq
+            };
+            const payload = { body: initial_payload };
+            return yield getRequest(`${this.url}${PortfolioAnalyst.url_pa_account_performance}`, payload);
+        });
+        this.AccountSummary = (account_ids) => __awaiter(this, void 0, void 0, function* () {
+            if (typeof account_ids == 'string') {
+                account_ids = [account_ids];
+            }
+            ;
+            const initial_payload = {
+                acctIds: account_ids
+            };
+            const payload = { body: initial_payload };
+            return yield getRequest(`${this.url}${PortfolioAnalyst.url_pa_account_summary}`);
+        });
+        this.TransactionHistory = (account_ids, contract_ids, currency, days) => __awaiter(this, void 0, void 0, function* () {
+            if (typeof account_ids == 'string') {
+                account_ids = [account_ids];
+            }
+            ;
+            if (typeof contract_ids == 'number') {
+                contract_ids = [contract_ids];
+            }
+            ;
+            let initial_payload = {
+                acctIds: account_ids,
+                conids: contract_ids
+            };
+            if (typeof currency !== 'undefined') {
+                initial_payload = Object.assign(Object.assign({}, initial_payload), { currency: currency });
+            }
+            ;
+            if (typeof days !== 'undefined') {
+                initial_payload = Object.assign(Object.assign({}, initial_payload), { days: days });
+            }
+            ;
+            const payload = { body: initial_payload };
+            return yield getRequest(`${this.url}${PortfolioAnalyst.url_pa_transactions}`);
+        });
+        this.url = baseURL;
+    }
+}
+PortfolioAnalyst.url_pa_account_performance = '/pa/performance';
+PortfolioAnalyst.url_pa_account_summary = '/pa/summary';
+PortfolioAnalyst.url_pa_transactions = '/pa/transactions';
