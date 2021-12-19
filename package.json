@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon index.js",
-    "init": "cd ./clientportal && ./bin/run.sh ./root/conf.yaml"
+    "init": "cd ./clientportal && ./bin/run.sh ./root/conf.yaml",
+    "devStart" : ""
   },
   "repository": {
     "type": "git",
