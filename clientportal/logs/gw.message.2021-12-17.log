@@ -1,0 +1,3078 @@
+-> GET /sso/Login?forwardTo=22&RL=1&ip2loc=US
+<- 200 GET /sso/Login?forwardTo=22&RL=1&ip2loc=US
+-> GET /sso/Templates/otp-responsive.css?1639719300894
+-> GET /scripts/common/js/bootstrap-4.3.1/bootstrap.bundle.min.js
+-> GET /scripts/common/js/switchery/switchery-init.js
+-> GET /scripts/common/js/icheck-1.0.2/icheck-init.js
+-> GET /sso/CombineFiles
+-> GET /scripts/common/js/switchery/switchery.min.js
+<- 200 GET /sso/Templates/otp-responsive.css?1639719300894
+-> GET /scripts/common/js/bootstrap-switch-3.3.2/bootstrap-switch.min.js
+<- 200 GET /scripts/common/js/switchery/switchery.min.js
+-> GET /scripts/common/js/jquery-ui-1.12.1/jquery-ui.min.js
+<- 200 GET /sso/CombineFiles
+<- 200 GET /scripts/common/js/switchery/switchery-init.js
+-> GET /scripts/common/js/jquery-3.4.1/jquery.min.js
+<- 200 GET /scripts/common/js/icheck-1.0.2/icheck-init.js
+<- 200 GET /scripts/common/js/bootstrap-4.3.1/bootstrap.bundle.min.js
+<- 200 GET /scripts/common/js/bootstrap-switch-3.3.2/bootstrap-switch.min.js
+-> GET /scripts/common/js/icheck-1.0.2/icheck.min.js
+<- 200 GET /scripts/common/js/jquery-ui-1.12.1/jquery-ui.min.js
+<- 200 GET /scripts/common/js/icheck-1.0.2/icheck.min.js
+-> GET /images/2015/btn-app-apple.png
+<- 200 GET /scripts/common/js/jquery-3.4.1/jquery.min.js
+<- 200 GET /images/2015/btn-app-apple.png
+-> GET /images/2015/btn-app-google.png
+-> GET /images/2015/button_discover_apis.png
+-> GET /sso/CombineFiles
+<- 200 GET /images/2015/btn-app-google.png
+<- 200 GET /images/2015/button_discover_apis.png
+-> GET /images/2015/btn-app-tws.png
+<- 200 GET /images/2015/btn-app-tws.png
+<- 200 GET /sso/CombineFiles
+-> GET /fonts/sourcesanspro-regular-webfont.woff2
+<- 200 GET /fonts/sourcesanspro-regular-webfont.woff2
+-> POST /sso/Authenticator;jsessionid=C89053F9254EA72AF258034D2FADDC57.ny5wwwdam1-internet?54325
+<- 200 POST /sso/Authenticator;jsessionid=C89053F9254EA72AF258034D2FADDC57.ny5wwwdam1-internet?54325
+-> POST /sso/Authenticator;jsessionid=C89053F9254EA72AF258034D2FADDC57.ny5wwwdam1-internet?56733
+<- 200 POST /sso/Authenticator;jsessionid=C89053F9254EA72AF258034D2FADDC57.ny5wwwdam1-internet?56733
+-> POST /sso/Authenticator;jsessionid=C89053F9254EA72AF258034D2FADDC57.ny5wwwdam1-internet?83209
+<- 200 POST /sso/Authenticator;jsessionid=C89053F9254EA72AF258034D2FADDC57.ny5wwwdam1-internet?83209
+-> POST /sso/Authenticator;jsessionid=C89053F9254EA72AF258034D2FADDC57.ny5wwwdam1-internet?41320
+-> GET /fonts/sourcesanspro-semibold-webfont.woff2
+<- 200 GET /fonts/sourcesanspro-semibold-webfont.woff2
+<- 200 POST /sso/Authenticator;jsessionid=C89053F9254EA72AF258034D2FADDC57.ny5wwwdam1-internet?41320
+-> POST /sso/Authenticator;jsessionid=C89053F9254EA72AF258034D2FADDC57.ny5wwwdam1-internet?21591
+<- 200 POST /sso/Authenticator;jsessionid=C89053F9254EA72AF258034D2FADDC57.ny5wwwdam1-internet?21591
+-> POST /sso/Authenticator;jsessionid=C89053F9254EA72AF258034D2FADDC57.ny5wwwdam1-internet?61324
+<- 200 POST /sso/Authenticator;jsessionid=C89053F9254EA72AF258034D2FADDC57.ny5wwwdam1-internet?61324
+-> POST /sso/Dispatcher;jsessionid=C89053F9254EA72AF258034D2FADDC57.ny5wwwdam1-internet
+<- 302 POST /sso/Dispatcher;jsessionid=C89053F9254EA72AF258034D2FADDC57.ny5wwwdam1-internet
+-> request: /v1/api/sso/validate?gw=1
+-> request: /AccountManagement/OneBarAuthentication?json=1
+-> GET /AccountManagement/OneBarAuthentication?json=1,404|216ms
+-> GET /v1/api/sso/validate?gw=1,200|292ms
+-> request: /v1/api/one/user
+-> request: /sso/AuthenticateSSODH?ACTION=INIT
+-> sso GET https://api.ibkr.com/sso/AuthenticateSSODH?ACTION=INIT
+-> request: /sso/AuthenticateSSODH?ACTION=COMPLETE&B=af8adbab0461a2e907f048249e5d5b239abed20f8cb226e5cff47753579cc93a174880d00c32d3521553f1c2efc50403ffc8b9c52bb1aae1894d0281fef9fa38&CHRESPONSE=2fb5a5916cc77f5cbd92019a1b2f6b500ec4fe91
+-> sso GET https://api.ibkr.com/sso/AuthenticateSSODH?ACTION=COMPLETE&B=af8adbab0461a2e907f048249e5d5b239abed20f8cb226e5cff47753579cc93a174880d00c32d3521553f1c2efc50403ffc8b9c52bb1aae1894d0281fef9fa38&CHRESPONSE=2fb5a5916cc77f5cbd92019a1b2f6b500ec4fe91
+-> GET /v1/api/one/user,200|1981ms
+-> request: /v1/api/iserver/auth/status
+-> GET /v1/api/iserver/auth/status,200|88ms
+-> request: /v1/api/iserver/auth/ssodh/init
+-> POST https://api.ibkr.com/v1/api/iserver/auth/ssodh/init,200|147ms
+-> request: /v1/api/iserver/auth/ssodh/response
+-> POST https://api.ibkr.com/v1/api/iserver/auth/ssodh/response,200|252ms
+-> request: /v1/api/iserver/accounts
+-> GET /v1/api/iserver/accounts,200|107ms
+-> GET /sso/Login?forwardTo=22&RL=1&ip2loc=US
+<- 200 GET /sso/Login?forwardTo=22&RL=1&ip2loc=US
+-> GET /sso/Templates/otp-responsive.css?1639719300894
+-> GET /scripts/common/js/jquery-3.4.1/jquery.min.js
+-> GET /sso/Templates/otp-responsive.css?1639719345073
+-> GET /sso/CombineFiles
+-> GET /scripts/common/js/bootstrap-4.3.1/bootstrap.bundle.min.js
+-> GET /scripts/common/js/switchery/switchery.min.js
+-> GET /scripts/common/js/jquery-ui-1.12.1/jquery-ui.min.js
+-> GET /scripts/common/js/bootstrap-switch-3.3.2/bootstrap-switch.min.js
+<- 304 GET /sso/Templates/otp-responsive.css?1639719300894
+-> GET /scripts/common/js/switchery/switchery-init.js
+<- 200 GET /sso/Templates/otp-responsive.css?1639719345073
+<- 200 GET /sso/CombineFiles
+<- 304 GET /scripts/common/js/jquery-3.4.1/jquery.min.js
+-> GET /scripts/common/js/icheck-1.0.2/icheck.min.js
+<- 200 GET /scripts/common/js/jquery-ui-1.12.1/jquery-ui.min.js
+-> GET /scripts/common/js/icheck-1.0.2/icheck-init.js
+<- 304 GET /scripts/common/js/switchery/switchery-init.js
+-> GET /fonts/sourcesanspro-regular-webfont.woff2
+<- 304 GET /scripts/common/js/icheck-1.0.2/icheck-init.js
+<- 304 GET /scripts/common/js/icheck-1.0.2/icheck.min.js
+<- 304 GET /fonts/sourcesanspro-regular-webfont.woff2
+-> GET /fonts/sourcesanspro-semibold-webfont.woff2
+-> GET /images/2015/btn-app-apple.png
+-> GET /images/2015/btn-app-google.png
+<- 304 GET /fonts/sourcesanspro-semibold-webfont.woff2
+-> GET /images/2015/btn-app-tws.png
+<- 304 GET /images/2015/btn-app-apple.png
+<- 304 GET /images/2015/btn-app-google.png
+<- 304 GET /images/2015/btn-app-tws.png
+-> GET /images/2015/button_discover_apis.png
+<- 304 GET /images/2015/button_discover_apis.png
+<- 200 GET /scripts/common/js/switchery/switchery.min.js
+<- 304 GET /scripts/common/js/bootstrap-4.3.1/bootstrap.bundle.min.js
+<- 200 GET /scripts/common/js/bootstrap-switch-3.3.2/bootstrap-switch.min.js
+-> GET /sso/CombineFiles
+<- 200 GET /sso/CombineFiles
+-> POST /sso/Authenticator;jsessionid=D16E6BDE6A68407AA388E3CC189C877B.ny5wwwdam2-internet?61810
+<- 200 POST /sso/Authenticator;jsessionid=D16E6BDE6A68407AA388E3CC189C877B.ny5wwwdam2-internet?61810
+-> POST /sso/Authenticator;jsessionid=D16E6BDE6A68407AA388E3CC189C877B.ny5wwwdam2-internet?72473
+<- 200 POST /sso/Authenticator;jsessionid=D16E6BDE6A68407AA388E3CC189C877B.ny5wwwdam2-internet?72473
+-> POST /sso/Authenticator;jsessionid=D16E6BDE6A68407AA388E3CC189C877B.ny5wwwdam2-internet?48266
+<- 200 POST /sso/Authenticator;jsessionid=D16E6BDE6A68407AA388E3CC189C877B.ny5wwwdam2-internet?48266
+-> GET /fonts/sourcesanspro-semibold-webfont.woff2
+-> POST /sso/Authenticator;jsessionid=D16E6BDE6A68407AA388E3CC189C877B.ny5wwwdam2-internet?80529
+<- 304 GET /fonts/sourcesanspro-semibold-webfont.woff2
+<- 200 POST /sso/Authenticator;jsessionid=D16E6BDE6A68407AA388E3CC189C877B.ny5wwwdam2-internet?80529
+-> POST /sso/Authenticator;jsessionid=D16E6BDE6A68407AA388E3CC189C877B.ny5wwwdam2-internet?32207
+<- 200 POST /sso/Authenticator;jsessionid=D16E6BDE6A68407AA388E3CC189C877B.ny5wwwdam2-internet?32207
+-> POST /sso/Authenticator;jsessionid=D16E6BDE6A68407AA388E3CC189C877B.ny5wwwdam2-internet?65003
+<- 200 POST /sso/Authenticator;jsessionid=D16E6BDE6A68407AA388E3CC189C877B.ny5wwwdam2-internet?65003
+-> POST /sso/Authenticator;jsessionid=D16E6BDE6A68407AA388E3CC189C877B.ny5wwwdam2-internet?15465
+<- 200 POST /sso/Authenticator;jsessionid=D16E6BDE6A68407AA388E3CC189C877B.ny5wwwdam2-internet?15465
+-> POST /sso/Authenticator;jsessionid=D16E6BDE6A68407AA388E3CC189C877B.ny5wwwdam2-internet?34515
+<- 200 POST /sso/Authenticator;jsessionid=D16E6BDE6A68407AA388E3CC189C877B.ny5wwwdam2-internet?34515
+-> POST /sso/Authenticator;jsessionid=D16E6BDE6A68407AA388E3CC189C877B.ny5wwwdam2-internet?80929
+<- 200 POST /sso/Authenticator;jsessionid=D16E6BDE6A68407AA388E3CC189C877B.ny5wwwdam2-internet?80929
+-> POST /sso/Authenticator;jsessionid=D16E6BDE6A68407AA388E3CC189C877B.ny5wwwdam2-internet?50919
+<- 200 POST /sso/Authenticator;jsessionid=D16E6BDE6A68407AA388E3CC189C877B.ny5wwwdam2-internet?50919
+-> POST /sso/Authenticator;jsessionid=D16E6BDE6A68407AA388E3CC189C877B.ny5wwwdam2-internet?45302
+<- 200 POST /sso/Authenticator;jsessionid=D16E6BDE6A68407AA388E3CC189C877B.ny5wwwdam2-internet?45302
+-> POST /sso/Authenticator;jsessionid=D16E6BDE6A68407AA388E3CC189C877B.ny5wwwdam2-internet?55529
+<- 200 POST /sso/Authenticator;jsessionid=D16E6BDE6A68407AA388E3CC189C877B.ny5wwwdam2-internet?55529
+-> GET /sso/Login?forwardTo=22&RL=1&ip2loc=US
+<- 200 GET /sso/Login?forwardTo=22&RL=1&ip2loc=US
+-> GET /sso/CombineFiles
+-> GET /scripts/common/js/bootstrap-4.3.1/bootstrap.bundle.min.js
+-> GET /scripts/common/js/jquery-ui-1.12.1/jquery-ui.min.js
+-> GET /sso/Templates/otp-responsive.css?1639719393031
+-> GET /scripts/common/js/switchery/switchery.min.js
+-> GET /scripts/common/js/bootstrap-switch-3.3.2/bootstrap-switch.min.js
+-> GET /scripts/common/js/jquery-3.4.1/jquery.min.js
+<- 304 GET /scripts/common/js/bootstrap-4.3.1/bootstrap.bundle.min.js
+<- 200 GET /sso/Templates/otp-responsive.css?1639719393031
+<- 200 GET /sso/CombineFiles
+<- 304 GET /scripts/common/js/switchery/switchery.min.js
+-> GET /scripts/common/js/icheck-1.0.2/icheck.min.js
+<- 200 GET /scripts/common/js/jquery-ui-1.12.1/jquery-ui.min.js
+-> GET /scripts/common/js/switchery/switchery-init.js
+-> GET /fonts/sourcesanspro-regular-webfont.woff2
+<- 304 GET /scripts/common/js/bootstrap-switch-3.3.2/bootstrap-switch.min.js
+-> GET /scripts/common/js/icheck-1.0.2/icheck-init.js
+<- 304 GET /fonts/sourcesanspro-regular-webfont.woff2
+-> GET /images/2015/btn-app-apple.png
+<- 304 GET /scripts/common/js/jquery-3.4.1/jquery.min.js
+<- 304 GET /scripts/common/js/icheck-1.0.2/icheck.min.js
+-> GET /images/2015/btn-app-google.png
+<- 304 GET /images/2015/btn-app-apple.png
+-> GET /images/2015/btn-app-tws.png
+-> GET /images/2015/button_discover_apis.png
+<- 304 GET /scripts/common/js/switchery/switchery-init.js
+<- 304 GET /images/2015/btn-app-google.png
+<- 304 GET /images/2015/btn-app-tws.png
+<- 304 GET /images/2015/button_discover_apis.png
+<- 304 GET /scripts/common/js/icheck-1.0.2/icheck-init.js
+-> GET /sso/CombineFiles
+<- 200 GET /sso/CombineFiles
+-> POST /sso/Authenticator;jsessionid=D16E6BDE6A68407AA388E3CC189C877B.ny5wwwdam2-internet?36602
+<- 200 POST /sso/Authenticator;jsessionid=D16E6BDE6A68407AA388E3CC189C877B.ny5wwwdam2-internet?36602
+-> POST /sso/Authenticator;jsessionid=D16E6BDE6A68407AA388E3CC189C877B.ny5wwwdam2-internet?7712
+<- 200 POST /sso/Authenticator;jsessionid=D16E6BDE6A68407AA388E3CC189C877B.ny5wwwdam2-internet?7712
+-> POST /sso/Authenticator;jsessionid=D16E6BDE6A68407AA388E3CC189C877B.ny5wwwdam2-internet?93124
+<- 200 POST /sso/Authenticator;jsessionid=D16E6BDE6A68407AA388E3CC189C877B.ny5wwwdam2-internet?93124
+-> POST /sso/Authenticator;jsessionid=D16E6BDE6A68407AA388E3CC189C877B.ny5wwwdam2-internet?1587
+<- 200 POST /sso/Authenticator;jsessionid=D16E6BDE6A68407AA388E3CC189C877B.ny5wwwdam2-internet?1587
+-> POST /sso/Authenticator;jsessionid=D16E6BDE6A68407AA388E3CC189C877B.ny5wwwdam2-internet?61218
+<- 200 POST /sso/Authenticator;jsessionid=D16E6BDE6A68407AA388E3CC189C877B.ny5wwwdam2-internet?61218
+-> POST /sso/Authenticator;jsessionid=D16E6BDE6A68407AA388E3CC189C877B.ny5wwwdam2-internet?73738
+<- 200 POST /sso/Authenticator;jsessionid=D16E6BDE6A68407AA388E3CC189C877B.ny5wwwdam2-internet?73738
+-> POST /sso/Authenticator;jsessionid=D16E6BDE6A68407AA388E3CC189C877B.ny5wwwdam2-internet?55897
+<- 200 POST /sso/Authenticator;jsessionid=D16E6BDE6A68407AA388E3CC189C877B.ny5wwwdam2-internet?55897
+-> POST /sso/Authenticator;jsessionid=D16E6BDE6A68407AA388E3CC189C877B.ny5wwwdam2-internet?50394
+<- 200 POST /sso/Authenticator;jsessionid=D16E6BDE6A68407AA388E3CC189C877B.ny5wwwdam2-internet?50394
+-> POST /sso/Authenticator;jsessionid=D16E6BDE6A68407AA388E3CC189C877B.ny5wwwdam2-internet?50928
+<- 200 POST /sso/Authenticator;jsessionid=D16E6BDE6A68407AA388E3CC189C877B.ny5wwwdam2-internet?50928
+-> POST /sso/Authenticator;jsessionid=D16E6BDE6A68407AA388E3CC189C877B.ny5wwwdam2-internet?71530
+<- 200 POST /sso/Authenticator;jsessionid=D16E6BDE6A68407AA388E3CC189C877B.ny5wwwdam2-internet?71530
+-> POST /sso/Authenticator;jsessionid=D16E6BDE6A68407AA388E3CC189C877B.ny5wwwdam2-internet?86873
+<- 200 POST /sso/Authenticator;jsessionid=D16E6BDE6A68407AA388E3CC189C877B.ny5wwwdam2-internet?86873
+-> POST /sso/Authenticator;jsessionid=D16E6BDE6A68407AA388E3CC189C877B.ny5wwwdam2-internet?25909
+<- 200 POST /sso/Authenticator;jsessionid=D16E6BDE6A68407AA388E3CC189C877B.ny5wwwdam2-internet?25909
+-> POST /sso/Authenticator;jsessionid=D16E6BDE6A68407AA388E3CC189C877B.ny5wwwdam2-internet?22533
+<- 200 POST /sso/Authenticator;jsessionid=D16E6BDE6A68407AA388E3CC189C877B.ny5wwwdam2-internet?22533
+-> POST /sso/Authenticator;jsessionid=D16E6BDE6A68407AA388E3CC189C877B.ny5wwwdam2-internet?39359
+<- 200 POST /sso/Authenticator;jsessionid=D16E6BDE6A68407AA388E3CC189C877B.ny5wwwdam2-internet?39359
+-> POST /sso/Authenticator;jsessionid=D16E6BDE6A68407AA388E3CC189C877B.ny5wwwdam2-internet?68161
+<- 200 POST /sso/Authenticator;jsessionid=D16E6BDE6A68407AA388E3CC189C877B.ny5wwwdam2-internet?68161
+-> POST /sso/Authenticator;jsessionid=D16E6BDE6A68407AA388E3CC189C877B.ny5wwwdam2-internet?64307
+<- 200 POST /sso/Authenticator;jsessionid=D16E6BDE6A68407AA388E3CC189C877B.ny5wwwdam2-internet?64307
+-> POST /sso/Authenticator;jsessionid=D16E6BDE6A68407AA388E3CC189C877B.ny5wwwdam2-internet?26602
+<- 200 POST /sso/Authenticator;jsessionid=D16E6BDE6A68407AA388E3CC189C877B.ny5wwwdam2-internet?26602
+-> POST /sso/Authenticator;jsessionid=D16E6BDE6A68407AA388E3CC189C877B.ny5wwwdam2-internet?55074
+<- 200 POST /sso/Authenticator;jsessionid=D16E6BDE6A68407AA388E3CC189C877B.ny5wwwdam2-internet?55074
+-> POST /sso/Authenticator;jsessionid=D16E6BDE6A68407AA388E3CC189C877B.ny5wwwdam2-internet?73815
+<- 200 POST /sso/Authenticator;jsessionid=D16E6BDE6A68407AA388E3CC189C877B.ny5wwwdam2-internet?73815
+-> POST /sso/Authenticator;jsessionid=D16E6BDE6A68407AA388E3CC189C877B.ny5wwwdam2-internet?62575
+<- 200 POST /sso/Authenticator;jsessionid=D16E6BDE6A68407AA388E3CC189C877B.ny5wwwdam2-internet?62575
+-> POST /sso/Authenticator;jsessionid=D16E6BDE6A68407AA388E3CC189C877B.ny5wwwdam2-internet?62569
+<- 200 POST /sso/Authenticator;jsessionid=D16E6BDE6A68407AA388E3CC189C877B.ny5wwwdam2-internet?62569
+-> POST /sso/Authenticator;jsessionid=D16E6BDE6A68407AA388E3CC189C877B.ny5wwwdam2-internet?57737
+<- 200 POST /sso/Authenticator;jsessionid=D16E6BDE6A68407AA388E3CC189C877B.ny5wwwdam2-internet?57737
+-> POST /sso/Authenticator;jsessionid=D16E6BDE6A68407AA388E3CC189C877B.ny5wwwdam2-internet?21234
+<- 200 POST /sso/Authenticator;jsessionid=D16E6BDE6A68407AA388E3CC189C877B.ny5wwwdam2-internet?21234
+-> POST /sso/Authenticator;jsessionid=D16E6BDE6A68407AA388E3CC189C877B.ny5wwwdam2-internet?54439
+<- 200 POST /sso/Authenticator;jsessionid=D16E6BDE6A68407AA388E3CC189C877B.ny5wwwdam2-internet?54439
+-> POST /sso/Authenticator;jsessionid=D16E6BDE6A68407AA388E3CC189C877B.ny5wwwdam2-internet?26954
+<- 200 POST /sso/Authenticator;jsessionid=D16E6BDE6A68407AA388E3CC189C877B.ny5wwwdam2-internet?26954
+-> POST /sso/Authenticator;jsessionid=D16E6BDE6A68407AA388E3CC189C877B.ny5wwwdam2-internet?10055
+<- 200 POST /sso/Authenticator;jsessionid=D16E6BDE6A68407AA388E3CC189C877B.ny5wwwdam2-internet?10055
+-> POST /sso/Authenticator;jsessionid=D16E6BDE6A68407AA388E3CC189C877B.ny5wwwdam2-internet?51678
+<- 200 POST /sso/Authenticator;jsessionid=D16E6BDE6A68407AA388E3CC189C877B.ny5wwwdam2-internet?51678
+-> GET /v1/api/sso/validate
+<- 401 GET /v1/api/sso/validate
+-> GET /v1/api/sso/validate
+<- 401 GET /v1/api/sso/validate
+-> GET /sso/Login?forwardTo=22&RL=1&ip2loc=US
+<- 200 GET /sso/Login?forwardTo=22&RL=1&ip2loc=US
+-> GET /scripts/common/js/jquery-ui-1.12.1/jquery-ui.min.js
+-> GET /scripts/common/js/jquery-3.4.1/jquery.min.js
+-> GET /scripts/common/js/switchery/switchery.min.js
+-> GET /scripts/common/js/bootstrap-4.3.1/bootstrap.bundle.min.js
+-> GET /scripts/common/js/bootstrap-switch-3.3.2/bootstrap-switch.min.js
+-> GET /scripts/common/js/switchery/switchery-init.js
+-> GET /sso/Templates/otp-responsive.css?1639719712901
+-> GET /sso/CombineFiles
+<- 200 GET /scripts/common/js/jquery-ui-1.12.1/jquery-ui.min.js
+-> GET /scripts/common/js/icheck-1.0.2/icheck.min.js
+<- 304 GET /scripts/common/js/switchery/switchery.min.js
+-> GET /scripts/common/js/icheck-1.0.2/icheck-init.js
+<- 304 GET /scripts/common/js/jquery-3.4.1/jquery.min.js
+<- 304 GET /scripts/common/js/bootstrap-4.3.1/bootstrap.bundle.min.js
+<- 200 GET /scripts/common/js/switchery/switchery-init.js
+-> GET /images/2015/btn-app-google.png
+-> GET /fonts/sourcesanspro-regular-webfont.woff2
+-> GET /images/2015/btn-app-apple.png
+<- 200 GET /sso/Templates/otp-responsive.css?1639719712901
+<- 304 GET /images/2015/btn-app-google.png
+<- 304 GET /scripts/common/js/bootstrap-switch-3.3.2/bootstrap-switch.min.js
+-> GET /images/2015/btn-app-tws.png
+<- 304 GET /fonts/sourcesanspro-regular-webfont.woff2
+<- 304 GET /scripts/common/js/icheck-1.0.2/icheck.min.js
+<- 304 GET /images/2015/btn-app-apple.png
+<- 200 GET /sso/CombineFiles
+<- 304 GET /scripts/common/js/icheck-1.0.2/icheck-init.js
+-> GET /images/2015/button_discover_apis.png
+<- 304 GET /images/2015/btn-app-tws.png
+-> GET /sso/CombineFiles
+<- 304 GET /images/2015/button_discover_apis.png
+<- 200 GET /sso/CombineFiles
+-> GET /v1/api/sso/validate
+<- 401 GET /v1/api/sso/validate
+-> GET /sso/Login?forwardTo=22&RL=1&ip2loc=US
+<- 200 GET /sso/Login?forwardTo=22&RL=1&ip2loc=US
+-> GET /sso/Templates/otp-responsive.css?1639719756198
+-> GET /scripts/common/js/jquery-3.4.1/jquery.min.js
+-> GET /scripts/common/js/jquery-ui-1.12.1/jquery-ui.min.js
+-> GET /scripts/common/js/bootstrap-4.3.1/bootstrap.bundle.min.js
+-> GET /scripts/common/js/switchery/switchery.min.js
+-> GET /scripts/common/js/bootstrap-switch-3.3.2/bootstrap-switch.min.js
+<- 200 GET /sso/Templates/otp-responsive.css?1639719756198
+-> GET /scripts/common/js/switchery/switchery-init.js
+<- 200 GET /scripts/common/js/switchery/switchery.min.js
+-> GET /scripts/common/js/icheck-1.0.2/icheck.min.js
+<- 304 GET /scripts/common/js/jquery-ui-1.12.1/jquery-ui.min.js
+<- 304 GET /scripts/common/js/bootstrap-4.3.1/bootstrap.bundle.min.js
+<- 304 GET /scripts/common/js/jquery-3.4.1/jquery.min.js
+-> GET /sso/CombineFiles
+-> GET /scripts/common/js/icheck-1.0.2/icheck-init.js
+-> GET /images/2015/btn-app-apple.png
+<- 304 GET /scripts/common/js/bootstrap-switch-3.3.2/bootstrap-switch.min.js
+-> GET /images/2015/btn-app-google.png
+<- 200 GET /scripts/common/js/switchery/switchery-init.js
+-> GET /images/2015/btn-app-tws.png
+<- 304 GET /scripts/common/js/icheck-1.0.2/icheck.min.js
+<- 304 GET /images/2015/btn-app-apple.png
+<- 304 GET /images/2015/btn-app-google.png
+<- 304 GET /images/2015/btn-app-tws.png
+-> GET /images/2015/button_discover_apis.png
+<- 200 GET /sso/CombineFiles
+<- 304 GET /images/2015/button_discover_apis.png
+<- 304 GET /scripts/common/js/icheck-1.0.2/icheck-init.js
+-> GET /sso/CombineFiles
+<- 200 GET /sso/CombineFiles
+-> GET /fonts/sourcesanspro-regular-webfont.woff2
+<- 304 GET /fonts/sourcesanspro-regular-webfont.woff2
+-> POST /sso/Authenticator?90874
+<- 200 POST /sso/Authenticator?90874
+-> POST /sso/Authenticator?99292
+<- 200 POST /sso/Authenticator?99292
+-> POST /sso/Authenticator?40826
+<- 200 POST /sso/Authenticator?40826
+-> GET /fonts/sourcesanspro-semibold-webfont.woff2
+<- 200 GET /fonts/sourcesanspro-semibold-webfont.woff2
+-> POST /sso/Authenticator?29236
+<- 200 POST /sso/Authenticator?29236
+-> POST /sso/Authenticator?21296
+<- 200 POST /sso/Authenticator?21296
+-> POST /sso/Dispatcher
+<- 302 POST /sso/Dispatcher
+-> request: /v1/api/sso/validate?gw=1
+-> request: /AccountManagement/OneBarAuthentication?json=1
+-> GET /AccountManagement/OneBarAuthentication?json=1,404|92ms
+-> GET /v1/api/sso/validate?gw=1,200|140ms
+-> request: /v1/api/one/user
+-> request: /sso/AuthenticateSSODH?ACTION=INIT
+-> sso GET https://api.ibkr.com/sso/AuthenticateSSODH?ACTION=INIT
+-> GET /v1/api/one/user,200|90ms
+-> request: /sso/AuthenticateSSODH?ACTION=COMPLETE&B=1ccee7a38bb11385d62a39064b80999082c04fe459a639ac09e1583b0b7193fb75e8a6ae063a3828c53a8ffdc6712cc3c9e4e57ed9eb1b0473eecfe30b226bc&CHRESPONSE=43b53b4ade041c53874636a5ea96d091855246f9
+-> sso GET https://api.ibkr.com/sso/AuthenticateSSODH?ACTION=COMPLETE&B=1ccee7a38bb11385d62a39064b80999082c04fe459a639ac09e1583b0b7193fb75e8a6ae063a3828c53a8ffdc6712cc3c9e4e57ed9eb1b0473eecfe30b226bc&CHRESPONSE=43b53b4ade041c53874636a5ea96d091855246f9
+-> request: /v1/api/iserver/auth/status
+-> GET /v1/api/iserver/auth/status,200|90ms
+-> request: /v1/api/iserver/auth/ssodh/init
+-> POST https://api.ibkr.com/v1/api/iserver/auth/ssodh/init,200|143ms
+-> request: /v1/api/iserver/auth/ssodh/response
+-> POST https://api.ibkr.com/v1/api/iserver/auth/ssodh/response,200|99ms
+-> request: /v1/api/iserver/auth/ssodh/init
+-> POST https://api.ibkr.com/v1/api/iserver/auth/ssodh/init,200|79ms
+-> GET /v1/api/sso/validate
+<- 200 GET /v1/api/sso/validate
+-> request: /sso/ping
+-> GET /sso/ping,200|79ms
+-> request: /sso/ping
+-> GET /sso/ping,200|242ms
+-> GET /v1/api/sso/validate
+<- 200 GET /v1/api/sso/validate
+-> request: /sso/ping
+-> GET /sso/ping,200|245ms
+-> request: /sso/ping
+-> GET /sso/ping,200|82ms
+-> GET /v1/api/sso/validate
+<- 200 GET /v1/api/sso/validate
+-> GET /v1/api/sso/validate
+<- 200 GET /v1/api/sso/validate
+-> GET /v1/api/tickle
+<- 200 GET /v1/api/tickle
+-> GET /sso/Login?forwardTo=22&RL=1&ip2loc=US
+<- 200 GET /sso/Login?forwardTo=22&RL=1&ip2loc=US
+-> GET /scripts/common/js/jquery-ui-1.12.1/jquery-ui.min.js
+-> GET /scripts/common/js/jquery-3.4.1/jquery.min.js
+-> GET /scripts/common/js/bootstrap-4.3.1/bootstrap.bundle.min.js
+-> GET /scripts/common/js/bootstrap-switch-3.3.2/bootstrap-switch.min.js
+-> GET /scripts/common/js/switchery/switchery.min.js
+-> GET /scripts/common/js/switchery/switchery-init.js
+-> GET /sso/Templates/otp-responsive.css?1639721147301
+-> GET /sso/CombineFiles
+<- 304 GET /scripts/common/js/jquery-ui-1.12.1/jquery-ui.min.js
+-> GET /scripts/common/js/icheck-1.0.2/icheck.min.js
+<- 304 GET /scripts/common/js/bootstrap-switch-3.3.2/bootstrap-switch.min.js
+<- 304 GET /scripts/common/js/switchery/switchery.min.js
+-> GET /scripts/common/js/icheck-1.0.2/icheck-init.js
+<- 304 GET /scripts/common/js/jquery-3.4.1/jquery.min.js
+<- 304 GET /scripts/common/js/bootstrap-4.3.1/bootstrap.bundle.min.js
+<- 200 GET /scripts/common/js/switchery/switchery-init.js
+-> GET /images/2015/btn-app-tws.png
+-> GET /fonts/sourcesanspro-regular-webfont.woff2
+-> GET /images/2015/btn-app-apple.png
+<- 200 GET /sso/Templates/otp-responsive.css?1639721147301
+-> GET /images/2015/btn-app-google.png
+<- 200 GET /sso/CombineFiles
+<- 304 GET /images/2015/btn-app-tws.png
+-> GET /images/2015/button_discover_apis.png
+<- 304 GET /fonts/sourcesanspro-regular-webfont.woff2
+<- 304 GET /images/2015/btn-app-apple.png
+<- 304 GET /scripts/common/js/icheck-1.0.2/icheck.min.js
+<- 304 GET /scripts/common/js/icheck-1.0.2/icheck-init.js
+-> GET /sso/CombineFiles
+<- 304 GET /images/2015/btn-app-google.png
+<- 304 GET /images/2015/button_discover_apis.png
+<- 200 GET /sso/CombineFiles
+-> request: /sso/ping
+-> GET /sso/ping,200|90ms
+-> GET /v1/api/sso/validate
+<- 200 GET /v1/api/sso/validate
+-> GET /sso/Login?forwardTo=22&RL=1&ip2loc=US
+<- 200 GET /sso/Login?forwardTo=22&RL=1&ip2loc=US
+-> GET /sso/CombineFiles
+-> GET /scripts/common/js/jquery-3.4.1/jquery.min.js
+-> GET /sso/Templates/otp-responsive.css?1639721315401
+-> GET /scripts/common/js/jquery-ui-1.12.1/jquery-ui.min.js
+-> GET /scripts/common/js/bootstrap-4.3.1/bootstrap.bundle.min.js
+-> GET /scripts/common/js/switchery/switchery.min.js
+-> GET /scripts/common/js/bootstrap-switch-3.3.2/bootstrap-switch.min.js
+<- 200 GET /sso/CombineFiles
+-> GET /scripts/common/js/icheck-1.0.2/icheck.min.js
+<- 200 GET /sso/Templates/otp-responsive.css?1639721315401
+<- 200 GET /scripts/common/js/jquery-ui-1.12.1/jquery-ui.min.js
+<- 304 GET /scripts/common/js/jquery-3.4.1/jquery.min.js
+<- 304 GET /scripts/common/js/bootstrap-4.3.1/bootstrap.bundle.min.js
+-> GET /scripts/common/js/switchery/switchery-init.js
+-> GET /fonts/sourcesanspro-regular-webfont.woff2
+-> GET /scripts/common/js/icheck-1.0.2/icheck-init.js
+<- 304 GET /fonts/sourcesanspro-regular-webfont.woff2
+-> GET /images/2015/btn-app-apple.png
+<- 304 GET /scripts/common/js/switchery/switchery.min.js
+<- 200 GET /scripts/common/js/bootstrap-switch-3.3.2/bootstrap-switch.min.js
+<- 304 GET /scripts/common/js/icheck-1.0.2/icheck.min.js
+-> GET /images/2015/button_discover_apis.png
+-> GET /images/2015/btn-app-google.png
+<- 304 GET /images/2015/btn-app-apple.png
+<- 200 GET /scripts/common/js/switchery/switchery-init.js
+-> GET /images/2015/btn-app-tws.png
+<- 304 GET /images/2015/button_discover_apis.png
+<- 304 GET /images/2015/btn-app-google.png
+<- 304 GET /scripts/common/js/icheck-1.0.2/icheck-init.js
+-> GET /sso/CombineFiles
+<- 304 GET /images/2015/btn-app-tws.png
+<- 200 GET /sso/CombineFiles
+-> GET /v1/api/sso/validate
+<- 401 GET /v1/api/sso/validate
+-> GET /sso/Login?forwardTo=22&RL=1&ip2loc=US
+<- 200 GET /sso/Login?forwardTo=22&RL=1&ip2loc=US
+-> GET /sso/CombineFiles
+-> GET /sso/Templates/otp-responsive.css?1639721329253
+-> GET /scripts/common/js/jquery-3.4.1/jquery.min.js
+<- 200 GET /sso/CombineFiles
+-> GET /scripts/common/js/jquery-ui-1.12.1/jquery-ui.min.js
+-> GET /scripts/common/js/switchery/switchery.min.js
+-> GET /scripts/common/js/bootstrap-switch-3.3.2/bootstrap-switch.min.js
+-> GET /scripts/common/js/bootstrap-4.3.1/bootstrap.bundle.min.js
+-> GET /scripts/common/js/switchery/switchery-init.js
+<- 200 GET /sso/Templates/otp-responsive.css?1639721329253
+<- 200 GET /scripts/common/js/switchery/switchery.min.js
+<- 200 GET /scripts/common/js/bootstrap-switch-3.3.2/bootstrap-switch.min.js
+-> GET /scripts/common/js/icheck-1.0.2/icheck.min.js
+-> GET /scripts/common/js/icheck-1.0.2/icheck-init.js
+<- 200 GET /scripts/common/js/jquery-ui-1.12.1/jquery-ui.min.js
+-> GET /fonts/sourcesanspro-regular-webfont.woff2
+<- 304 GET /scripts/common/js/jquery-3.4.1/jquery.min.js
+-> GET /images/2015/btn-app-apple.png
+<- 304 GET /scripts/common/js/bootstrap-4.3.1/bootstrap.bundle.min.js
+<- 304 GET /fonts/sourcesanspro-regular-webfont.woff2
+<- 304 GET /images/2015/btn-app-apple.png
+<- 200 GET /scripts/common/js/switchery/switchery-init.js
+<- 304 GET /scripts/common/js/icheck-1.0.2/icheck.min.js
+-> GET /images/2015/btn-app-tws.png
+-> GET /images/2015/btn-app-google.png
+-> GET /images/2015/button_discover_apis.png
+<- 304 GET /scripts/common/js/icheck-1.0.2/icheck-init.js
+<- 304 GET /images/2015/btn-app-tws.png
+-> GET /sso/CombineFiles
+<- 304 GET /images/2015/btn-app-google.png
+<- 304 GET /images/2015/button_discover_apis.png
+<- 200 GET /sso/CombineFiles
+-> POST /sso/Authenticator?27880
+<- 200 POST /sso/Authenticator?27880
+-> POST /sso/Authenticator?17394
+<- 200 POST /sso/Authenticator?17394
+-> POST /sso/Authenticator?49390
+<- 200 POST /sso/Authenticator?49390
+-> POST /sso/Authenticator?40099
+<- 200 POST /sso/Authenticator?40099
+-> POST /sso/Authenticator?48689
+<- 200 POST /sso/Authenticator?48689
+-> GET /fonts/sourcesanspro-semibold-webfont.woff2
+-> POST /sso/Authenticator?22955
+<- 200 GET /fonts/sourcesanspro-semibold-webfont.woff2
+<- 200 POST /sso/Authenticator?22955
+-> POST /sso/Authenticator?77991
+<- 200 POST /sso/Authenticator?77991
+-> POST /sso/Authenticator?6573
+<- 200 POST /sso/Authenticator?6573
+-> POST /sso/Dispatcher
+<- 302 POST /sso/Dispatcher
+-> request: /v1/api/sso/validate?gw=1
+-> request: /AccountManagement/OneBarAuthentication?json=1
+-> GET /AccountManagement/OneBarAuthentication?json=1,404|97ms
+-> GET /v1/api/sso/validate?gw=1,200|114ms
+-> request: /v1/api/one/user
+-> request: /sso/AuthenticateSSODH?ACTION=INIT
+-> sso GET https://api.ibkr.com/sso/AuthenticateSSODH?ACTION=INIT
+-> request: /sso/AuthenticateSSODH?ACTION=COMPLETE&B=9eac33c5ddeff3a64e4fb79a76b7f68b44be0400417354bf040563430ee2d90cfd3a13a441e38b97e606cfeabdb623b32b1d0833362382c629cc7840969f4ce3&CHRESPONSE=f955ecb11d4a1b9d7987a29400eecccd88b1bb81
+-> sso GET https://api.ibkr.com/sso/AuthenticateSSODH?ACTION=COMPLETE&B=9eac33c5ddeff3a64e4fb79a76b7f68b44be0400417354bf040563430ee2d90cfd3a13a441e38b97e606cfeabdb623b32b1d0833362382c629cc7840969f4ce3&CHRESPONSE=f955ecb11d4a1b9d7987a29400eecccd88b1bb81
+-> GET /v1/api/one/user,200|2064ms
+-> request: /v1/api/iserver/auth/status
+-> GET /v1/api/iserver/auth/status,200|93ms
+-> request: /v1/api/iserver/auth/ssodh/init
+-> POST https://api.ibkr.com/v1/api/iserver/auth/ssodh/init,200|150ms
+-> request: /v1/api/iserver/auth/ssodh/response
+-> POST https://api.ibkr.com/v1/api/iserver/auth/ssodh/response,200|100ms
+-> request: /v1/api/iserver/accounts
+-> GET /v1/api/iserver/accounts,200|73ms
+-> GET /sso/Login?forwardTo=22&RL=1&ip2loc=US
+<- 200 GET /sso/Login?forwardTo=22&RL=1&ip2loc=US
+-> GET /sso/CombineFiles
+-> GET /sso/Templates/otp-responsive.css?1639721355601
+-> GET /scripts/common/js/jquery-3.4.1/jquery.min.js
+-> GET /scripts/common/js/bootstrap-4.3.1/bootstrap.bundle.min.js
+-> GET /scripts/common/js/jquery-ui-1.12.1/jquery-ui.min.js
+-> GET /scripts/common/js/bootstrap-switch-3.3.2/bootstrap-switch.min.js
+-> GET /scripts/common/js/switchery/switchery.min.js
+<- 200 GET /sso/CombineFiles
+-> GET /scripts/common/js/switchery/switchery-init.js
+<- 200 GET /sso/Templates/otp-responsive.css?1639721355601
+<- 304 GET /scripts/common/js/bootstrap-4.3.1/bootstrap.bundle.min.js
+<- 304 GET /scripts/common/js/jquery-ui-1.12.1/jquery-ui.min.js
+<- 304 GET /scripts/common/js/jquery-3.4.1/jquery.min.js
+-> GET /scripts/common/js/icheck-1.0.2/icheck.min.js
+-> GET /scripts/common/js/icheck-1.0.2/icheck-init.js
+-> GET /fonts/sourcesanspro-regular-webfont.woff2
+<- 200 GET /scripts/common/js/bootstrap-switch-3.3.2/bootstrap-switch.min.js
+-> GET /images/2015/btn-app-apple.png
+<- 304 GET /fonts/sourcesanspro-regular-webfont.woff2
+-> GET /images/2015/btn-app-google.png
+<- 304 GET /scripts/common/js/icheck-1.0.2/icheck.min.js
+<- 304 GET /images/2015/btn-app-apple.png
+<- 200 GET /scripts/common/js/switchery/switchery-init.js
+<- 304 GET /scripts/common/js/switchery/switchery.min.js
+<- 304 GET /scripts/common/js/icheck-1.0.2/icheck-init.js
+-> GET /images/2015/btn-app-tws.png
+<- 304 GET /images/2015/btn-app-google.png
+-> GET /images/2015/button_discover_apis.png
+-> GET /sso/CombineFiles
+<- 304 GET /images/2015/btn-app-tws.png
+<- 304 GET /images/2015/button_discover_apis.png
+<- 200 GET /sso/CombineFiles
+-> GET /v1/api/sso/validate
+<- 200 GET /v1/api/sso/validate
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|78ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|85ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|77ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|74ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|81ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|135ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|79ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|77ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|84ms
+-> request: /sso/ping
+-> GET /sso/ping,200|73ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|72ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|84ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|92ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|99ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|95ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|80ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|99ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|91ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|82ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|80ms
+-> request: /sso/ping
+-> GET /sso/ping,200|74ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|88ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|74ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|88ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|75ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|88ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|90ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|95ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|76ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|78ms
+-> GET /v1/api/sso/validate
+<- 200 GET /v1/api/sso/validate
+-> GET /v1/api/tickle
+<- 200 GET /v1/api/tickle
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|78ms
+-> request: /sso/ping
+-> GET /sso/ping,200|90ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|89ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|74ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|82ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|85ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|90ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|85ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|72ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|81ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|81ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|84ms
+-> request: /sso/ping
+-> GET /sso/ping,200|77ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|91ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|84ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|77ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|77ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|91ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|52ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|67ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|87ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|87ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|76ms
+-> request: /sso/ping
+-> GET /sso/ping,200|78ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|89ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|96ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|81ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|83ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|117ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|81ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|210ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|76ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|90ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|76ms
+-> request: /sso/ping
+-> GET /sso/ping,200|76ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|88ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|83ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|97ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|74ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|92ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|80ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|83ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|74ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|203ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|115ms
+-> request: /sso/ping
+-> GET /sso/ping,200|79ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|262ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|87ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|97ms
+-> GET /v1/api/tickle
+<- 200 GET /v1/api/tickle
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|56ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|67ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|75ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|105ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|82ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|87ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|89ms
+-> request: /sso/ping
+-> GET /sso/ping,200|74ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|86ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|87ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|87ms
+-> GET /v1/api/sso/validate
+<- 200 GET /v1/api/sso/validate
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|96ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|79ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|77ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|98ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|79ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|97ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|86ms
+-> request: /sso/ping
+-> GET /sso/ping,200|72ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|89ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|81ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|84ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|87ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|91ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|80ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|84ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|78ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|81ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|77ms
+-> request: /sso/ping
+-> GET /sso/ping,200|136ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|74ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|52ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|124ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|59ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|66ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|82ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|85ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|80ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|90ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|56ms
+-> request: /sso/ping
+-> GET /sso/ping,200|62ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|83ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|54ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|89ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|77ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|90ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|77ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|64ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|51ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|64ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|77ms
+-> request: /sso/ping
+-> GET /sso/ping,200|75ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|84ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|81ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|66ms
+-> GET /v1/api/logoff
+<- 404 GET /v1/api/logoff
+-> GET /v1/api/logout
+<- 200 GET /v1/api/logout
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|63ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|57ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|79ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|84ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|76ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|79ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|56ms
+-> request: /sso/ping
+-> GET /sso/ping,200|53ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|381ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|51ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|78ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|84ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|70ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|85ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|77ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|104ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|56ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|79ms
+-> request: /sso/ping
+-> GET /sso/ping,200|78ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|84ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|87ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|85ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|75ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|137ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|75ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|55ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|68ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|63ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|82ms
+-> request: /sso/ping
+-> GET /sso/ping,200|153ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|72ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|83ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|77ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|82ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|52ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|63ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|80ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|80ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|80ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|62ms
+-> request: /sso/ping
+-> GET /sso/ping,200|50ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|54ms
+-> GET /sso/Login?forwardTo=22&RL=1&ip2loc=US
+<- 200 GET /sso/Login?forwardTo=22&RL=1&ip2loc=US
+-> GET /sso/Templates/otp-responsive.css?1639726183628
+-> request: /v1/api/tickle
+-> GET /scripts/common/js/jquery-ui-1.12.1/jquery-ui.min.js
+-> GET /scripts/common/js/jquery-3.4.1/jquery.min.js
+-> GET /scripts/common/js/bootstrap-switch-3.3.2/bootstrap-switch.min.js
+-> GET /scripts/common/js/bootstrap-4.3.1/bootstrap.bundle.min.js
+<- 200 GET /sso/Templates/otp-responsive.css?1639726183628
+-> GET /scripts/common/js/switchery/switchery.min.js
+-> GET /scripts/common/js/icheck-1.0.2/icheck.min.js
+-> GET /v1/api/tickle,200|60ms
+<- 200 GET /scripts/common/js/bootstrap-switch-3.3.2/bootstrap-switch.min.js
+-> GET /scripts/common/js/switchery/switchery-init.js
+<- 304 GET /scripts/common/js/bootstrap-4.3.1/bootstrap.bundle.min.js
+<- 304 GET /scripts/common/js/switchery/switchery.min.js
+-> GET /sso/CombineFiles
+<- 304 GET /scripts/common/js/jquery-3.4.1/jquery.min.js
+-> GET /scripts/common/js/icheck-1.0.2/icheck-init.js
+<- 200 GET /scripts/common/js/jquery-ui-1.12.1/jquery-ui.min.js
+-> GET /images/2015/btn-app-google.png
+-> GET /images/2015/btn-app-apple.png
+<- 304 GET /images/2015/btn-app-google.png
+-> GET /images/2015/btn-app-tws.png
+<- 304 GET /images/2015/btn-app-apple.png
+<- 304 GET /images/2015/btn-app-tws.png
+<- 200 GET /sso/CombineFiles
+<- 304 GET /scripts/common/js/switchery/switchery-init.js
+<- 200 GET /scripts/common/js/icheck-1.0.2/icheck.min.js
+-> GET /images/2015/button_discover_apis.png
+<- 200 GET /images/2015/button_discover_apis.png
+<- 304 GET /scripts/common/js/icheck-1.0.2/icheck-init.js
+-> GET /sso/CombineFiles
+<- 200 GET /sso/CombineFiles
+-> GET /fonts/sourcesanspro-regular-webfont.woff2
+<- 200 GET /fonts/sourcesanspro-regular-webfont.woff2
+-> POST /sso/Authenticator?76740
+<- 200 POST /sso/Authenticator?76740
+-> POST /sso/Authenticator?41503
+<- 200 POST /sso/Authenticator?41503
+-> POST /sso/Authenticator?12906
+<- 200 POST /sso/Authenticator?12906
+-> GET /fonts/sourcesanspro-semibold-webfont.woff2
+-> POST /sso/Authenticator?87574
+<- 304 GET /fonts/sourcesanspro-semibold-webfont.woff2
+<- 200 POST /sso/Authenticator?87574
+-> POST /sso/Authenticator?29447
+<- 200 POST /sso/Authenticator?29447
+-> POST /sso/Authenticator?4396
+<- 200 POST /sso/Authenticator?4396
+-> POST /sso/Authenticator?63959
+<- 200 POST /sso/Authenticator?63959
+-> POST /sso/Authenticator?88068
+<- 200 POST /sso/Authenticator?88068
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|60ms
+-> POST /sso/Authenticator?78421
+<- 200 POST /sso/Authenticator?78421
+-> POST /sso/Authenticator?90972
+<- 200 POST /sso/Authenticator?90972
+-> GET /v1/api/sso/validate
+<- 200 GET /v1/api/sso/validate
+-> POST /sso/Authenticator?39474
+<- 200 POST /sso/Authenticator?39474
+-> POST /sso/Authenticator?32598
+<- 200 POST /sso/Authenticator?32598
+-> POST /sso/Authenticator?24682
+<- 200 POST /sso/Authenticator?24682
+-> POST /sso/Authenticator?82663
+<- 200 POST /sso/Authenticator?82663
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|87ms
+-> POST /sso/Authenticator?76931
+<- 200 POST /sso/Authenticator?76931
+-> POST /sso/Authenticator?44890
+<- 200 POST /sso/Authenticator?44890
+-> POST /sso/Authenticator?30039
+<- 200 POST /sso/Authenticator?30039
+-> POST /sso/Authenticator?57785
+<- 200 POST /sso/Authenticator?57785
+-> POST /sso/Authenticator?58687
+<- 200 POST /sso/Authenticator?58687
+-> POST /sso/Authenticator?98092
+<- 200 POST /sso/Authenticator?98092
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|163ms
+-> POST /sso/Authenticator?80541
+<- 200 POST /sso/Authenticator?80541
+-> POST /sso/Authenticator?70387
+<- 200 POST /sso/Authenticator?70387
+-> POST /sso/Authenticator?55444
+<- 200 POST /sso/Authenticator?55444
+-> POST /sso/Authenticator?86692
+<- 200 POST /sso/Authenticator?86692
+-> POST /sso/Authenticator?43483
+<- 200 POST /sso/Authenticator?43483
+-> GET /v1/api/tickle
+<- 401 GET /v1/api/tickle
+-> POST /sso/Authenticator?48000
+<- 200 POST /sso/Authenticator?48000
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,401|111ms
+-> request: /v1/api/sso/validate?gw=1
+-> GET /v1/api/sso/validate?gw=1,401|101ms
+-> POST /sso/Authenticator?95679
+<- 200 POST /sso/Authenticator?95679
+-> request: /v1/api/sso/validate?gw=1
+-> GET /v1/api/sso/validate?gw=1,401|121ms
+-> request: /v1/api/sso/validate?gw=1
+-> GET /v1/api/sso/validate?gw=1,401|100ms
+-> POST /sso/Authenticator?85727
+<- 200 POST /sso/Authenticator?85727
+-> request: /v1/api/sso/validate?gw=1
+-> GET /v1/api/sso/validate?gw=1,401|108ms
+-> request: /v1/api/sso/validate?gw=1
+-> GET /v1/api/sso/validate?gw=1,401|151ms
+-> POST /sso/Authenticator?23052
+<- 200 POST /sso/Authenticator?23052
+-> POST /sso/Authenticator?54364
+<- 200 POST /sso/Authenticator?54364
+-> POST /sso/Authenticator?51842
+<- 200 POST /sso/Authenticator?51842
+-> POST /sso/Authenticator?28998
+<- 200 POST /sso/Authenticator?28998
+-> POST /sso/Authenticator?61122
+<- 200 POST /sso/Authenticator?61122
+-> POST /sso/Authenticator?22519
+<- 200 POST /sso/Authenticator?22519
+-> POST /sso/Authenticator?80637
+<- 200 POST /sso/Authenticator?80637
+-> POST /sso/Authenticator?18406
+<- 200 POST /sso/Authenticator?18406
+-> POST /sso/Authenticator?11303
+<- 200 POST /sso/Authenticator?11303
+-> POST /sso/Authenticator?70683
+<- 200 POST /sso/Authenticator?70683
+-> POST /sso/Authenticator?26779
+<- 200 POST /sso/Authenticator?26779
+-> request: /sso/ping
+-> GET /sso/ping,200|79ms
+-> request: /sso/ping
+-> GET /sso/ping,200|59ms
+-> GET /v1/api/sso/validate
+uri /v1/api/sso/validate failed
+java.io.IOException: Connection reset by peer
+	at sun.nio.ch.FileDispatcherImpl.read0(Native Method) ~[na:1.8.0_311]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:39) ~[na:1.8.0_311]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[na:1.8.0_311]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[na:1.8.0_311]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:378) ~[na:1.8.0_311]
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288) ~[netty-buffer-4.1.15.Final.jar:4.1.15.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1106) ~[netty-buffer-4.1.15.Final.jar:4.1.15.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:373) ~[netty-transport-4.1.15.Final.jar:4.1.15.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:123) ~[netty-transport-4.1.15.Final.jar:4.1.15.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:645) ~[netty-transport-4.1.15.Final.jar:4.1.15.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:580) ~[netty-transport-4.1.15.Final.jar:4.1.15.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:497) ~[netty-transport-4.1.15.Final.jar:4.1.15.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:459) ~[netty-transport-4.1.15.Final.jar:4.1.15.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858) ~[netty-common-4.1.15.Final.jar:4.1.15.Final]
+	at java.lang.Thread.run(Thread.java:748) ~[na:1.8.0_311]
+-> request: /sso/ping
+-> GET /v1/api/sso/validate
+uri /v1/api/sso/validate failed
+java.io.IOException: Connection reset by peer
+	at sun.nio.ch.FileDispatcherImpl.read0(Native Method) ~[na:1.8.0_311]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:39) ~[na:1.8.0_311]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[na:1.8.0_311]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[na:1.8.0_311]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:378) ~[na:1.8.0_311]
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288) ~[netty-buffer-4.1.15.Final.jar:4.1.15.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1106) ~[netty-buffer-4.1.15.Final.jar:4.1.15.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:373) ~[netty-transport-4.1.15.Final.jar:4.1.15.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:123) ~[netty-transport-4.1.15.Final.jar:4.1.15.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:645) ~[netty-transport-4.1.15.Final.jar:4.1.15.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:580) ~[netty-transport-4.1.15.Final.jar:4.1.15.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:497) ~[netty-transport-4.1.15.Final.jar:4.1.15.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:459) ~[netty-transport-4.1.15.Final.jar:4.1.15.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858) ~[netty-common-4.1.15.Final.jar:4.1.15.Final]
+	at java.lang.Thread.run(Thread.java:748) ~[na:1.8.0_311]
+-> request: /sso/ping
+-> request: /sso/ping
+-> request: /sso/ping
+-> GET /sso/ping,200|236ms
+-> request: /sso/ping
+-> GET /sso/ping,200|737ms
+-> request: /sso/ping
+-> GET /sso/ping,200|225ms
+-> request: /sso/ping
+-> request: /sso/ping
+-> GET /sso/ping,200|144ms
+-> request: /sso/ping
+-> request: /sso/ping
+-> GET /sso/ping,200|235ms
+-> request: /sso/ping
+-> request: /sso/ping
+-> GET /sso/ping,200|196ms
+-> request: /sso/ping
+-> request: /sso/ping
+-> GET /sso/ping,200|150ms
+-> request: /sso/ping
+-> request: /sso/ping
+-> GET /sso/ping,200|160ms
+-> request: /sso/ping
+-> request: /sso/ping
+-> GET /sso/ping,200|465ms
+-> request: /sso/ping
+-> request: /sso/ping
+-> GET /sso/ping,200|200ms
+-> request: /sso/ping
+-> GET /sso/ping,200|79ms
+-> request: /sso/ping
+-> GET /sso/ping,200|75ms
+-> request: /sso/ping
+-> GET /sso/ping,200|88ms
+-> request: /sso/ping
+-> GET /sso/ping,200|76ms
+-> request: /sso/ping
+-> GET /sso/ping,200|85ms
+-> request: /sso/ping
+-> GET /sso/ping,200|50ms
+-> request: /sso/ping
+-> GET /sso/ping,200|89ms
+-> request: /sso/ping
+-> GET /sso/ping,200|75ms
+-> request: /sso/ping
+-> GET /sso/ping,200|92ms
+-> request: /sso/ping
+-> GET /sso/ping,200|84ms
+-> request: /sso/ping
+-> GET /sso/ping,200|75ms
+-> request: /sso/ping
+-> GET /sso/ping,200|79ms
+-> request: /sso/ping
+-> GET /sso/ping,200|74ms
+-> request: /sso/ping
+-> GET /sso/ping,200|81ms
+-> request: /sso/ping
+-> GET /sso/ping,200|76ms
+-> request: /sso/ping
+-> GET /sso/ping,200|73ms
+-> request: /sso/ping
+-> GET /sso/ping,200|78ms
+-> request: /sso/ping
+-> GET /sso/ping,200|72ms
+-> request: /sso/ping
+-> GET /sso/ping,200|75ms
+-> request: /sso/ping
+-> GET /sso/ping,200|74ms
+-> request: /sso/ping
+-> GET /sso/ping,200|74ms
+-> request: /sso/ping
+-> GET /sso/ping,200|73ms
+-> request: /sso/ping
+-> GET /sso/ping,200|73ms
+-> request: /sso/ping
+-> GET /sso/ping,200|105ms
+-> request: /sso/ping
+-> request: /sso/ping
+-> GET /sso/ping,200|247ms
+-> request: /sso/ping
+-> GET /sso/ping,200|206ms
+-> request: /sso/ping
+-> GET /sso/ping,200|93ms
+-> request: /sso/ping
+-> GET /sso/ping,200|74ms
+-> request: /sso/ping
+-> GET /sso/ping,200|74ms
+-> request: /sso/ping
+-> GET /sso/ping,200|79ms
+-> request: /sso/ping
+-> GET /sso/ping,200|73ms
+-> request: /sso/ping
+-> GET /sso/ping,200|76ms
+-> request: /sso/ping
+-> GET /sso/ping,200|95ms
+-> request: /sso/ping
+-> GET /sso/ping,200|81ms
+-> request: /sso/ping
+-> GET /sso/ping,200|72ms
+-> request: /sso/ping
+-> GET /sso/ping,200|95ms
+-> request: /sso/ping
+-> GET /sso/ping,200|87ms
+-> request: /sso/ping
+-> GET /sso/ping,200|88ms
+-> request: /sso/ping
+-> GET /sso/ping,200|76ms
+-> request: /sso/ping
+-> GET /sso/ping,200|121ms
+-> request: /sso/ping
+-> GET /sso/ping,200|108ms
+-> request: /sso/ping
+-> GET /sso/ping,200|99ms
+-> request: /sso/ping
+-> GET /sso/ping,200|86ms
+-> GET /sso/Login?forwardTo=22&RL=1&ip2loc=US
+<- 200 GET /sso/Login?forwardTo=22&RL=1&ip2loc=US
+-> GET /scripts/common/js/jquery-ui-1.12.1/jquery-ui.min.js
+-> GET /scripts/common/js/jquery-3.4.1/jquery.min.js
+-> GET /sso/Templates/otp-responsive.css?1639754403750
+-> GET /scripts/common/js/bootstrap-4.3.1/bootstrap.bundle.min.js
+-> GET /scripts/common/js/switchery/switchery-init.js
+-> GET /scripts/common/js/switchery/switchery.min.js
+-> GET /scripts/common/js/bootstrap-switch-3.3.2/bootstrap-switch.min.js
+-> GET /sso/CombineFiles
+<- 304 GET /scripts/common/js/jquery-3.4.1/jquery.min.js
+-> GET /scripts/common/js/icheck-1.0.2/icheck.min.js
+<- 200 GET /scripts/common/js/switchery/switchery-init.js
+-> GET /scripts/common/js/icheck-1.0.2/icheck-init.js
+<- 200 GET /sso/Templates/otp-responsive.css?1639754403750
+<- 304 GET /scripts/common/js/bootstrap-4.3.1/bootstrap.bundle.min.js
+<- 200 GET /scripts/common/js/jquery-ui-1.12.1/jquery-ui.min.js
+<- 200 GET /scripts/common/js/switchery/switchery.min.js
+-> GET /images/2015/btn-app-tws.png
+-> GET /images/2015/button_discover_apis.png
+-> GET /fonts/sourcesanspro-regular-webfont.woff2
+<- 304 GET /scripts/common/js/bootstrap-switch-3.3.2/bootstrap-switch.min.js
+<- 304 GET /images/2015/btn-app-tws.png
+-> GET /images/2015/btn-app-apple.png
+<- 304 GET /images/2015/button_discover_apis.png
+-> GET /images/2015/btn-app-google.png
+<- 304 GET /fonts/sourcesanspro-regular-webfont.woff2
+<- 200 GET /sso/CombineFiles
+<- 304 GET /images/2015/btn-app-apple.png
+<- 304 GET /images/2015/btn-app-google.png
+<- 304 GET /scripts/common/js/icheck-1.0.2/icheck-init.js
+<- 304 GET /scripts/common/js/icheck-1.0.2/icheck.min.js
+-> GET /sso/CombineFiles
+<- 200 GET /sso/CombineFiles
+-> POST /sso/Authenticator;jsessionid=2536C32331A54FAD663CD6D7187CB4A2.ny5wwwdam1-internet?84364
+<- 200 POST /sso/Authenticator;jsessionid=2536C32331A54FAD663CD6D7187CB4A2.ny5wwwdam1-internet?84364
+-> POST /sso/Authenticator;jsessionid=2536C32331A54FAD663CD6D7187CB4A2.ny5wwwdam1-internet?13670
+<- 200 POST /sso/Authenticator;jsessionid=2536C32331A54FAD663CD6D7187CB4A2.ny5wwwdam1-internet?13670
+-> POST /sso/Authenticator;jsessionid=2536C32331A54FAD663CD6D7187CB4A2.ny5wwwdam1-internet?56447
+<- 200 POST /sso/Authenticator;jsessionid=2536C32331A54FAD663CD6D7187CB4A2.ny5wwwdam1-internet?56447
+-> GET /fonts/sourcesanspro-semibold-webfont.woff2
+-> POST /sso/Authenticator;jsessionid=2536C32331A54FAD663CD6D7187CB4A2.ny5wwwdam1-internet?98188
+<- 200 GET /fonts/sourcesanspro-semibold-webfont.woff2
+<- 200 POST /sso/Authenticator;jsessionid=2536C32331A54FAD663CD6D7187CB4A2.ny5wwwdam1-internet?98188
+-> POST /sso/Authenticator;jsessionid=2536C32331A54FAD663CD6D7187CB4A2.ny5wwwdam1-internet?91352
+<- 200 POST /sso/Authenticator;jsessionid=2536C32331A54FAD663CD6D7187CB4A2.ny5wwwdam1-internet?91352
+-> POST /sso/Authenticator;jsessionid=2536C32331A54FAD663CD6D7187CB4A2.ny5wwwdam1-internet?42876
+<- 200 POST /sso/Authenticator;jsessionid=2536C32331A54FAD663CD6D7187CB4A2.ny5wwwdam1-internet?42876
+-> POST /sso/Dispatcher;jsessionid=2536C32331A54FAD663CD6D7187CB4A2.ny5wwwdam1-internet
+<- 302 POST /sso/Dispatcher;jsessionid=2536C32331A54FAD663CD6D7187CB4A2.ny5wwwdam1-internet
+-> request: /v1/api/sso/validate?gw=1
+-> request: /AccountManagement/OneBarAuthentication?json=1
+-> GET /AccountManagement/OneBarAuthentication?json=1,404|90ms
+-> GET /v1/api/sso/validate?gw=1,200|137ms
+-> request: /v1/api/one/user
+-> request: /sso/AuthenticateSSODH?ACTION=INIT
+-> sso GET https://api.ibkr.com/sso/AuthenticateSSODH?ACTION=INIT
+-> request: /sso/AuthenticateSSODH?ACTION=COMPLETE&B=51eb2cdbf485a5b170e952ebe942e6f42ef0b4d056da737c8c7551c4d5f62b0c2f247bbaa970e804179c579ac09e0e8e3a8636f305bec72a0331fd27c42178b9&CHRESPONSE=8a15b0e8e84a056e683f1af3a0f91f07160aaa19
+-> sso GET https://api.ibkr.com/sso/AuthenticateSSODH?ACTION=COMPLETE&B=51eb2cdbf485a5b170e952ebe942e6f42ef0b4d056da737c8c7551c4d5f62b0c2f247bbaa970e804179c579ac09e0e8e3a8636f305bec72a0331fd27c42178b9&CHRESPONSE=8a15b0e8e84a056e683f1af3a0f91f07160aaa19
+-> GET /v1/api/one/user,200|2159ms
+-> request: /v1/api/iserver/auth/status
+-> GET /v1/api/iserver/auth/status,200|90ms
+-> request: /v1/api/iserver/auth/ssodh/init
+-> POST https://api.ibkr.com/v1/api/iserver/auth/ssodh/init,200|161ms
+-> request: /v1/api/iserver/auth/ssodh/response
+-> POST https://api.ibkr.com/v1/api/iserver/auth/ssodh/response,200|106ms
+-> request: /v1/api/iserver/accounts
+-> GET /v1/api/iserver/accounts,200|88ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|90ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|105ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|126ms
+-> GET /sso/Login?forwardTo=22&RL=1&ip2loc=US
+<- 200 GET /sso/Login?forwardTo=22&RL=1&ip2loc=US
+-> GET /sso/CombineFiles
+-> GET /scripts/common/js/jquery-3.4.1/jquery.min.js
+-> GET /scripts/common/js/jquery-ui-1.12.1/jquery-ui.min.js
+-> GET /scripts/common/js/bootstrap-4.3.1/bootstrap.bundle.min.js
+-> GET /scripts/common/js/switchery/switchery.min.js
+-> GET /scripts/common/js/switchery/switchery-init.js
+-> GET /sso/Templates/otp-responsive.css?1639754536699
+<- 200 GET /sso/CombineFiles
+<- 200 GET /scripts/common/js/jquery-ui-1.12.1/jquery-ui.min.js
+<- 304 GET /scripts/common/js/bootstrap-4.3.1/bootstrap.bundle.min.js
+<- 304 GET /scripts/common/js/jquery-3.4.1/jquery.min.js
+-> GET /scripts/common/js/bootstrap-switch-3.3.2/bootstrap-switch.min.js
+<- 200 GET /scripts/common/js/switchery/switchery.min.js
+-> GET /scripts/common/js/icheck-1.0.2/icheck.min.js
+-> GET /images/2015/btn-app-apple.png
+-> GET /scripts/common/js/icheck-1.0.2/icheck-init.js
+<- 200 GET /scripts/common/js/switchery/switchery-init.js
+-> GET /fonts/sourcesanspro-regular-webfont.woff2
+-> GET /images/2015/btn-app-google.png
+<- 200 GET /scripts/common/js/bootstrap-switch-3.3.2/bootstrap-switch.min.js
+<- 200 GET /sso/Templates/otp-responsive.css?1639754536699
+-> GET /images/2015/btn-app-tws.png
+<- 304 GET /images/2015/btn-app-apple.png
+-> GET /images/2015/button_discover_apis.png
+<- 304 GET /fonts/sourcesanspro-regular-webfont.woff2
+<- 304 GET /images/2015/btn-app-google.png
+<- 304 GET /images/2015/btn-app-tws.png
+<- 304 GET /scripts/common/js/icheck-1.0.2/icheck.min.js
+<- 304 GET /scripts/common/js/icheck-1.0.2/icheck-init.js
+<- 304 GET /images/2015/button_discover_apis.png
+-> GET /sso/CombineFiles
+<- 200 GET /sso/CombineFiles
+-> GET /sso/Login?forwardTo=22&RL=1&ip2loc=US
+-> GET /v1/api/sso/validate
+<- 200 GET /sso/Login?forwardTo=22&RL=1&ip2loc=US
+<- 200 GET /v1/api/sso/validate
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|91ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|93ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|91ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|86ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|88ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|116ms
+-> request: /sso/ping
+-> GET /sso/ping,200|108ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|115ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|103ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|89ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|100ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|117ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|87ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|86ms
+-> GET /v1/portal/sso/validate
+<- 401 GET /v1/portal/sso/validate
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,401|89ms
+-> request: /v1/api/sso/validate?gw=1
+-> GET /v1/api/sso/validate?gw=1,401|88ms
+-> request: /v1/api/sso/validate?gw=1
+-> GET /v1/api/sso/validate?gw=1,401|85ms
+-> request: /v1/api/sso/validate?gw=1
+-> GET /v1/api/sso/validate?gw=1,401|86ms
+-> request: /v1/api/sso/validate?gw=1
+-> GET /v1/api/sso/validate?gw=1,401|81ms
+-> request: /v1/api/sso/validate?gw=1
+-> GET /v1/api/sso/validate?gw=1,401|93ms
+-> GET /v1/portal/one/user
+<- 401 GET /v1/portal/one/user
+-> GET /v1/portal/portfolio/accounts
+<- 401 GET /v1/portal/portfolio/accounts
+-> GET /v1/api/portal/sso/validate
+<- 401 GET /v1/api/portal/sso/validate
+-> request: /sso/ping
+-> GET /sso/ping,200|97ms
+-> GET /sso/Login?forwardTo=22&RL=1&ip2loc=US
+<- 200 GET /sso/Login?forwardTo=22&RL=1&ip2loc=US
+-> GET /sso/CombineFiles
+-> GET /scripts/common/js/jquery-3.4.1/jquery.min.js
+-> GET /scripts/common/js/jquery-ui-1.12.1/jquery-ui.min.js
+-> GET /scripts/common/js/bootstrap-4.3.1/bootstrap.bundle.min.js
+-> GET /scripts/common/js/bootstrap-switch-3.3.2/bootstrap-switch.min.js
+-> GET /scripts/common/js/switchery/switchery.min.js
+<- 200 GET /sso/CombineFiles
+-> GET /scripts/common/js/switchery/switchery-init.js
+<- 304 GET /scripts/common/js/bootstrap-switch-3.3.2/bootstrap-switch.min.js
+<- 304 GET /scripts/common/js/jquery-ui-1.12.1/jquery-ui.min.js
+-> GET /scripts/common/js/icheck-1.0.2/icheck.min.js
+<- 304 GET /scripts/common/js/bootstrap-4.3.1/bootstrap.bundle.min.js
+<- 304 GET /scripts/common/js/jquery-3.4.1/jquery.min.js
+-> GET /sso/Templates/otp-responsive.css?1639755039163
+-> GET /scripts/common/js/icheck-1.0.2/icheck-init.js
+-> GET /images/2015/btn-app-apple.png
+<- 304 GET /scripts/common/js/switchery/switchery-init.js
+<- 304 GET /images/2015/btn-app-apple.png
+-> GET /images/2015/btn-app-google.png
+<- 304 GET /scripts/common/js/icheck-1.0.2/icheck.min.js
+<- 304 GET /images/2015/btn-app-google.png
+<- 200 GET /sso/Templates/otp-responsive.css?1639755039163
+-> GET /images/2015/btn-app-tws.png
+-> GET /images/2015/button_discover_apis.png
+<- 304 GET /scripts/common/js/icheck-1.0.2/icheck-init.js
+<- 304 GET /images/2015/btn-app-tws.png
+<- 304 GET /images/2015/button_discover_apis.png
+<- 304 GET /scripts/common/js/switchery/switchery.min.js
+-> GET /sso/CombineFiles
+<- 200 GET /sso/CombineFiles
+-> GET /fonts/sourcesanspro-regular-webfont.woff2
+<- 200 GET /fonts/sourcesanspro-regular-webfont.woff2
+-> POST /sso/Authenticator?87849
+<- 200 POST /sso/Authenticator?87849
+-> GET /sso/Login?forwardTo=22&RL=1&ip2loc=US
+<- 200 GET /sso/Login?forwardTo=22&RL=1&ip2loc=US
+-> GET /sso/CombineFiles
+-> GET /scripts/common/js/jquery-3.4.1/jquery.min.js
+-> GET /sso/Templates/otp-responsive.css?1639755068676
+-> GET /scripts/common/js/jquery-ui-1.12.1/jquery-ui.min.js
+-> GET /scripts/common/js/bootstrap-4.3.1/bootstrap.bundle.min.js
+-> GET /scripts/common/js/bootstrap-switch-3.3.2/bootstrap-switch.min.js
+-> GET /scripts/common/js/switchery/switchery.min.js
+<- 200 GET /sso/CombineFiles
+-> GET /scripts/common/js/switchery/switchery-init.js
+<- 200 GET /sso/Templates/otp-responsive.css?1639755068676
+<- 304 GET /scripts/common/js/jquery-3.4.1/jquery.min.js
+<- 304 GET /scripts/common/js/bootstrap-4.3.1/bootstrap.bundle.min.js
+<- 304 GET /scripts/common/js/jquery-ui-1.12.1/jquery-ui.min.js
+-> GET /scripts/common/js/icheck-1.0.2/icheck.min.js
+-> GET /scripts/common/js/icheck-1.0.2/icheck-init.js
+-> GET /images/2015/btn-app-apple.png
+<- 200 GET /scripts/common/js/bootstrap-switch-3.3.2/bootstrap-switch.min.js
+<- 304 GET /scripts/common/js/switchery/switchery.min.js
+-> GET /images/2015/btn-app-google.png
+-> GET /images/2015/btn-app-tws.png
+<- 200 GET /scripts/common/js/switchery/switchery-init.js
+-> GET /images/2015/button_discover_apis.png
+<- 304 GET /images/2015/btn-app-apple.png
+<- 304 GET /images/2015/btn-app-google.png
+<- 304 GET /scripts/common/js/icheck-1.0.2/icheck.min.js
+<- 304 GET /images/2015/btn-app-tws.png
+<- 304 GET /scripts/common/js/icheck-1.0.2/icheck-init.js
+<- 304 GET /images/2015/button_discover_apis.png
+-> GET /sso/CombineFiles
+<- 200 GET /sso/CombineFiles
+-> GET /fonts/sourcesanspro-regular-webfont.woff2
+<- 304 GET /fonts/sourcesanspro-regular-webfont.woff2
+-> POST /sso/Authenticator?59851
+<- 200 POST /sso/Authenticator?59851
+-> POST /sso/Authenticator?43730
+<- 200 POST /sso/Authenticator?43730
+-> POST /sso/Authenticator?27191
+<- 200 POST /sso/Authenticator?27191
+-> GET /fonts/sourcesanspro-semibold-webfont.woff2
+<- 200 GET /fonts/sourcesanspro-semibold-webfont.woff2
+-> POST /sso/Authenticator?14621
+<- 200 POST /sso/Authenticator?14621
+-> POST /sso/Authenticator?83943
+<- 200 POST /sso/Authenticator?83943
+-> POST /sso/Authenticator?80112
+<- 200 POST /sso/Authenticator?80112
+-> POST /sso/Authenticator?25761
+<- 200 POST /sso/Authenticator?25761
+-> GET /sso/Login?forwardTo=22&RL=1&ip2loc=US
+<- 200 GET /sso/Login?forwardTo=22&RL=1&ip2loc=US
+-> GET /scripts/common/js/jquery-3.4.1/jquery.min.js
+-> GET /sso/Templates/otp-responsive.css?1639755090742
+-> GET /scripts/common/js/jquery-ui-1.12.1/jquery-ui.min.js
+-> GET /scripts/common/js/bootstrap-4.3.1/bootstrap.bundle.min.js
+-> GET /scripts/common/js/bootstrap-switch-3.3.2/bootstrap-switch.min.js
+-> GET /scripts/common/js/switchery/switchery.min.js
+<- 200 GET /scripts/common/js/jquery-3.4.1/jquery.min.js
+-> GET /scripts/common/js/switchery/switchery-init.js
+<- 200 GET /sso/Templates/otp-responsive.css?1639755090742
+-> GET /scripts/common/js/icheck-1.0.2/icheck.min.js
+<- 200 GET /scripts/common/js/bootstrap-switch-3.3.2/bootstrap-switch.min.js
+<- 200 GET /scripts/common/js/jquery-ui-1.12.1/jquery-ui.min.js
+-> GET /sso/CombineFiles
+-> GET /scripts/common/js/icheck-1.0.2/icheck-init.js
+<- 200 GET /scripts/common/js/bootstrap-4.3.1/bootstrap.bundle.min.js
+<- 200 GET /scripts/common/js/switchery/switchery.min.js
+<- 200 GET /scripts/common/js/switchery/switchery-init.js
+<- 200 GET /scripts/common/js/icheck-1.0.2/icheck.min.js
+<- 200 GET /scripts/common/js/icheck-1.0.2/icheck-init.js
+-> GET /images/2015/btn-app-apple.png
+<- 200 GET /sso/CombineFiles
+-> GET /images/2015/btn-app-google.png
+<- 200 GET /images/2015/btn-app-google.png
+-> GET /images/2015/btn-app-tws.png
+<- 200 GET /images/2015/btn-app-apple.png
+-> GET /images/2015/button_discover_apis.png
+<- 200 GET /images/2015/btn-app-tws.png
+<- 200 GET /images/2015/button_discover_apis.png
+-> GET /fonts/sourcesanspro-regular-webfont.woff2
+<- 200 GET /fonts/sourcesanspro-regular-webfont.woff2
+-> POST /sso/Authenticator?4919
+<- 200 POST /sso/Authenticator?4919
+-> POST /sso/Authenticator?34616
+<- 200 POST /sso/Authenticator?34616
+-> POST /sso/Authenticator?84307
+<- 200 POST /sso/Authenticator?84307
+-> GET /fonts/sourcesanspro-semibold-webfont.woff2
+-> POST /sso/Authenticator?89334
+<- 304 GET /fonts/sourcesanspro-semibold-webfont.woff2
+<- 200 POST /sso/Authenticator?89334
+-> POST /sso/Authenticator?41243
+<- 200 POST /sso/Authenticator?41243
+-> POST /sso/Dispatcher
+<- 302 POST /sso/Dispatcher
+-> request: /v1/api/sso/validate?gw=1
+-> request: /AccountManagement/OneBarAuthentication?json=1
+-> GET /AccountManagement/OneBarAuthentication?json=1,404|97ms
+-> GET /v1/api/sso/validate?gw=1,200|129ms
+-> request: /v1/api/one/user
+-> request: /sso/AuthenticateSSODH?ACTION=INIT
+-> sso GET https://api.ibkr.com/sso/AuthenticateSSODH?ACTION=INIT
+-> GET /v1/api/one/user,200|93ms
+-> request: /sso/AuthenticateSSODH?ACTION=COMPLETE&B=b248133abab3a6a7a1d1c9e6abaff84fd8445197dab3a435bb92263a988a76c07eead7d155f4670b6b1d652de00d190bb80ed0294a845bb94fc8432258a8051b&CHRESPONSE=4bd994c64284ab172d2fc27c9306e3e4aab35faf
+-> sso GET https://api.ibkr.com/sso/AuthenticateSSODH?ACTION=COMPLETE&B=b248133abab3a6a7a1d1c9e6abaff84fd8445197dab3a435bb92263a988a76c07eead7d155f4670b6b1d652de00d190bb80ed0294a845bb94fc8432258a8051b&CHRESPONSE=4bd994c64284ab172d2fc27c9306e3e4aab35faf
+-> request: /v1/api/iserver/auth/status
+-> GET /v1/api/iserver/auth/status,200|86ms
+-> request: /v1/api/iserver/auth/ssodh/init
+-> POST https://api.ibkr.com/v1/api/iserver/auth/ssodh/init,200|149ms
+-> request: /v1/api/iserver/auth/ssodh/response
+-> POST https://api.ibkr.com/v1/api/iserver/auth/ssodh/response,200|98ms
+-> request: /v1/api/iserver/accounts
+-> GET /v1/api/iserver/accounts,200|85ms
+-> GET /v1/api/portal/sso/validate
+<- 404 GET /v1/api/portal/sso/validate
+-> GET /v1//portal/sso/validate
+<- 404 GET /v1//portal/sso/validate
+-> GET /v1/portal/sso/validate
+<- 200 GET /v1/portal/sso/validate
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|95ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|80ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|74ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|82ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|76ms
+-> GET /sso/Login?forwardTo=22&RL=1&ip2loc=US
+<- 200 GET /sso/Login?forwardTo=22&RL=1&ip2loc=US
+-> GET /sso/Templates/otp-responsive.css?1639755261456
+<- 200 GET /sso/Templates/otp-responsive.css?1639755261456
+-> GET /scripts/common/js/jquery-ui-1.12.1/jquery-ui.min.js
+-> GET /scripts/common/js/switchery/switchery-init.js
+-> GET /scripts/common/js/icheck-1.0.2/icheck.min.js
+-> GET /scripts/common/js/icheck-1.0.2/icheck-init.js
+-> GET /sso/CombineFiles
+-> GET /scripts/common/js/jquery-3.4.1/jquery.min.js
+<- 200 GET /scripts/common/js/icheck-1.0.2/icheck.min.js
+<- 200 GET /scripts/common/js/jquery-ui-1.12.1/jquery-ui.min.js
+<- 200 GET /scripts/common/js/switchery/switchery-init.js
+-> GET /scripts/common/js/bootstrap-4.3.1/bootstrap.bundle.min.js
+-> GET /scripts/common/js/bootstrap-switch-3.3.2/bootstrap-switch.min.js
+-> GET /scripts/common/js/switchery/switchery.min.js
+<- 200 GET /sso/CombineFiles
+<- 200 GET /scripts/common/js/icheck-1.0.2/icheck-init.js
+<- 200 GET /scripts/common/js/bootstrap-switch-3.3.2/bootstrap-switch.min.js
+<- 200 GET /scripts/common/js/switchery/switchery.min.js
+<- 200 GET /scripts/common/js/jquery-3.4.1/jquery.min.js
+<- 200 GET /scripts/common/js/bootstrap-4.3.1/bootstrap.bundle.min.js
+-> GET /sso/images/2fa.png
+-> GET /images/2015/btn-app-apple.png
+-> GET /images/2015/btn-app-google.png
+-> GET /images/2015/btn-app-tws.png
+-> GET /images/2015/button_discover_apis.png
+<- 200 GET /images/2015/btn-app-apple.png
+<- 200 GET /images/2015/btn-app-tws.png
+<- 200 GET /images/2015/btn-app-google.png
+<- 200 GET /images/2015/button_discover_apis.png
+<- 200 GET /sso/images/2fa.png
+-> POST /sso/Authenticator?25337
+<- 200 POST /sso/Authenticator?25337
+-> POST /sso/Authenticator?7165
+<- 200 POST /sso/Authenticator?7165
+-> POST /sso/Authenticator?63558
+<- 200 POST /sso/Authenticator?63558
+-> POST /sso/Authenticator?44184
+-> GET /fonts/sourcesanspro-regular-webfont.woff2
+-> GET /fonts/sourcesanspro-semibold-webfont.woff2
+<- 200 GET /fonts/sourcesanspro-regular-webfont.woff2
+<- 200 GET /fonts/sourcesanspro-semibold-webfont.woff2
+<- 200 POST /sso/Authenticator?44184
+-> POST /sso/Authenticator?22303
+<- 200 POST /sso/Authenticator?22303
+-> POST /sso/Dispatcher
+<- 302 POST /sso/Dispatcher
+-> request: /v1/api/sso/validate?gw=1
+-> request: /AccountManagement/OneBarAuthentication?json=1
+-> GET /v1/api/sso/validate?gw=1,200|86ms
+-> request: /v1/api/one/user
+-> request: /sso/AuthenticateSSODH?ACTION=INIT
+-> sso GET https://api.ibkr.com/sso/AuthenticateSSODH?ACTION=INIT
+-> GET /AccountManagement/OneBarAuthentication?json=1,404|99ms
+-> GET /v1/api/one/user,200|86ms
+-> request: /sso/AuthenticateSSODH?ACTION=COMPLETE&B=d02ad6ae57f8c96f882ce74c48f5b389f62cd3556cf20688a7b7b79bc14a8f67a8fa322b23511c21a3f4e87ec22dbf7daafca0fbb9738dcc931c53b28d00b446&CHRESPONSE=6aed4254567891b4b3fc3d57a7455a2e3671a687
+-> sso GET https://api.ibkr.com/sso/AuthenticateSSODH?ACTION=COMPLETE&B=d02ad6ae57f8c96f882ce74c48f5b389f62cd3556cf20688a7b7b79bc14a8f67a8fa322b23511c21a3f4e87ec22dbf7daafca0fbb9738dcc931c53b28d00b446&CHRESPONSE=6aed4254567891b4b3fc3d57a7455a2e3671a687
+-> request: /v1/api/iserver/auth/status
+-> GET /v1/api/iserver/auth/status,200|142ms
+-> request: /v1/api/iserver/accounts
+-> GET /v1/api/iserver/accounts,200|107ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|140ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|85ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|84ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|76ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|97ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|97ms
+-> GET /v1/portal/sso/validate
+<- 200 GET /v1/portal/sso/validate
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|82ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|94ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|82ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|78ms
+-> request: /sso/ping
+-> GET /sso/ping,200|91ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|249ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|102ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|79ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|76ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|90ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|82ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|86ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|80ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|91ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|76ms
+-> request: /sso/ping
+-> GET /sso/ping,200|79ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|77ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|79ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|90ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|81ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|80ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|84ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|113ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|107ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|126ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|83ms
+-> request: /sso/ping
+-> GET /sso/ping,200|77ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|76ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|90ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|122ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|77ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|1127ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|366ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|79ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|92ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|81ms
+-> GET /v1/api/sso/validate
+<- 200 GET /v1/api/sso/validate
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|82ms
+-> request: /sso/ping
+-> GET /sso/ping,200|78ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|76ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|86ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|88ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|153ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|111ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|108ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|184ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|87ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|74ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|86ms
+-> request: /sso/ping
+-> GET /sso/ping,200|81ms
+-> GET /v1/portal/sso/validate
+<- 200 GET /v1/portal/sso/validate
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|79ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|88ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|74ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|201ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|176ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|91ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|90ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|92ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|120ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|84ms
+-> request: /sso/ping
+-> GET /sso/ping,200|85ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|266ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|132ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|87ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|101ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|86ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|94ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|83ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|88ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|101ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|88ms
+-> request: /sso/ping
+-> GET /sso/ping,200|93ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|80ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|84ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|78ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|89ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|81ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|85ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|83ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|108ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|93ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|88ms
+-> request: /sso/ping
+-> GET /sso/ping,200|80ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|75ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|112ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|95ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|87ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|73ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|86ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|76ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|117ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|88ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|91ms
+-> request: /sso/ping
+-> GET /sso/ping,200|78ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|80ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|75ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|84ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|89ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|91ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|90ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|78ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|83ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|81ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|82ms
+-> request: /sso/ping
+-> GET /sso/ping,200|72ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|81ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|89ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|84ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|75ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|79ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|96ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|85ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|98ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|76ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|95ms
+-> request: /sso/ping
+-> GET /sso/ping,200|82ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|77ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|84ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|88ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|86ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|77ms
+-> GET /v1/api/sso/validate
+<- 200 GET /v1/api/sso/validate
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|88ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|1657ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|81ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|82ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|106ms
+-> request: /sso/ping
+-> GET /sso/ping,200|104ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|90ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|113ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|79ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|113ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|113ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|78ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|81ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|93ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|86ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|84ms
+-> request: /sso/ping
+-> GET /sso/ping,200|81ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|85ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|75ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|82ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|95ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|80ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|136ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|79ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|81ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|78ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|79ms
+-> request: /sso/ping
+-> GET /sso/ping,200|74ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|83ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|76ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|88ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|77ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|79ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|81ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|98ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|83ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|74ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|80ms
+-> request: /sso/ping
+-> GET /sso/ping,200|71ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|1254ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|73ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|79ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|85ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|75ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|91ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|172ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|87ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|95ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|80ms
+-> request: /sso/ping
+-> GET /sso/ping,200|87ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|77ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|87ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|88ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|85ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|81ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|79ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|89ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|90ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|79ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|89ms
+-> request: /sso/ping
+-> GET /sso/ping,200|87ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|89ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|1719ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|184ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|95ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|103ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|105ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|81ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|95ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|74ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|89ms
+-> request: /sso/ping
+-> GET /sso/ping,200|83ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|79ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|86ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|78ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|110ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|91ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|90ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|81ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|130ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|101ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|96ms
+-> request: /sso/ping
+-> GET /sso/ping,200|82ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|71ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|91ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|75ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|106ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|122ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|164ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|125ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|101ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|75ms
+-> GET /sso/Login?forwardTo=22&RL=1&ip2loc=US
+<- 200 GET /sso/Login?forwardTo=22&RL=1&ip2loc=US
+-> GET /sso/Templates/otp-responsive.css?1639761241290
+<- 200 GET /sso/Templates/otp-responsive.css?1639761241290
+-> GET /scripts/common/js/switchery/switchery.min.js
+-> GET /scripts/common/js/switchery/switchery-init.js
+-> GET /scripts/common/js/icheck-1.0.2/icheck.min.js
+-> GET /scripts/common/js/icheck-1.0.2/icheck-init.js
+-> GET /sso/CombineFiles
+-> GET /scripts/common/js/jquery-3.4.1/jquery.min.js
+<- 200 GET /scripts/common/js/icheck-1.0.2/icheck.min.js
+<- 200 GET /scripts/common/js/icheck-1.0.2/icheck-init.js
+<- 200 GET /scripts/common/js/switchery/switchery.min.js
+<- 200 GET /sso/CombineFiles
+-> GET /scripts/common/js/jquery-ui-1.12.1/jquery-ui.min.js
+-> GET /scripts/common/js/bootstrap-4.3.1/bootstrap.bundle.min.js
+-> GET /scripts/common/js/bootstrap-switch-3.3.2/bootstrap-switch.min.js
+<- 200 GET /scripts/common/js/switchery/switchery-init.js
+<- 200 GET /scripts/common/js/jquery-3.4.1/jquery.min.js
+<- 200 GET /scripts/common/js/bootstrap-switch-3.3.2/bootstrap-switch.min.js
+<- 200 GET /scripts/common/js/jquery-ui-1.12.1/jquery-ui.min.js
+-> GET /sso/images/2fa.png
+<- 200 GET /scripts/common/js/bootstrap-4.3.1/bootstrap.bundle.min.js
+-> GET /images/2015/btn-app-apple.png
+-> GET /images/2015/btn-app-google.png
+-> GET /images/2015/btn-app-tws.png
+-> GET /images/2015/button_discover_apis.png
+<- 200 GET /images/2015/btn-app-apple.png
+<- 200 GET /images/2015/btn-app-google.png
+<- 200 GET /images/2015/button_discover_apis.png
+<- 200 GET /images/2015/btn-app-tws.png
+<- 200 GET /sso/images/2fa.png
+-> GET /images/web/favicons/home-screen-icon-128x128.png
+<- 200 GET /images/web/favicons/home-screen-icon-128x128.png
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|86ms
+-> request: /sso/ping
+-> GET /sso/ping,200|78ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|77ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|84ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,401|75ms
+-> request: /v1/api/sso/validate?gw=1
+-> GET /v1/api/sso/validate?gw=1,401|88ms
+-> request: /v1/api/sso/validate?gw=1
+-> GET /v1/api/sso/validate?gw=1,401|92ms
+-> request: /v1/api/sso/validate?gw=1
+-> GET /v1/api/sso/validate?gw=1,401|84ms
+-> request: /v1/api/sso/validate?gw=1
+-> GET /v1/api/sso/validate?gw=1,401|96ms
+-> request: /v1/api/sso/validate?gw=1
+-> GET /v1/api/sso/validate?gw=1,401|73ms
+-> GET /v1/api/sso/validate
+<- 401 GET /v1/api/sso/validate
+-> request: /sso/ping
+-> GET /sso/ping,200|81ms
+-> request: /sso/ping
+-> GET /v1/api/sso/validate
+uri /v1/api/sso/validate failed
+java.io.IOException: Connection reset by peer
+	at sun.nio.ch.FileDispatcherImpl.read0(Native Method) ~[na:1.8.0_311]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:39) ~[na:1.8.0_311]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[na:1.8.0_311]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[na:1.8.0_311]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:378) ~[na:1.8.0_311]
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288) ~[netty-buffer-4.1.15.Final.jar:4.1.15.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1106) ~[netty-buffer-4.1.15.Final.jar:4.1.15.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:373) ~[netty-transport-4.1.15.Final.jar:4.1.15.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:123) ~[netty-transport-4.1.15.Final.jar:4.1.15.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:645) ~[netty-transport-4.1.15.Final.jar:4.1.15.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:580) ~[netty-transport-4.1.15.Final.jar:4.1.15.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:497) ~[netty-transport-4.1.15.Final.jar:4.1.15.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:459) ~[netty-transport-4.1.15.Final.jar:4.1.15.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858) ~[netty-common-4.1.15.Final.jar:4.1.15.Final]
+	at java.lang.Thread.run(Thread.java:748) ~[na:1.8.0_311]
+-> POST /sso/Authenticator?25470
+uri /sso/Authenticator?25470 failed
+java.io.IOException: Connection reset by peer
+	at sun.nio.ch.FileDispatcherImpl.read0(Native Method) ~[na:1.8.0_311]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:39) ~[na:1.8.0_311]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[na:1.8.0_311]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[na:1.8.0_311]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:378) ~[na:1.8.0_311]
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288) ~[netty-buffer-4.1.15.Final.jar:4.1.15.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1106) ~[netty-buffer-4.1.15.Final.jar:4.1.15.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:373) ~[netty-transport-4.1.15.Final.jar:4.1.15.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:123) ~[netty-transport-4.1.15.Final.jar:4.1.15.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:645) ~[netty-transport-4.1.15.Final.jar:4.1.15.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:580) ~[netty-transport-4.1.15.Final.jar:4.1.15.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:497) ~[netty-transport-4.1.15.Final.jar:4.1.15.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:459) ~[netty-transport-4.1.15.Final.jar:4.1.15.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858) ~[netty-common-4.1.15.Final.jar:4.1.15.Final]
+	at java.lang.Thread.run(Thread.java:748) ~[na:1.8.0_311]
+-> request: /sso/ping
+-> GET /sso/Login?forwardTo=22&RL=1&ip2loc=US
+<- 200 GET /sso/Login?forwardTo=22&RL=1&ip2loc=US
+-> GET /scripts/common/js/jquery-3.4.1/jquery.min.js
+<- 304 GET /scripts/common/js/jquery-3.4.1/jquery.min.js
+-> GET /sso/Templates/otp-responsive.css?1639762450567
+-> GET /scripts/common/js/switchery/switchery-init.js
+-> GET /scripts/common/js/icheck-1.0.2/icheck.min.js
+-> GET /scripts/common/js/icheck-1.0.2/icheck-init.js
+-> GET /sso/CombineFiles
+-> GET /scripts/common/js/jquery-ui-1.12.1/jquery-ui.min.js
+<- 200 GET /sso/Templates/otp-responsive.css?1639762450567
+-> GET /scripts/common/js/bootstrap-4.3.1/bootstrap.bundle.min.js
+<- 304 GET /scripts/common/js/icheck-1.0.2/icheck.min.js
+<- 200 GET /sso/CombineFiles
+-> GET /scripts/common/js/bootstrap-switch-3.3.2/bootstrap-switch.min.js
+<- 304 GET /scripts/common/js/switchery/switchery-init.js
+-> GET /scripts/common/js/switchery/switchery.min.js
+<- 304 GET /scripts/common/js/icheck-1.0.2/icheck-init.js
+<- 304 GET /scripts/common/js/bootstrap-4.3.1/bootstrap.bundle.min.js
+<- 304 GET /scripts/common/js/bootstrap-switch-3.3.2/bootstrap-switch.min.js
+<- 200 GET /scripts/common/js/jquery-ui-1.12.1/jquery-ui.min.js
+-> GET /sso/images/2fa.png
+<- 304 GET /scripts/common/js/switchery/switchery.min.js
+-> GET /images/2015/btn-app-apple.png
+<- 304 GET /images/2015/btn-app-apple.png
+-> GET /images/2015/btn-app-google.png
+-> GET /images/2015/btn-app-tws.png
+-> GET /images/2015/button_discover_apis.png
+<- 304 GET /images/2015/button_discover_apis.png
+<- 304 GET /images/2015/btn-app-tws.png
+<- 304 GET /images/2015/btn-app-google.png
+<- 304 GET /sso/images/2fa.png
+-> GET /images/web/favicons/home-screen-icon-128x128.png
+<- 200 GET /images/web/favicons/home-screen-icon-128x128.png
+-> POST /sso/Authenticator?69697
+<- 200 POST /sso/Authenticator?69697
+-> POST /sso/Authenticator?34674
+<- 200 POST /sso/Authenticator?34674
+-> POST /sso/Authenticator?25142
+<- 200 POST /sso/Authenticator?25142
+-> POST /sso/Authenticator?35983
+-> GET /fonts/sourcesanspro-regular-webfont.woff2
+<- 200 GET /fonts/sourcesanspro-regular-webfont.woff2
+-> GET /fonts/sourcesanspro-semibold-webfont.woff2
+<- 200 GET /fonts/sourcesanspro-semibold-webfont.woff2
+<- 200 POST /sso/Authenticator?35983
+-> POST /sso/Authenticator?43141
+<- 200 POST /sso/Authenticator?43141
+-> POST /sso/Dispatcher
+<- 302 POST /sso/Dispatcher
+-> request: /v1/api/sso/validate?gw=1
+-> request: /AccountManagement/OneBarAuthentication?json=1
+-> GET /AccountManagement/OneBarAuthentication?json=1,404|92ms
+-> GET /v1/api/sso/validate?gw=1,200|151ms
+-> request: /v1/api/one/user
+-> request: /sso/AuthenticateSSODH?ACTION=INIT
+-> sso GET https://api.ibkr.com/sso/AuthenticateSSODH?ACTION=INIT
+-> request: /sso/AuthenticateSSODH?ACTION=COMPLETE&B=481e636e2002287aca157608e05266db1844b3095d9286c3a7866b8575ff367d18d8a797ddb301d96497db52cb95a7497701add37b3beaba12985e35a1b0746&CHRESPONSE=99b18d020b9087bed429c16b11218757c95484b0
+-> sso GET https://api.ibkr.com/sso/AuthenticateSSODH?ACTION=COMPLETE&B=481e636e2002287aca157608e05266db1844b3095d9286c3a7866b8575ff367d18d8a797ddb301d96497db52cb95a7497701add37b3beaba12985e35a1b0746&CHRESPONSE=99b18d020b9087bed429c16b11218757c95484b0
+-> GET /v1/api/sso/validate
+<- 200 GET /v1/api/sso/validate
+-> GET /v1/api/one/user,200|2645ms
+-> request: /v1/api/iserver/auth/status
+-> GET /v1/api/iserver/auth/status,200|112ms
+-> request: /v1/api/iserver/auth/ssodh/init
+-> POST https://api.ibkr.com/v1/api/iserver/auth/ssodh/init,200|152ms
+-> request: /v1/api/iserver/auth/ssodh/response
+-> POST https://api.ibkr.com/v1/api/iserver/auth/ssodh/response,200|95ms
+-> request: /v1/api/iserver/accounts
+-> GET /v1/api/iserver/accounts,200|80ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|91ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|98ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|82ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|94ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|77ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|97ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|88ms
+-> GET /v1/api/sso/validate
+<- 200 GET /v1/api/sso/validate
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|95ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|75ms
+-> GET /v1/api/sso/validate
+<- 200 GET /v1/api/sso/validate
+-> request: /sso/ping
+-> GET /sso/ping,200|83ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|79ms
+-> GET /v1/api/sso/validate
+<- 200 GET /v1/api/sso/validate
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|72ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|302ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|85ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|1368ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|77ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|77ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|71ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|88ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|78ms
+-> request: /sso/ping
+-> GET /sso/ping,200|77ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|1494ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|450ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|79ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|101ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|95ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|84ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|157ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|79ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|118ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|84ms
+-> request: /sso/ping
+-> GET /sso/ping,200|79ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|92ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|100ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|82ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|78ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|78ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|77ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|94ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|75ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|70ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|77ms
+-> request: /sso/ping
+-> GET /sso/ping,200|73ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|74ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|75ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|80ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|70ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|78ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|84ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|79ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|75ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|78ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|80ms
+-> request: /sso/ping
+-> GET /sso/ping,200|76ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|77ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|86ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|80ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|81ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|90ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|77ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|76ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|86ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|82ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|88ms
+-> request: /sso/ping
+-> GET /sso/ping,200|75ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|76ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|123ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|76ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|94ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|72ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|76ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|78ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|80ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|77ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|97ms
+-> request: /sso/ping
+-> GET /sso/ping,200|80ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|80ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|77ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|80ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|80ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|77ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|116ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|86ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|83ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|80ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|1405ms
+-> request: /sso/ping
+-> GET /sso/ping,200|74ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|91ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|78ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|81ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|85ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|73ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|78ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|75ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|74ms
+-> GET /v1/api/portfolio/accounts
+<- 200 GET /v1/api/portfolio/accounts
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|77ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|77ms
+-> request: /sso/ping
+-> GET /sso/ping,200|89ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|83ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|74ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|77ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|75ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|77ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|79ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|85ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|83ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|100ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|95ms
+-> request: /sso/ping
+-> GET /sso/ping,200|81ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|82ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|71ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|72ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|90ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|72ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|77ms
+-> GET /v1/api/sso/validate
+<- 200 GET /v1/api/sso/validate
+-> GET /v1/api/sso/validate
+<- 200 GET /v1/api/sso/validate
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|131ms
+-> GET /v1/api/sso/validate
+<- 200 GET /v1/api/sso/validate
+-> GET /v1/api/sso/validate
+<- 200 GET /v1/api/sso/validate
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|155ms
+-> GET /v1/api/portfolio/accounts
+<- 200 GET /v1/api/portfolio/accounts
+-> GET /v1/api/portfolio/accounts
+<- 200 GET /v1/api/portfolio/accounts
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|85ms
+-> GET /v1/api/sso/validate
+<- 200 GET /v1/api/sso/validate
+-> GET /v1/api/sso/validate
+<- 200 GET /v1/api/sso/validate
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|208ms
+-> request: /sso/ping
+-> GET /sso/ping,200|93ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|83ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|240ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|100ms
+-> GET /v1/api/sso/validate
+<- 200 GET /v1/api/sso/validate
+-> GET /v1/api/sso/validate
+<- 200 GET /v1/api/sso/validate
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|139ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|73ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|94ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|84ms
+-> GET /v1/api/sso/validate
+<- 200 GET /v1/api/sso/validate
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|212ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|78ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|94ms
+-> GET /v1/api/sso/validate
+<- 200 GET /v1/api/sso/validate
+-> request: /sso/ping
+-> GET /sso/ping,200|161ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|91ms
+-> GET /v1/api/sso/validate
+<- 200 GET /v1/api/sso/validate
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|241ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|82ms
+-> GET /v1/api/sso/validate
+<- 200 GET /v1/api/sso/validate
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|163ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|104ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|98ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|85ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|80ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|155ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|79ms
+-> GET /v1/api/sso/validate
+<- 200 GET /v1/api/sso/validate
+-> request: /sso/ping
+-> GET /sso/ping,200|224ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|100ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|83ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|83ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|77ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|80ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|75ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|75ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|74ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|76ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|74ms
+-> request: /sso/ping
+-> GET /sso/ping,200|69ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|85ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|80ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|99ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|110ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|118ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|78ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|81ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|70ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|70ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|80ms
+-> request: /sso/ping
+-> GET /sso/ping,200|68ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|88ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|78ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|81ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|92ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|90ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|71ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|67ms
+-> GET /v1/api/sso/validate
+<- 200 GET /v1/api/sso/validate
+-> GET /v1/api/sso/validate
+<- 200 GET /v1/api/sso/validate
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|131ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|83ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|78ms
+-> GET /v1/api/sso/validate
+<- 200 GET /v1/api/sso/validate
+-> request: /sso/ping
+-> GET /sso/ping,200|159ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|81ms
+-> GET /v1/api/sso/validate
+<- 200 GET /v1/api/sso/validate
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|148ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|73ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|78ms
+-> GET /v1/api/sso/validate
+<- 200 GET /v1/api/sso/validate
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|170ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|82ms
+-> GET /v1/api/sso/validate
+<- 200 GET /v1/api/sso/validate
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|235ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|78ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|84ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|83ms
+-> request: /sso/ping
+-> GET /sso/ping,200|77ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|78ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|79ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|85ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|81ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|78ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|128ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|129ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|79ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|76ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|84ms
+-> request: /sso/ping
+-> GET /sso/ping,200|80ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|77ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|73ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|81ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|75ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|77ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|78ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|78ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|74ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|80ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|80ms
+-> request: /sso/ping
+-> GET /sso/ping,200|76ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|76ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|85ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|82ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|81ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|78ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|85ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|81ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|72ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|86ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|89ms
+-> request: /sso/ping
+-> GET /sso/ping,200|78ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|74ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|92ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|76ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|80ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|76ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|77ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|75ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|84ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|84ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|77ms
+-> request: /sso/ping
+-> GET /sso/ping,200|76ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|80ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|83ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|79ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|87ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|79ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|96ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|76ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|84ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|79ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|87ms
+-> request: /sso/ping
+-> GET /sso/ping,200|77ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|83ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|83ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|84ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|81ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|80ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|87ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|74ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|80ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|78ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|92ms
+-> request: /sso/ping
+-> GET /sso/ping,200|74ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|74ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|84ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|101ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|85ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|80ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|92ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|77ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|128ms
+-> GET /v1/api/sso/validate
+<- 200 GET /v1/api/sso/validate
+-> POST /sso/Dispatcher
+<- 302 POST /sso/Dispatcher
+-> request: /v1/api/sso/validate?gw=1
+-> request: /AccountManagement/OneBarAuthentication?json=1
+-> GET /v1/api/sso/validate?gw=1,200|131ms
+-> request: /v1/api/one/user
+-> request: /sso/AuthenticateSSODH?ACTION=INIT
+-> sso GET https://api.ibkr.com/sso/AuthenticateSSODH?ACTION=INIT
+-> GET /AccountManagement/OneBarAuthentication?json=1,404|148ms
+-> request: /sso/AuthenticateSSODH?ACTION=COMPLETE&B=1ccee7a38bb11385d62a39064b80999082c04fe459a639ac09e1583b0b7193fb75e8a6ae063a3828c53a8ffdc6712cc3c9e4e57ed9eb1b0473eecfe30b226bc&CHRESPONSE=384b03bfbe80f5b2dc802b331b4e9e797ce98bc8
+-> sso GET https://api.ibkr.com/sso/AuthenticateSSODH?ACTION=COMPLETE&B=1ccee7a38bb11385d62a39064b80999082c04fe459a639ac09e1583b0b7193fb75e8a6ae063a3828c53a8ffdc6712cc3c9e4e57ed9eb1b0473eecfe30b226bc&CHRESPONSE=384b03bfbe80f5b2dc802b331b4e9e797ce98bc8
+-> request: /v1/api/iserver/auth/status
+-> GET /v1/api/iserver/auth/status,200|171ms
+-> request: /v1/api/iserver/auth/ssodh/init
+-> POST https://api.ibkr.com/v1/api/iserver/auth/ssodh/init,200|137ms
+-> request: /v1/api/iserver/auth/ssodh/response
+-> POST https://api.ibkr.com/v1/api/iserver/auth/ssodh/response,200|98ms
+-> request: /v1/api/iserver/auth/ssodh/init
+-> POST https://api.ibkr.com/v1/api/iserver/auth/ssodh/init,200|91ms
+-> request: /v1/api/iserver/accounts
+-> GET /v1/api/iserver/accounts,200|80ms
+-> request: /v1/api/tickle
+-> GET /v1/api/one/user,200|4694ms
+-> GET /v1/api/tickle,200|88ms
+-> GET /v1/api/sso/validate
+<- 200 GET /v1/api/sso/validate
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|119ms
+-> GET /v1/api/sso/validate
+<- 200 GET /v1/api/sso/validate
+-> GET /v1/api/sso/validate
+<- 200 GET /v1/api/sso/validate
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|82ms
+-> GET /v1/api/sso/validate
+<- 200 GET /v1/api/sso/validate
+-> GET /v1/api/sso/validate
+<- 200 GET /v1/api/sso/validate
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|197ms
+-> GET /v1/api/sso/validate
+<- 200 GET /v1/api/sso/validate
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|123ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|83ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|78ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|91ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|74ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|80ms
+-> request: /sso/ping
+-> GET /sso/ping,200|72ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|79ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|79ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|75ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|75ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|72ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|76ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|74ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|77ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|95ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|73ms
+-> request: /sso/ping
+-> GET /sso/ping,200|77ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|82ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|76ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|78ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|79ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|80ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|73ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|147ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|103ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|92ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|112ms
+-> request: /sso/ping
+-> GET /sso/ping,200|112ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|111ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|102ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|81ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|78ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|99ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|76ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|79ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|89ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|134ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|88ms
+-> request: /sso/ping
+-> GET /sso/ping,200|80ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|111ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|78ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|75ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|82ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|80ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|86ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|80ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|80ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|100ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|87ms
+-> request: /sso/ping
+-> GET /sso/ping,200|2408ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|79ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|100ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|77ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|111ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|82ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|79ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|76ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|119ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|79ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|78ms
+-> request: /sso/ping
+-> GET /sso/ping,200|90ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|78ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|87ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|88ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|78ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|81ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|77ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|79ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|77ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|80ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|76ms
+-> request: /sso/ping
+-> GET /sso/ping,200|106ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|210ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|75ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|78ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|75ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|82ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|98ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|90ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|78ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|83ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|76ms
+-> request: /sso/ping
+-> GET /sso/ping,200|151ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|79ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|73ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|75ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|88ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|79ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|312ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|84ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|76ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|334ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|78ms
+-> request: /sso/ping
+-> GET /sso/ping,200|80ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|80ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|88ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|399ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|77ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|76ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|77ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|82ms
+-> request: /v1/api/tickle
+-> request: /v1/api/tickle
+-> request: /v1/api/tickle
+-> request: /sso/ping
+-> GET /sso/ping,200|202ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|80ms
+-> request: /v1/api/tickle
+-> request: /v1/api/tickle
+-> request: /v1/api/tickle
+-> request: /v1/api/tickle
+-> request: /v1/api/tickle
+-> request: /v1/api/tickle
+-> request: /v1/api/tickle
+-> request: /v1/api/tickle
+-> request: /v1/api/tickle
+-> request: /sso/ping
+-> request: /v1/api/tickle
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|731ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|105ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|121ms
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,200|258ms
+-> request: /v1/api/tickle
+-> request: /v1/api/tickle
+-> request: /v1/api/tickle
+-> request: /v1/api/tickle
+-> request: /v1/api/tickle
+-> request: /sso/ping
+-> request: /v1/api/tickle
+-> request: /v1/api/tickle
+-> request: /v1/api/tickle
+-> request: /v1/api/tickle
+-> request: /v1/api/tickle
+-> request: /v1/api/tickle
+-> request: /v1/api/tickle
+-> request: /v1/api/tickle
+-> request: /v1/api/tickle
+-> request: /v1/api/tickle
+-> request: /sso/ping
+-> request: /v1/api/tickle
+-> request: /v1/api/tickle
+-> request: /v1/api/tickle
+-> request: /v1/api/tickle
+-> request: /v1/api/tickle
+-> request: /v1/api/tickle
+-> request: /v1/api/tickle
+-> request: /v1/api/tickle
+-> request: /v1/api/tickle
+-> request: /v1/api/tickle
+-> request: /sso/ping
+-> request: /v1/api/tickle
+-> request: /v1/api/tickle
+-> request: /v1/api/tickle
+-> request: /v1/api/tickle
+-> request: /v1/api/tickle
+-> request: /v1/api/tickle
+-> GET /v1/api/tickle,401|307ms
+-> request: /v1/api/sso/validate?gw=1
+-> GET /v1/api/sso/validate?gw=1,401|147ms
+-> request: /v1/api/sso/validate?gw=1
+-> GET /v1/api/sso/validate?gw=1,401|189ms
+-> request: /v1/api/sso/validate?gw=1
+-> GET /v1/api/sso/validate?gw=1,401|114ms
+-> request: /v1/api/sso/validate?gw=1
+-> GET /v1/api/sso/validate?gw=1,401|99ms
+-> request: /v1/api/sso/validate?gw=1
+-> GET /v1/api/sso/validate?gw=1,401|193ms
+-> request: /sso/ping
+-> GET /sso/ping,200|91ms
+-> request: /sso/ping
+-> GET /sso/ping,200|185ms
