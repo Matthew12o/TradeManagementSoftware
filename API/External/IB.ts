@@ -3,6 +3,7 @@ import axios from 'axios';
 import https from 'https';
 import { type } from 'os';
 import { resolve } from 'path/posix';
+import { initParams } from 'request';
 
 const baseURL = 'https://127.0.0.1:8080/v1/api';
 
@@ -68,6 +69,9 @@ class IB_API {
     PnL: PnL;
     Trades: Trades;
     Contract: Contract;
+    Order: Order;
+    MarketData: MarketData;
+    PortfolioAnalyst: PortfolioAnalyst;
 
     constructor(PORT=8080) {
         this.PORT = PORT;
@@ -77,7 +81,10 @@ class IB_API {
         this.PnL = new PnL(this.baseURL);
         this.Trades = new Trades(this.baseURL);
         this.Contract = new Contract(this.baseURL);
-    }   
+        this.Order = new Order(this.baseURL);
+        this.MarketData = new MarketData(this.baseURL);
+        this.PortfolioAnalyst = new PortfolioAnalyst(this.baseURL);
+    };
 
     // Session
 
@@ -144,7 +151,6 @@ class Account {
 
     Accounts_List = async () => {
         const data = await getRequest(`${this.url}${Account.url_account_portfolio_accounts}`);
-        console.log(data)
         this.calledPortfolioAccounts = true;
         return data;
     };
@@ -384,4 +390,200 @@ class Contract {
 
 }
 
+class Order {
+    private static url_order_live_order = '/iserver/account/orders';
+
+    private url: string;
+    constructor(baseURL: string) {
+        this.url = baseURL;
+    }
+
+    LiveOrder = async (filters?: string) => {
+        // filters enum : inactive, pending_submit, pre_submitted, submitted, filled, pending_cancel, cancelled, warn_state, sort_by_time;
+        let initial_payload = {};
+        if (typeof filters !== 'undefined') {
+            initial_payload = {...initial_payload, ...{filters : filters}};
+        }
+        const payload = { body: initial_payload };
+        return await getRequest(`${this.url}${Order.url_order_live_order}`, payload);
+    };
+
+    PlaceOrders = async (acccount_id: string, orders?: any) => {
+        const url = `/iserver/account/${acccount_id}/orders`;
+        let initial_payload = {};
+        if (typeof orders !== 'undefined') {
+            initial_payload = {...initial_payload, ...{orders: orders}};
+        }
+        const payload = { body: initial_payload};
+        return await postRequest(`${this.url}${url}`, payload);
+    };
+
+    // PlaceOrdersForFA - Not included
+
+    PlaceOrderReply = async (replyid: string, confirmed?: boolean) => {
+        const url = `/iserver/reply/${replyid}`;
+        let initial_payload = {};
+        if (typeof confirmed !== 'undefined') {
+            initial_payload = {...initial_payload, ...{ confirmed: confirmed }};
+        }
+        const payload = { body: initial_payload}
+        return await postRequest(`${this.url}${url}`, payload);
+    };
+
+    PreviewOrders = async (account_id: string, orders?: any) => {
+        const url = `/iserver/account/${account_id}/orders/whatif`;
+        let initial_payload = {};
+        if (typeof orders !== 'undefined') {
+            initial_payload = {...initial_payload, ...{ orders: orders }};
+        }
+        const payload = { body : initial_payload };
+        return await postRequest(`${this.url}${url}`, payload);
+    };
+
+    OrderStatus = async (order_id: string) => {
+        const url = `/iserver/account/order/status/${order_id}`;
+        return await getRequest(`${this.url}${url}`);
+    };
+
+    // ModifyOrder - skipped for now 
+
+    DeleteOrder = async (account_id: string, order_id: string) => {
+        const url = `/iserver/account/${account_id}/order/${order_id}`;
+        return await deleteRequest(`${this.url}${url}`);
+    };
+}
+
+class MarketData {
+    private static url_marketdata_snapshot = '/md/snapshot';
+    private static url_marketdata = '/iserver/marketdata/snapshot';
+    private static url_unsubscribeall = '/iserver/marketdata/unsubscribeall';
+    private static url_marketdata_history = '/iserver/marketdata/history';
+
+    url: string;
+    constructor(baseURL: string) {
+        this.url = baseURL;
+    }
+
+    // check api reference for contract_id
+    Snapshot = async (contract_ids: string, fields?: string) => {
+        let initial_payload = { conids : contract_ids };
+        if (typeof fields !== 'undefined') {
+            initial_payload = {...initial_payload, ...{fields: fields}};
+        }
+        const payload = { body: initial_payload};
+        return await getRequest(`${this.url}${MarketData.url_marketdata_snapshot}`, payload);
+    };
+
+    MarketData = async (contract_ids: any, since?: number, fields?: any) => {
+        let single_string_conids: string;
+        if (contract_ids.isArray) {
+            single_string_conids=contract_ids.concat();
+        } else {
+            single_string_conids = contract_ids;
+        };
+
+        let initial_payload = { conids : single_string_conids};
+        if (typeof since !== 'undefined') {
+            initial_payload = {...initial_payload, ...{since : since}};
+        };
+
+        let single_string_fields: string;
+        if (typeof fields !== 'undefined') {
+            if (fields.isArray) {
+                single_string_fields = fields.concat();
+            } else {
+                single_string_fields = fields;
+            }
+        };
+
+        const payload = { body : initial_payload };
+        return await getRequest(`${this.url}${MarketData.url_marketdata}`, payload);
+    };
+
+    MarketDataCancel = async (contract_id: string) => {
+        const url = `/iserver/marketdata/${contract_id}/unsubscribe`;
+        return await getRequest(`${this.url}${url}`);
+    };
+
+    MarketDataCancel_All = async () => {
+        return await getRequest(`${this.url}${MarketData.url_unsubscribeall}`);
+    };
+
+    MarketDataHistory = async (contract_id: string, period: string, exchange?: string, bar?: string, outsideRth?: boolean) => {
+        let initial_payload = {
+            conid : contract_id,
+            period : period
+        };
+        if (typeof exchange !== 'undefined') {
+            initial_payload = {...initial_payload, ...{exchange: exchange}};
+        };
+        if (typeof bar !== 'undefined') {
+            initial_payload = {...initial_payload, ...{bar: bar}};
+        };
+        if (typeof outsideRth !== 'undefined') {
+            initial_payload = {...initial_payload, ...{outsideRth : outsideRth}};
+        };
+        const payload = { body : initial_payload};
+        return await getRequest(`${this.url}${MarketData.url_marketdata_history}`, payload);
+    };
+
+};
+
+class PortfolioAnalyst {
+    private static url_pa_account_performance = '/pa/performance';
+    private static url_pa_account_summary = '/pa/summary';
+    private static url_pa_transactions = '/pa/transactions';
+
+    url: string;
+    constructor(baseURL: string) {
+        this.url = baseURL;
+    }
+
+    AccountPerformance = async (account_ids: any, freq = 'D') => {
+        if (typeof account_ids == 'string') {
+            account_ids = [account_ids];
+        };
+        let initial_payload = { 
+            acctIds: account_ids,
+            freq : freq
+        };
+        const payload = { body : initial_payload};
+        return await getRequest(`${this.url}${PortfolioAnalyst.url_pa_account_performance}`, payload);
+    };
+
+    AccountSummary = async (account_ids: any) => {
+        if (typeof account_ids == 'string') {
+            account_ids = [account_ids];
+        };
+        const initial_payload = {
+            acctIds: account_ids
+        };
+        const payload = { body: initial_payload};
+        return await getRequest(`${this.url}${PortfolioAnalyst.url_pa_account_summary}`);
+    }
+
+    TransactionHistory = async (account_ids: any, contract_ids: any, currency?:string, days?:number) => {
+        if (typeof account_ids == 'string') {
+            account_ids = [account_ids];
+        };
+        if (typeof contract_ids == 'number') {
+            contract_ids = [contract_ids];
+        };
+        let initial_payload = {
+            acctIds : account_ids,
+            conids : contract_ids
+        };
+
+        if (typeof currency !== 'undefined') {
+            initial_payload = {...initial_payload, ...{ currency : currency }};
+        };
+        if (typeof days !== 'undefined') {
+            initial_payload = {...initial_payload, ...{ days : days }};
+        };
+
+        const payload = { body : initial_payload };
+        return await getRequest(`${this.url}${PortfolioAnalyst.url_pa_transactions}`);
+    };
+
+}
 export {IB_API}
