@@ -1,5 +1,6 @@
 import { rejects } from 'assert';
 import axios from 'axios';
+import { response } from 'express';
 import https from 'https';
 import { type } from 'os';
 import { resolve } from 'path/posix';
@@ -72,7 +73,7 @@ class IB_API {
     Order: Order;
     MarketData: MarketData;
     PortfolioAnalyst: PortfolioAnalyst;
-
+    isActive: boolean;
     constructor(PORT=8080) {
         this.PORT = PORT;
         this.baseURL = `https://127.0.0.1:${this.PORT}/v1/api`;
@@ -84,6 +85,23 @@ class IB_API {
         this.Order = new Order(this.baseURL);
         this.MarketData = new MarketData(this.baseURL);
         this.PortfolioAnalyst = new PortfolioAnalyst(this.baseURL);
+        this.isActive = false;
+        this.checkIfActive();
+    };
+
+    checkIfActive(): void {
+        const session_response = this.Session.Status();
+        session_response.then((res) => {
+            const data = res.data;
+            if (data.authenticated && data.connected && !(data.competing)) {
+                this.isActive = true;
+            } else {
+                this.isActive = false;
+            };
+        }).catch((err) => {
+            console.error(err);
+            this.isActive = false;
+        });
     };
 
     // Session
