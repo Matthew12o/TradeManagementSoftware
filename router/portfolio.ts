@@ -1,15 +1,17 @@
 import express from 'express';
 import { ApplicationLogger, Log } from '../misc/logger';
+import { IB_API } from '../API/External/IB';
 
 const portfolioRouter = express.Router();
 
 // Middleware Functions
+const api = new IB_API();
 
 // Root Portfolio Page
 portfolioRouter.route('/')
     .get((req, res, next) => {
-        // Display Holistic Portfolio Information
-
+        // Display Holistic Portfolio Information   
+        
         //
         next()
     });

@@ -147,6 +147,98 @@ class Session {
 
 }
 
+
+/////////////////////
+// Portfolio
+/////////////////////
+
+class Portfolio {
+    private static url_portfolio_accounts = '/portfolio/accounts';
+    private static url_portfolio_subaccounts = '/portfolio/subaccounts';
+    private static url_portfolio_allocations = '/portfolio/allocations';
+    
+    url: string;
+    calledSubAccounts: boolean;
+    constructor(baseURL: string) {
+        this.url = baseURL;
+        this.calledSubAccounts = false;
+    }
+
+    Accounts = async () => {
+        return await getRequest(`${this.url}${Portfolio.url_portfolio_accounts}`);
+    };
+
+    Subaccounts = async () => {
+        this.calledSubAccounts = true;
+        return await getRequest(`${this.url}${Portfolio.url_portfolio_subaccounts}`);
+    };
+
+    AccountInformation = async (account_id: string) => {
+        const url = `/portfolio/${account_id}/meta`;
+        return await getRequest(`${this.url}${url}`);
+    };
+
+    AccountAllocation = async (account_id: string) => {
+
+        const url = `/portfolio/${account_id}/allocations`;
+        return await getRequest(`${this.url}${url}`);
+    };
+
+    AccountAllocation_All = async (account_ids?: any) => {
+        if (typeof account_ids !== 'undefined') {
+            const payload = { body: { acctIds : account_ids }};
+            return await getRequest(`${this.url}${Portfolio.url_portfolio_allocations}`);
+        } else {
+            return await getRequest(`${this.url}${Portfolio.url_portfolio_allocations}`);
+        };
+    };
+
+    Positions = async (account_id: string, page_id="0", model?: string, sort?: string, direction?: string, period?: string) => {
+        const url = `/portfolio/${account_id}/positions/${page_id}`;
+        let initial_payload = {};
+        if (typeof model !== 'undefined') {
+            initial_payload = {...initial_payload, ...{ model : model }};
+        };
+        if (typeof sort !== 'undefined') {
+            initial_payload = {...initial_payload, ...{ sort : sort }};
+        };
+        if (typeof direction !== 'undefined') {
+            initial_payload = {...initial_payload, ...{ direction : direction }};
+        };
+        if (typeof period !== 'undefined') {
+            initial_payload = {...initial_payload, ...{ period : period }};
+        };
+        const payload = { body: initial_payload }
+        return await postRequest(`${this.url}${url}`, payload);
+    };
+
+    PositionByContractID = async (account_id: string, contract_id: string) => {
+        const url = `/portfolio/${account_id}/position/${contract_id}`;
+        return await getRequest(`${this.url}${url}`);
+    };
+
+    Account_Summary = async (account_id: string) => {
+        if (!(this.calledSubAccounts)) {
+            this.Subaccounts();
+        }
+        const url_account_summary = `/portfolio/${account_id}/summary`;
+        return await getRequest(`${this.url}${url_account_summary}`);
+    };
+
+    Account_Ledger = async (account_id: string) => {
+        if (!(this.calledSubAccounts)) {
+            this.Subaccounts();
+        }
+        const url_account_ledger = `/portfolio/${account_id}/ledger`;
+        return await getRequest(`${this.url}${url_account_ledger}`)
+    };
+
+    PositionByContractID_AllAccount = async (contract_id: string) => {
+        const url = `/portfolio/positions/${contract_id}`;
+        return await getRequest(`${this.url}${url}`);
+    }
+};
+
 /////////////////////
 // Account
 /////////////////////
@@ -201,7 +293,7 @@ class Account {
         return await getRequest(`${this.url}${url_account_summary}`);
     };
 
-    Account_Ledget = async (accountID: string) => {
+    Account_Ledger = async (accountID: string) => {
         if (!(this.calledPortfolioAccounts)) {
             this.Accounts_List();
         }
