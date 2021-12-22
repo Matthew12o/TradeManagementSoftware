@@ -8,9 +8,11 @@ const express_1 = __importDefault(require("express"));
 const IB_1 = require("./API/External/IB");
 // Routers
 const externalAPI_1 = require("./router/externalAPI");
+const portfolio_1 = require("./router/portfolio");
 const app = (0, express_1.default)();
 const PORT = 8000;
 app.use('/API', externalAPI_1.externalAPIRouter);
+app.use('/Portfolio', portfolio_1.portfolioRouter);
 app.get('/', (req, res, next) => {
     res.send('home');
     next();

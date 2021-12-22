@@ -16,6 +16,7 @@ portfolioRouter.route('/')
         next()
     });
 
+
 // Principal Portfolio
 portfolioRouter.route('/Principal')
     .get((req, res, next) => {
@@ -54,5 +55,17 @@ portfolioRouter.route('/Underwriting/:underlying_id')
         next();
     });
 
+portfolioRouter.get('/account/:account_id', (req, res, next) => {
+    const account_id = req.params.account_id;
+    const data = api.Portfolio.Positions(account_id);
+    data.then((response) => {
+        console.log(response);
+        res.send(response.data);
+        next();
+    }).catch((err) => {
+        console.error(err);
+        next();
+    });
+});
 
 export { portfolioRouter };

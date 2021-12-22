@@ -5,13 +5,15 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.portfolioRouter = void 0;
 const express_1 = __importDefault(require("express"));
+const IB_1 = require("../API/External/IB");
 const portfolioRouter = express_1.default.Router();
 exports.portfolioRouter = portfolioRouter;
 // Middleware Functions
+const api = new IB_1.IB_API();
 // Root Portfolio Page
 portfolioRouter.route('/')
     .get((req, res, next) => {
-    // Display Holistic Portfolio Information
+    // Display Holistic Portfolio Information   
     //
     next();
 });
@@ -42,4 +44,16 @@ portfolioRouter.route('/Underwriting/:underlying_id')
     //Same data as principal, but display will be different
     //
     next();
+});
+portfolioRouter.get('/account/:account_id', (req, res, next) => {
+    const account_id = req.params.account_id;
+    const data = api.Portfolio.Positions(account_id);
+    data.then((response) => {
+        console.log(response);
+        res.send(response.data);
+        next();
+    }).catch((err) => {
+        console.error(err);
+        next();
+    });
 });

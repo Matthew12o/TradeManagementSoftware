@@ -76,6 +76,26 @@ class IB_API {
         this.Order = new Order(this.baseURL);
         this.MarketData = new MarketData(this.baseURL);
         this.PortfolioAnalyst = new PortfolioAnalyst(this.baseURL);
+        this.Portfolio = new Portfolio(this.baseURL);
+        this.isActive = false;
+        //this.checkIfActive();
+    }
+    ;
+    checkIfActive() {
+        const session_response = this.Session.Status();
+        session_response.then((res) => {
+            const data = res.data;
+            if (data.authenticated && data.connected && !(data.competing)) {
+                this.isActive = true;
+            }
+            else {
+                this.isActive = false;
+            }
+            ;
+        }).catch((err) => {
+            console.error(err);
+            this.isActive = false;
+        });
     }
     ;
 }
@@ -110,6 +130,88 @@ Session.url_session_reauthenticate = `/iserver/reauthenticate`;
 Session.url_session_ping = `/tickle`;
 Session.url_session_logout = `/logout`;
 /////////////////////
+// Portfolio
+/////////////////////
+class Portfolio {
+    constructor(baseURL) {
+        this.Accounts = () => __awaiter(this, void 0, void 0, function* () {
+            return yield getRequest(`${this.url}${Portfolio.url_portfolio_accounts}`);
+        });
+        this.Subaccounts = () => __awaiter(this, void 0, void 0, function* () {
+            this.calledSubAccounts = true;
+            return yield getRequest(`${this.url}${Portfolio.url_portfolio_subaccounts}`);
+        });
+        this.AccountInformation = (account_id) => __awaiter(this, void 0, void 0, function* () {
+            const url = `/portfolio/${account_id}/meta`;
+            return yield getRequest(`${this.url}${url}`);
+        });
+        this.AccountAllocation = (account_id) => __awaiter(this, void 0, void 0, function* () {
+            const url = `/portfolio/${account_id}/allocations`;
+            return yield getRequest(`${this.url}${url}`);
+        });
+        this.AccountAllocation_All = (account_ids) => __awaiter(this, void 0, void 0, function* () {
+            if (typeof account_ids !== 'undefined') {
+                const payload = { body: { acctIds: account_ids } };
+                return yield getRequest(`${this.url}${Portfolio.url_portfolio_allocations}`);
+            }
+            else {
+                return yield getRequest(`${this.url}${Portfolio.url_portfolio_allocations}`);
+            }
+            ;
+        });
+        this.Positions = (account_id, page_id = "0", model, sort, direction, period) => __awaiter(this, void 0, void 0, function* () {
+            const url = `/portfolio/${account_id}/positions/${page_id}`;
+            let initial_payload = {};
+            if (typeof model !== 'undefined') {
+                initial_payload = Object.assign(Object.assign({}, initial_payload), { model: model });
+            }
+            ;
+            if (typeof sort !== 'undefined') {
+                initial_payload = Object.assign(Object.assign({}, initial_payload), { sort: sort });
+            }
+            ;
+            if (typeof direction !== 'undefined') {
+                initial_payload = Object.assign(Object.assign({}, initial_payload), { direction: direction });
+            }
+            ;
+            if (typeof period !== 'undefined') {
+                initial_payload = Object.assign(Object.assign({}, initial_payload), { period: period });
+            }
+            ;
+            const payload = { body: initial_payload };
+            return yield getRequest(`${this.url}${url}`, payload);
+        });
+        this.PositionByContractID = (account_id, contract_id) => __awaiter(this, void 0, void 0, function* () {
+            const url = `/portfolio/${account_id}/position/${contract_id}`;
+            return yield getRequest(`${this.url}${url}`);
+        });
+        this.Account_Summary = (account_id) => __awaiter(this, void 0, void 0, function* () {
+            if (!(this.calledSubAccounts)) {
+                this.Subaccounts();
+            }
+            const url_account_summary = `/portfolio/${account_id}/summary`;
+            return yield getRequest(`${this.url}${url_account_summary}`);
+        });
+        this.Account_Ledger = (account_id) => __awaiter(this, void 0, void 0, function* () {
+            if (!(this.calledSubAccounts)) {
+                this.Subaccounts();
+            }
+            const url_account_ledger = `/portfolio/${account_id}/ledger`;
+            return yield getRequest(`${this.url}${url_account_ledger}`);
+        });
+        this.PositionByContractID_AllAccount = (contract_id) => __awaiter(this, void 0, void 0, function* () {
+            const url = `/portfolio/positions/${contract_id}`;
+            return yield getRequest(`${this.url}${url}`);
+        });
+        this.url = baseURL;
+        this.calledSubAccounts = false;
+    }
+}
+Portfolio.url_portfolio_accounts = '/portfolio/accounts';
+Portfolio.url_portfolio_subaccounts = '/portfolio/subaccounts';
+Portfolio.url_portfolio_allocations = '/portfolio/allocations';
+;
+/////////////////////
 // Account
 /////////////////////
 class Account {
@@ -143,7 +245,7 @@ class Account {
             const url_account_summary = `/portfolio/${accountID}/summary`;
             return yield getRequest(`${this.url}${url_account_summary}`);
         });
-        this.Account_Ledget = (accountID) => __awaiter(this, void 0, void 0, function* () {
+        this.Account_Ledger = (accountID) => __awaiter(this, void 0, void 0, function* () {
             if (!(this.calledPortfolioAccounts)) {
                 this.Accounts_List();
             }

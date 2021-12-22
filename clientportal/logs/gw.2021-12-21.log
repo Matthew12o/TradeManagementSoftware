@@ -1,0 +1,677 @@
+18:01:15.514 INFO  main GatewayStart         : config conf.yaml !!ibgroup.web.core.clientportal.gw.Config
+authDelay: 3000
+cors: {origin.allowed: '*', allowCredentials: false}
+ip2loc: US
+ips:
+  allow: [192.*, 131.216.*, 127.0.0.1]
+  deny: [212.90.324.10]
+listenPort: 8080
+listenSsl: true
+portalBaseURL: ''
+proxyRemoteHost: https://api.ibkr.com
+proxyRemoteSsl: true
+sslCert: vertx.jks
+sslPwd: mywebapi
+ssoPing: 5
+svcEnvironment: v1
+webApps:
+- {cache: true, index: index.html, listing: false, name: demo, proxy: ''}
+
+18:01:15.954 INFO  vert.x-eventloop-thread-0 GatewayHttpProxy     :  -> mount demo on /demo
+18:01:15.979 INFO  vert.x-eventloop-thread-0 GatewayVerticle      : version: ed4af2592e9dd4a784d5403843bd18292fd441ea Fri, 9 Nov 2018 13:23:18 -0500
+18:01:15.979 INFO  vert.x-eventloop-thread-0 GatewayVerticle      : Java Version: 1.8.0_311
+18:01:16.123 ERROR vert.x-eventloop-thread-0 DeploymentManager    : Address already in use
+io.vertx.core.impl.NoStackTraceThrowable: Address already in use
+18:02:02.961 INFO  main GatewayStart         : config conf.yaml !!ibgroup.web.core.clientportal.gw.Config
+authDelay: 3000
+cors: {origin.allowed: '*', allowCredentials: false}
+ip2loc: US
+ips:
+  allow: [192.*, 131.216.*, 127.0.0.1]
+  deny: [212.90.324.10]
+listenPort: 8080
+listenSsl: true
+portalBaseURL: ''
+proxyRemoteHost: https://api.ibkr.com
+proxyRemoteSsl: true
+sslCert: vertx.jks
+sslPwd: mywebapi
+ssoPing: 5
+svcEnvironment: v1
+webApps:
+- {cache: true, index: index.html, listing: false, name: demo, proxy: ''}
+
+18:02:03.376 INFO  vert.x-eventloop-thread-0 GatewayHttpProxy     :  -> mount demo on /demo
+18:02:03.399 INFO  vert.x-eventloop-thread-0 GatewayVerticle      : version: ed4af2592e9dd4a784d5403843bd18292fd441ea Fri, 9 Nov 2018 13:23:18 -0500
+18:02:03.399 INFO  vert.x-eventloop-thread-0 GatewayVerticle      : Java Version: 1.8.0_311
+18:03:45.591 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Login?forwardTo=22&RL=1&ip2loc=US,200|266ms
+18:03:45.593 INFO  vert.x-eventloop-thread-0 CookieManager        : set cookies [XYZAB_AM.LOGIN=""; Domain=.ibkr.com; Path=/;Secure;SameSite=None, XYZAB=""; Domain=.ibkr.com; Path=/;Secure;SameSite=None, URL_PARAM="forwardTo=22&RL=1&ip2loc=US"; Version=1; Domain=.ibkr.com; Path=/;Secure;HttpOnly, JSESSIONID=C5028FC4A81A14FF1DCB30EC6063BE14.ny5wwwdam2-internet; Path=/sso; HttpOnly;Secure;SameSite=None]
+18:03:45.595 DEBUG vert.x-eventloop-thread-0 BaseServiceProxy     : Remapping Set-cookies [XYZAB_AM.LOGIN=""; Domain=.ibkr.com; Path=/;Secure;SameSite=None, XYZAB=""; Domain=.ibkr.com; Path=/;Secure;SameSite=None, URL_PARAM="forwardTo=22&RL=1&ip2loc=US"; Version=1; Domain=.ibkr.com; Path=/;Secure;HttpOnly, JSESSIONID=C5028FC4A81A14FF1DCB30EC6063BE14.ny5wwwdam2-internet; Path=/sso; HttpOnly;Secure;SameSite=None] -> 
+18:03:45.959 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Templates/otp-responsive.css?1640127825564,200|203ms
+18:03:45.971 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /scripts/common/js/bootstrap-switch-3.3.2/bootstrap-switch.min.js,200|189ms
+18:03:45.986 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /scripts/common/js/bootstrap-4.3.1/bootstrap.bundle.min.js,304|268ms
+18:03:45.997 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /scripts/common/js/switchery/switchery-init.js,304|212ms
+18:03:46.080 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /scripts/common/js/icheck-1.0.2/icheck.min.js,304|290ms
+18:03:46.115 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /scripts/common/js/jquery-ui-1.12.1/jquery-ui.min.js,200|323ms
+18:03:46.120 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/CombineFiles,200|309ms
+18:03:46.125 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /scripts/common/js/switchery/switchery.min.js,200|330ms
+18:03:46.201 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /images/2015/btn-app-apple.png,304|127ms
+18:03:46.211 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /fonts/sourcesanspro-semibold-webfont.woff2,304|186ms
+18:03:46.225 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /images/2015/btn-app-google.png,304|130ms
+18:03:46.248 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /images/2015/btn-app-tws.png,304|97ms
+18:03:46.253 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /images/2015/button_discover_apis.png,304|19ms
+18:03:46.254 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /fonts/sourcesanspro-regular-webfont.woff2,304|279ms
+18:03:46.548 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /scripts/common/js/jquery-3.4.1/jquery.min.js,304|910ms
+18:03:46.558 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /scripts/common/js/icheck-1.0.2/icheck-init.js,200|746ms
+18:03:46.687 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/CombineFiles,200|97ms
+18:03:47.041 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /images/web/favicons/home-screen-icon-192x192.png,200|38ms
+18:03:47.048 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /images/web/favicons/home-screen-icon-128x128.png,200|34ms
+18:03:47.112 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /fonts/sourcesanspro-regular-webfont.woff2,200|113ms
+18:03:50.633 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Authenticator;jsessionid=C5028FC4A81A14FF1DCB30EC6063BE14.ny5wwwdam2-internet?94299,200|145ms
+18:03:51.995 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Authenticator;jsessionid=C5028FC4A81A14FF1DCB30EC6063BE14.ny5wwwdam2-internet?33765,200|121ms
+18:03:51.997 INFO  vert.x-eventloop-thread-0 CookieManager        : set cookies [web=855585717; Domain=.ibkr.com; Expires=Wed, 21-Dec-2022 23:03:51 GMT; Path=/; Secure;Secure;SameSite=None]
+18:03:51.998 DEBUG vert.x-eventloop-thread-0 BaseServiceProxy     : Remapping Set-cookies [web=855585717; Domain=.ibkr.com; Expires=Wed, 21-Dec-2022 23:03:51 GMT; Path=/; Secure;Secure;SameSite=None] -> 
+18:03:52.106 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Authenticator;jsessionid=C5028FC4A81A14FF1DCB30EC6063BE14.ny5wwwdam2-internet?34050,200|92ms
+18:03:52.153 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /fonts/sourcesanspro-semibold-webfont.woff2,200|30ms
+18:03:52.245 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Authenticator;jsessionid=C5028FC4A81A14FF1DCB30EC6063BE14.ny5wwwdam2-internet?2599,200|113ms
+18:03:57.355 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Authenticator;jsessionid=C5028FC4A81A14FF1DCB30EC6063BE14.ny5wwwdam2-internet?60354,200|88ms
+18:03:57.571 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Dispatcher;jsessionid=C5028FC4A81A14FF1DCB30EC6063BE14.ny5wwwdam2-internet,302|172ms
+18:03:57.573 INFO  vert.x-eventloop-thread-0 CookieManager        : set cookies [USERID=38195256; Domain=.ibkr.com; Path=/;Secure;SameSite=None, REGION=us; Domain=.ibkr.com; Path=/;Secure;HttpOnly;SameSite=None, USERID=38195256; Domain=.interactiveadvisors.com; Path=/; Secure;Secure;SameSite=None, REGION=us; Domain=.interactiveadvisors.com; Path=/; Secure;Secure;HttpOnly;SameSite=None, XYZAB_AM.LOGIN=b84086e9607d83156d328f2ad4a332aacd086e26; Domain=.interactiveadvisors.com; Path=/; Secure;Secure;SameSite=None, XYZAB=b84086e9607d83156d328f2ad4a332aacd086e26; Domain=.interactiveadvisors.com; Path=/; Secure;Secure;SameSite=None]
+18:03:57.578 DEBUG vert.x-eventloop-thread-0 BaseServiceProxy     : Remapping Set-cookies [USERID=38195256; Domain=.ibkr.com; Path=/;Secure;SameSite=None, REGION=us; Domain=.ibkr.com; Path=/;Secure;HttpOnly;SameSite=None, USERID=38195256; Domain=.interactiveadvisors.com; Path=/; Secure;Secure;SameSite=None, REGION=us; Domain=.interactiveadvisors.com; Path=/; Secure;Secure;HttpOnly;SameSite=None, XYZAB_AM.LOGIN=b84086e9607d83156d328f2ad4a332aacd086e26; Domain=.interactiveadvisors.com; Path=/; Secure;Secure;SameSite=None, XYZAB=b84086e9607d83156d328f2ad4a332aacd086e26; Domain=.interactiveadvisors.com; Path=/; Secure;Secure;SameSite=None] -> 
+18:03:57.587 INFO  vert.x-eventloop-thread-0 GatewayHttpProxy     : Client login succeeds
+18:03:57.619 INFO  vert.x-eventloop-thread-0 AmService            : authenticating with AM https://api.ibkr.com/AccountManagement/OneBarAuthentication?json=1
+18:03:57.744 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/sso/validate?gw=1,200|135ms
+18:03:57.757 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : portal validate response: {"SFT":"5.2a","LOGIN_TYPE":1,"LANDING_APP":"PORTAL-US","IS_PENDING_APPLICANT":false,"SF_ENABLED":true,"AUTH_TIME":1640127834816,"CREDENTIAL":"matt0120","SF_CONFIG":"5.2a","USER_NAME":"matt0120","CREDENTIAL_TYPE":0,"RESULT":true,"IS_FREE_TRIAL":false,"IP":"71.232.181.176","USER_ID":38195256,"EXPIRES":1640127837732,"TOKEN":"b84086e9607d83156d328f2ad4a332aacd086e26","took":40,"features":{"env":"PROD","wlms":true,"realtime":true,"bond":true,"optionChains":true,"calendar":true,"newMf":true}}
+18:03:57.921 INFO  vert.x-eventloop-thread-0 GatewayHttpProxy     : authenticated to cp
+18:03:57.929 DEBUG vert.x-eventloop-thread-0 BaseServiceProxy     : cancel timer SsoService 0
+18:03:57.929 DEBUG vert.x-eventloop-thread-0 BaseServiceProxy     : start timer 300000 SsoService
+18:03:58.062 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/one/user,200|135ms
+18:03:58.063 INFO  vert.x-eventloop-thread-0 ClientPortalService  : get user reply {"ispaper":false,"islite":false,"has2fa":true,"username":"matt0120","features":{"env":"PROD","wlms":true,"realtime":true,"bond":true,"optionChains":true,"calendar":true,"newMf":true},"applicants":[{"id":4200771,"type":"INDIVIDUAL","entityId":68984081,"businessType":"INDEPENDENT","legalCountry":{"name":"United States","alpha3":"USA"},"nlcode":"en"}],"uar":{"portfolioAnalyst":true,"userInfo":true,"messageCenter":true,"accountDetails":true,"tradingRestrictions":false,"tws":true,"fyi":true,"voting":true,"forum":true,"recentTransactions":true},"accts":{"U2645415":{"clearingStatus":"O","openDate":1536984000000,"isFunded":true,"tradingPermissions":["OPT","FUT","FOP","BILL","WAR","STK","BOND","CASH","COMB"],"isFAClient":false}},"props":{"readOnlySession":null,"isIBAMClient":false},"firstApprovedDate":1537156800000}
+18:03:58.103 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /AccountManagement/OneBarAuthentication?json=1,404|483ms
+18:03:58.105 WARN  vert.x-eventloop-thread-0 BaseServiceProxy     : failed /AccountManagement/OneBarAuthentication?json=1 | reason <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL /AccountManagement/OneBarAuthentication was not found on this server.</p>
+<p>Additionally, a 404 Not Found
+error was encountered while trying to use an ErrorDocument to handle the request.</p>
+</body></html>
+
+18:03:58.110 ERROR vert.x-eventloop-thread-0 AmService            : am authentication failed
+io.vertx.core.impl.NoStackTraceThrowable: <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL /AccountManagement/OneBarAuthentication was not found on this server.</p>
+<p>Additionally, a 404 Not Found
+error was encountered while trying to use an ErrorDocument to handle the request.</p>
+</body></html>
+
+18:03:58.110 WARN  vert.x-eventloop-thread-0 BaseServiceProxy     : failed /AccountManagement/OneBarAuthentication?json=1 | reason 404
+18:03:58.110 ERROR vert.x-eventloop-thread-0 AmService            : am authentication failed
+io.vertx.core.impl.NoStackTraceThrowable: 404
+18:03:58.112 INFO  vert.x-eventloop-thread-0 SsoService           : sso init status=200, url=https://api.ibkr.com/sso/AuthenticateSSODH?ACTION=INIT
+18:03:58.117 DEBUG vert.x-eventloop-thread-0 SsoService           : sso init reponse: <ib_auth_res>
+<dh_params>
+<hash>SHA-1</hash>
+<p>b039019989c1b7e227fd8565ec9a3054f12209ee39b5f4a5feba9b81560aa87232ba407bd38b98d79ac103efd00063043fff859ffcb86f767a2b57d07eadf665</p>
+<g>bd86ab8e334a24f94e5d311d1d477fe3c50ac1497583a83cee54768e88a5d8aaf19ee65f7b9ac0c12fa351cf383b19df6e1bd0fee2a6218cc98bad53d27a58d9</g>
+<A>2f1b44dfe0d039a8c02721fb8998200e47c213cf9681464121dda8a46e48b05060bb0b4d6038d98204e9abfc25185c610bf6ae5be6d18e022d8a7e1e420f51f4</A>
+<challenge>4ac73db7d87e4798ff3b354c6d702dff10d8f253</challenge>
+<info></info>
+</dh_params>
+</ib_auth_res>
+
+18:03:58.124 DEBUG vert.x-eventloop-thread-0 SsoService           : p b039019989c1b7e227fd8565ec9a3054f12209ee39b5f4a5feba9b81560aa87232ba407bd38b98d79ac103efd00063043fff859ffcb86f767a2b57d07eadf665
+18:03:58.129 DEBUG vert.x-eventloop-thread-0 SsoService           : K e09bec7edd8ccc7bd6df9495ee9ed0afe65ade55
+18:03:58.129 DEBUG vert.x-eventloop-thread-0 SsoService           : chlRes 45f71f47e96ed2b1ba4dc54afd74eb6f9654b155
+18:03:58.130 DEBUG vert.x-eventloop-thread-0 SsoService           : B a6de3ae214de2694a85dd8b4e28ef00054ec13613a0947c6ad8daa7dd5297588b2a9169b67806eb7308c6dad0c03c3e081daf3b65e37af7e590a472d12f713ed
+18:03:58.268 INFO  vert.x-eventloop-thread-0 SsoService           : sso complete url status=200, url=https://api.ibkr.com/sso/AuthenticateSSODH?ACTION=COMPLETE&B=a6de3ae214de2694a85dd8b4e28ef00054ec13613a0947c6ad8daa7dd5297588b2a9169b67806eb7308c6dad0c03c3e081daf3b65e37af7e590a472d12f713ed&CHRESPONSE=45f71f47e96ed2b1ba4dc54afd74eb6f9654b155
+18:03:58.271 DEBUG vert.x-eventloop-thread-0 SsoService           : challenge reply:
+<ib_auth_res>
+<dh_params>
+<enc>AES</enc>
+<einfo>-421e506ff6ce36cb1720c9056f848d80</einfo>
+<info></info>
+</dh_params>
+</ib_auth_res>
+
+18:03:58.273 DEBUG vert.x-eventloop-thread-0 BaseServiceProxy     : forward event ON_SSODH_COMPLETED, payload none
+18:03:58.274 DEBUG vert.x-eventloop-thread-0 GatewayHttpProxy     : delaying authentication for 3000
+18:04:01.352 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/iserver/auth/status,200|75ms
+18:04:01.355 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : status {"authenticated":false,"competing":false,"connected":false,"MAC":"98:F2:B3:23:BF:A0"}
+18:04:01.358 INFO  vert.x-eventloop-thread-0 ClientPortalService  : process auth status {"authenticated":false,"competing":false,"connected":false,"MAC":"98:F2:B3:23:BF:A0"}
+18:04:01.400 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : auth brokerage, k=e09bec7edd8ccc7bd6df9495ee9ed0afe65ade55, post={"username":"matt0120","machineId":"29e27fb5","compete":true}
+18:04:01.620 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> POST https://api.ibkr.com/v1/api/iserver/auth/ssodh/init,200|213ms
+18:04:01.622 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : iserver init : {"challenge":"5ee203a2249970db6baff73e5272caf9f9bfad70"}
+18:04:01.623 INFO  vert.x-eventloop-thread-0 ClientPortalService  : sending sso dh response, k=a0f8ef7b986142baa0c5ae26e995f4a6c7eccd67
+18:04:01.718 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> POST https://api.ibkr.com/v1/api/iserver/auth/ssodh/response,200|95ms
+18:04:01.718 INFO  vert.x-eventloop-thread-0 ClientPortalService  : server sso dh response {"passed":true,"authenticated":true,"connected":true,"competing":false}
+18:04:01.718 INFO  vert.x-eventloop-thread-0 ClientPortalService  : process auth status {"passed":true,"authenticated":true,"connected":true,"competing":false}
+18:04:01.721 DEBUG vert.x-eventloop-thread-0 BaseServiceProxy     : start timer 30000 ClientPortalService
+18:04:01.803 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/iserver/accounts,200|83ms
+18:04:01.803 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : iserver accounts {}
+18:04:31.821 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/tickle,200|88ms
+18:04:31.823 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : tickle {"session":"a35965cc09c422b599f5f88b26a35b1b","ssoExpires":565924,"collission":false,"userId":38195256,"iserver":{"authStatus":{"authenticated":true,"competing":false,"connected":true,"message":"","MAC":"98:F2:B3:23:BF:A0"}}}
+18:05:01.834 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/tickle,200|111ms
+18:05:01.836 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : tickle {"session":"a35965cc09c422b599f5f88b26a35b1b","ssoExpires":535919,"collission":false,"userId":38195256,"iserver":{"authStatus":{"authenticated":true,"competing":false,"connected":true,"message":"","MAC":"98:F2:B3:23:BF:A0"}}}
+18:05:31.809 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/tickle,200|86ms
+18:05:31.810 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : tickle {"session":"a35965cc09c422b599f5f88b26a35b1b","ssoExpires":505935,"collission":false,"userId":38195256,"iserver":{"authStatus":{"authenticated":true,"competing":false,"connected":true,"message":"","MAC":"98:F2:B3:23:BF:A0"}}}
+18:06:01.848 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/tickle,200|124ms
+18:06:01.851 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : tickle {"session":"a35965cc09c422b599f5f88b26a35b1b","ssoExpires":475897,"collission":false,"userId":38195256,"iserver":{"authStatus":{"authenticated":true,"competing":false,"connected":true,"message":"","MAC":"98:F2:B3:23:BF:A0"}}}
+18:06:31.842 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/tickle,200|115ms
+18:06:31.844 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : tickle {"session":"a35965cc09c422b599f5f88b26a35b1b","ssoExpires":445925,"collission":false,"userId":38195256,"iserver":{"authStatus":{"authenticated":true,"competing":false,"connected":true,"message":"","MAC":"98:F2:B3:23:BF:A0"}}}
+18:07:01.830 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/tickle,200|107ms
+18:07:01.837 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : tickle {"session":"a35965cc09c422b599f5f88b26a35b1b","ssoExpires":415917,"collission":false,"userId":38195256,"iserver":{"authStatus":{"authenticated":true,"competing":false,"connected":true,"message":"","MAC":"98:F2:B3:23:BF:A0"}}}
+18:07:31.801 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/tickle,200|78ms
+18:07:31.801 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : tickle {"session":"a35965cc09c422b599f5f88b26a35b1b","ssoExpires":385941,"collission":false,"userId":38195256,"iserver":{"authStatus":{"authenticated":true,"competing":false,"connected":true,"message":"","MAC":"98:F2:B3:23:BF:A0"}}}
+18:07:39.258 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Login?forwardTo=22&RL=1&ip2loc=US,200|98ms
+18:07:39.264 INFO  vert.x-eventloop-thread-0 CookieManager        : set cookies [XYZAB_AM.LOGIN=""; Domain=.ibkr.com; Path=/;Secure;SameSite=None, XYZAB=""; Domain=.ibkr.com; Path=/;Secure;SameSite=None, URL_PARAM="forwardTo=22&RL=1&ip2loc=US"; Version=1; Domain=.ibkr.com; Path=/;Secure;HttpOnly, JSESSIONID=B7E31ED8B69555C940EBE36E631E413B.ny5wwwdam2-internet; Path=/sso; HttpOnly;Secure;SameSite=None]
+18:07:39.266 DEBUG vert.x-eventloop-thread-0 BaseServiceProxy     : Remapping Set-cookies [XYZAB_AM.LOGIN=""; Domain=.ibkr.com; Path=/;Secure;SameSite=None, XYZAB=""; Domain=.ibkr.com; Path=/;Secure;SameSite=None, URL_PARAM="forwardTo=22&RL=1&ip2loc=US"; Version=1; Domain=.ibkr.com; Path=/;Secure;HttpOnly, JSESSIONID=B7E31ED8B69555C940EBE36E631E413B.ny5wwwdam2-internet; Path=/sso; HttpOnly;Secure;SameSite=None] -> 
+18:07:39.446 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Templates/otp-responsive.css?1640128059230,200|134ms
+18:07:39.544 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /scripts/common/js/bootstrap-switch-3.3.2/bootstrap-switch.min.js,200|99ms
+18:07:39.563 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /scripts/common/js/jquery-ui-1.12.1/jquery-ui.min.js,200|122ms
+18:07:39.577 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /scripts/common/js/jquery-3.4.1/jquery.min.js,200|138ms
+18:07:39.584 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /scripts/common/js/switchery/switchery.min.js,200|126ms
+18:07:39.611 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /scripts/common/js/bootstrap-4.3.1/bootstrap.bundle.min.js,200|169ms
+18:07:39.655 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /scripts/common/js/switchery/switchery-init.js,200|197ms
+18:07:39.663 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /scripts/common/js/icheck-1.0.2/icheck.min.js,200|115ms
+18:07:39.688 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /scripts/common/js/icheck-1.0.2/icheck-init.js,200|89ms
+18:07:39.706 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/CombineFiles,200|117ms
+18:07:39.729 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /images/2015/btn-app-apple.png,200|30ms
+18:07:39.755 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /images/2015/btn-app-google.png,200|21ms
+18:07:39.760 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /images/2015/btn-app-tws.png,200|24ms
+18:07:39.790 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /images/2015/button_discover_apis.png,200|23ms
+18:07:40.016 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /fonts/sourcesanspro-regular-webfont.woff2,200|96ms
+18:07:42.024 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Authenticator?6367,200|155ms
+18:07:43.294 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Authenticator?52374,200|97ms
+18:07:43.418 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Authenticator?36126,200|102ms
+18:07:43.485 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /fonts/sourcesanspro-semibold-webfont.woff2,304|22ms
+18:07:43.555 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Authenticator?59260,200|87ms
+18:07:48.666 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Authenticator?38532,200|93ms
+18:07:53.786 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Authenticator?44991,200|95ms
+18:07:58.887 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Authenticator?10692,200|87ms
+18:08:01.809 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/tickle,200|86ms
+18:08:01.810 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : tickle {"session":"a35965cc09c422b599f5f88b26a35b1b","ssoExpires":355938,"collission":false,"userId":38195256,"iserver":{"authStatus":{"authenticated":true,"competing":false,"connected":true,"message":"","MAC":"98:F2:B3:23:BF:A0"}}}
+18:08:04.010 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Authenticator?79221,200|84ms
+18:08:09.120 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Authenticator?86566,200|89ms
+18:08:14.224 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Authenticator?53925,200|91ms
+18:08:15.571 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/portfolio/accounts,200|104ms
+18:08:19.345 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Authenticator?6977,200|91ms
+18:08:20.845 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/portfolio/accounts,200|83ms
+18:08:24.490 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Authenticator?31191,200|100ms
+18:08:29.669 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Authenticator?9737,200|124ms
+18:08:31.813 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/tickle,200|90ms
+18:08:31.814 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : tickle {"session":"a35965cc09c422b599f5f88b26a35b1b","ssoExpires":325931,"collission":false,"userId":38195256,"iserver":{"authStatus":{"authenticated":true,"competing":false,"connected":true,"message":"","MAC":"98:F2:B3:23:BF:A0"}}}
+18:08:34.786 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Authenticator?1550,200|94ms
+18:08:39.898 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Authenticator?26149,200|92ms
+18:08:45.033 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Authenticator?22093,200|111ms
+18:08:46.914 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/portfolio/U2645415/meta,200|98ms
+18:08:50.155 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Authenticator?14681,200|94ms
+18:08:55.312 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Authenticator?21686,200|127ms
+18:08:58.027 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/ping,200|77ms
+18:08:58.028 INFO  vert.x-eventloop-thread-0 SsoService           : sso ping {"result": "true"}
+18:09:00.416 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Authenticator?12109,200|90ms
+18:09:01.803 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/tickle,200|82ms
+18:09:01.803 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : tickle {"session":"a35965cc09c422b599f5f88b26a35b1b","ssoExpires":295935,"collission":false,"userId":38195256,"iserver":{"authStatus":{"authenticated":true,"competing":false,"connected":true,"message":"","MAC":"98:F2:B3:23:BF:A0"}}}
+18:09:05.519 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Authenticator?29698,200|93ms
+18:09:10.603 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Authenticator?3668,200|77ms
+18:09:15.695 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Authenticator?7350,200|81ms
+18:09:20.570 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/portfolio/U2645415/meta,200|89ms
+18:09:20.826 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Authenticator?69747,200|95ms
+18:09:25.950 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Authenticator?74459,200|90ms
+18:09:31.155 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Authenticator?67555,200|183ms
+18:09:31.840 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/tickle,200|115ms
+18:09:31.843 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : tickle {"session":"a35965cc09c422b599f5f88b26a35b1b","ssoExpires":265922,"collission":false,"userId":38195256,"iserver":{"authStatus":{"authenticated":true,"competing":false,"connected":true,"message":"","MAC":"98:F2:B3:23:BF:A0"}}}
+18:09:36.261 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Authenticator?79388,200|85ms
+18:09:41.376 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Authenticator?47840,200|98ms
+18:09:46.516 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Authenticator?35493,200|121ms
+18:09:51.624 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Authenticator?44390,200|84ms
+18:09:57.032 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Authenticator?67379,200|393ms
+18:10:01.436 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/portfolio/subaccounts,200|137ms
+18:10:01.868 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/portfolio/U2645415/summary,200|562ms
+18:10:01.902 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/tickle,200|176ms
+18:10:01.903 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : tickle {"session":"a35965cc09c422b599f5f88b26a35b1b","ssoExpires":235842,"collission":false,"userId":38195256,"iserver":{"authStatus":{"authenticated":true,"competing":false,"connected":true,"message":"","MAC":"98:F2:B3:23:BF:A0"}}}
+18:10:02.146 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Authenticator?81336,200|88ms
+18:10:07.278 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Authenticator?48155,200|107ms
+18:10:12.528 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Authenticator?92243,200|215ms
+18:10:17.646 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Authenticator?38276,200|96ms
+18:10:22.767 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Authenticator?64779,200|94ms
+18:10:27.878 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Authenticator?37103,200|88ms
+18:10:31.799 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/tickle,200|76ms
+18:10:31.803 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : tickle {"session":"a35965cc09c422b599f5f88b26a35b1b","ssoExpires":205943,"collission":false,"userId":38195256,"iserver":{"authStatus":{"authenticated":true,"competing":false,"connected":true,"message":"","MAC":"98:F2:B3:23:BF:A0"}}}
+18:10:33.002 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Authenticator?89225,200|91ms
+18:10:38.115 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Authenticator?25738,200|90ms
+18:10:43.223 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Authenticator?78,200|90ms
+18:11:01.816 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/tickle,200|94ms
+18:11:01.824 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : tickle {"session":"a35965cc09c422b599f5f88b26a35b1b","ssoExpires":175931,"collission":false,"userId":38195256,"iserver":{"authStatus":{"authenticated":true,"competing":false,"connected":true,"message":"","MAC":"98:F2:B3:23:BF:A0"}}}
+18:11:31.816 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/tickle,200|93ms
+18:11:31.820 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : tickle {"session":"a35965cc09c422b599f5f88b26a35b1b","ssoExpires":145934,"collission":false,"userId":38195256,"iserver":{"authStatus":{"authenticated":true,"competing":false,"connected":true,"message":"","MAC":"98:F2:B3:23:BF:A0"}}}
+18:11:52.123 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/portfolio/subaccounts,200|109ms
+18:11:52.233 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/portfolio/U2645415/ledger,200|217ms
+18:12:01.889 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/tickle,200|166ms
+18:12:01.896 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : tickle {"session":"a35965cc09c422b599f5f88b26a35b1b","ssoExpires":115862,"collission":false,"userId":38195256,"iserver":{"authStatus":{"authenticated":true,"competing":false,"connected":true,"message":"","MAC":"98:F2:B3:23:BF:A0"}}}
+18:12:31.809 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/tickle,200|87ms
+18:12:31.811 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : tickle {"session":"a35965cc09c422b599f5f88b26a35b1b","ssoExpires":85941,"collission":false,"userId":38195256,"iserver":{"authStatus":{"authenticated":true,"competing":false,"connected":true,"message":"","MAC":"98:F2:B3:23:BF:A0"}}}
+18:13:01.807 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/tickle,200|84ms
+18:13:01.808 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : tickle {"session":"a35965cc09c422b599f5f88b26a35b1b","ssoExpires":55937,"collission":false,"userId":38195256,"iserver":{"authStatus":{"authenticated":true,"competing":false,"connected":true,"message":"","MAC":"98:F2:B3:23:BF:A0"}}}
+18:13:31.807 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/tickle,200|84ms
+18:13:31.808 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : tickle {"session":"a35965cc09c422b599f5f88b26a35b1b","ssoExpires":25940,"collission":false,"userId":38195256,"iserver":{"authStatus":{"authenticated":true,"competing":false,"connected":true,"message":"","MAC":"98:F2:B3:23:BF:A0"}}}
+18:13:32.259 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Login?forwardTo=22&RL=1&ip2loc=US,200|109ms
+18:13:32.262 INFO  vert.x-eventloop-thread-0 CookieManager        : set cookies [XYZAB_AM.LOGIN=""; Domain=.ibkr.com; Path=/;Secure;SameSite=None, XYZAB=""; Domain=.ibkr.com; Path=/;Secure;SameSite=None, URL_PARAM="forwardTo=22&RL=1&ip2loc=US"; Version=1; Domain=.ibkr.com; Path=/;Secure;HttpOnly, JSESSIONID=B4DF96C17AF3563FA1AE9A7B4177724A.ny5wwwdam2-internet; Path=/sso; HttpOnly;Secure;SameSite=None]
+18:13:32.264 DEBUG vert.x-eventloop-thread-0 BaseServiceProxy     : Remapping Set-cookies [XYZAB_AM.LOGIN=""; Domain=.ibkr.com; Path=/;Secure;SameSite=None, XYZAB=""; Domain=.ibkr.com; Path=/;Secure;SameSite=None, URL_PARAM="forwardTo=22&RL=1&ip2loc=US"; Version=1; Domain=.ibkr.com; Path=/;Secure;HttpOnly, JSESSIONID=B4DF96C17AF3563FA1AE9A7B4177724A.ny5wwwdam2-internet; Path=/sso; HttpOnly;Secure;SameSite=None] -> 
+18:13:32.486 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Templates/otp-responsive.css?1640128412223,200|136ms
+18:13:32.609 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /scripts/common/js/switchery/switchery.min.js,200|124ms
+18:13:32.628 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /scripts/common/js/bootstrap-switch-3.3.2/bootstrap-switch.min.js,200|145ms
+18:13:32.648 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /scripts/common/js/bootstrap-4.3.1/bootstrap.bundle.min.js,200|167ms
+18:13:32.655 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /scripts/common/js/jquery-ui-1.12.1/jquery-ui.min.js,200|176ms
+18:13:32.658 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /scripts/common/js/jquery-3.4.1/jquery.min.js,200|187ms
+18:13:32.729 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /scripts/common/js/switchery/switchery-init.js,200|236ms
+18:13:32.751 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /scripts/common/js/icheck-1.0.2/icheck.min.js,200|137ms
+18:13:32.772 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /scripts/common/js/icheck-1.0.2/icheck-init.js,200|141ms
+18:13:32.780 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/CombineFiles,200|93ms
+18:13:32.813 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /images/2015/btn-app-apple.png,200|38ms
+18:13:32.837 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /images/2015/btn-app-tws.png,200|21ms
+18:13:32.846 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /images/2015/btn-app-google.png,200|31ms
+18:13:32.867 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /images/2015/button_discover_apis.png,200|27ms
+18:13:33.194 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /fonts/sourcesanspro-regular-webfont.woff2,200|189ms
+18:13:39.081 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Authenticator?92916,200|142ms
+18:13:40.689 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Authenticator?43799,200|97ms
+18:13:44.402 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Authenticator?38677,200|100ms
+18:13:45.753 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Authenticator?51645,200|89ms
+18:13:45.849 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Authenticator?61092,200|85ms
+18:13:45.938 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /fonts/sourcesanspro-semibold-webfont.woff2,200|63ms
+18:13:45.975 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Authenticator?11752,200|92ms
+18:13:51.079 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Authenticator?52624,200|90ms
+18:13:51.258 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Dispatcher,302|152ms
+18:13:51.259 INFO  vert.x-eventloop-thread-0 CookieManager        : set cookies [USERID=38195256; Domain=.ibkr.com; Path=/;Secure;SameSite=None, REGION=us; Domain=.ibkr.com; Path=/;Secure;HttpOnly;SameSite=None, USERID=38195256; Domain=.interactiveadvisors.com; Path=/; Secure;Secure;SameSite=None, REGION=us; Domain=.interactiveadvisors.com; Path=/; Secure;Secure;HttpOnly;SameSite=None, XYZAB_AM.LOGIN=4b0761ad072b8e1d610083284f455e12a96adb07; Domain=.interactiveadvisors.com; Path=/; Secure;Secure;SameSite=None, XYZAB=4b0761ad072b8e1d610083284f455e12a96adb07; Domain=.interactiveadvisors.com; Path=/; Secure;Secure;SameSite=None]
+18:13:51.265 DEBUG vert.x-eventloop-thread-0 BaseServiceProxy     : Remapping Set-cookies [USERID=38195256; Domain=.ibkr.com; Path=/;Secure;SameSite=None, REGION=us; Domain=.ibkr.com; Path=/;Secure;HttpOnly;SameSite=None, USERID=38195256; Domain=.interactiveadvisors.com; Path=/; Secure;Secure;SameSite=None, REGION=us; Domain=.interactiveadvisors.com; Path=/; Secure;Secure;HttpOnly;SameSite=None, XYZAB_AM.LOGIN=4b0761ad072b8e1d610083284f455e12a96adb07; Domain=.interactiveadvisors.com; Path=/; Secure;Secure;SameSite=None, XYZAB=4b0761ad072b8e1d610083284f455e12a96adb07; Domain=.interactiveadvisors.com; Path=/; Secure;Secure;SameSite=None] -> 
+18:13:51.265 INFO  vert.x-eventloop-thread-0 GatewayHttpProxy     : Client login succeeds
+18:13:51.266 INFO  vert.x-eventloop-thread-0 AmService            : authenticating with AM https://api.ibkr.com/AccountManagement/OneBarAuthentication?json=1
+18:13:51.527 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /AccountManagement/OneBarAuthentication?json=1,404|261ms
+18:13:51.528 WARN  vert.x-eventloop-thread-0 BaseServiceProxy     : failed /AccountManagement/OneBarAuthentication?json=1 | reason <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL /AccountManagement/OneBarAuthentication was not found on this server.</p>
+<p>Additionally, a 404 Not Found
+error was encountered while trying to use an ErrorDocument to handle the request.</p>
+</body></html>
+
+18:13:51.529 ERROR vert.x-eventloop-thread-0 AmService            : am authentication failed
+io.vertx.core.impl.NoStackTraceThrowable: <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL /AccountManagement/OneBarAuthentication was not found on this server.</p>
+<p>Additionally, a 404 Not Found
+error was encountered while trying to use an ErrorDocument to handle the request.</p>
+</body></html>
+
+18:13:51.530 WARN  vert.x-eventloop-thread-0 BaseServiceProxy     : failed /AccountManagement/OneBarAuthentication?json=1 | reason 404
+18:13:51.530 ERROR vert.x-eventloop-thread-0 AmService            : am authentication failed
+io.vertx.core.impl.NoStackTraceThrowable: 404
+18:13:51.531 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/sso/validate?gw=1,200|265ms
+18:13:51.534 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : portal validate response: {"USER_ID":38195256,"USER_NAME":"matt0120","RESULT":true,"AUTH_TIME":1640127834816,"SF_ENABLED":true,"IS_FREE_TRIAL":false,"IP":"71.232.181.176","EXPIRES":6321,"QUALIFIED_FOR_MOBILE_AUTH":null,"LANDING_APP":"PORTAL-US","lastAccessed":1640128411793,"features":{"env":"PROD","wlms":true,"realtime":true,"bond":true,"optionChains":true,"calendar":true,"newMf":true}}
+18:13:51.535 INFO  vert.x-eventloop-thread-0 GatewayHttpProxy     : authenticated to cp
+18:13:51.536 DEBUG vert.x-eventloop-thread-0 BaseServiceProxy     : cancel timer SsoService 0
+18:13:51.536 DEBUG vert.x-eventloop-thread-0 BaseServiceProxy     : start timer 300000 SsoService
+18:13:51.622 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/one/user,200|87ms
+18:13:51.623 INFO  vert.x-eventloop-thread-0 ClientPortalService  : get user reply {"ispaper":false,"islite":false,"has2fa":true,"username":"matt0120","features":{"env":"PROD","wlms":true,"realtime":true,"bond":true,"optionChains":true,"calendar":true,"newMf":true},"applicants":[{"id":4200771,"type":"INDIVIDUAL","entityId":68984081,"businessType":"INDEPENDENT","legalCountry":{"name":"United States","alpha3":"USA"},"nlcode":"en"}],"uar":{"portfolioAnalyst":true,"userInfo":true,"messageCenter":true,"accountDetails":true,"tradingRestrictions":false,"tws":true,"fyi":true,"voting":true,"forum":true,"recentTransactions":true},"accts":{"U2645415":{"clearingStatus":"O","openDate":1536984000000,"isFunded":true,"tradingPermissions":["OPT","FUT","FOP","BILL","WAR","STK","BOND","CASH","COMB"],"isFAClient":false}},"props":{"readOnlySession":null,"isIBAMClient":false},"firstApprovedDate":1537156800000}
+18:13:51.684 INFO  vert.x-eventloop-thread-0 SsoService           : sso init status=200, url=https://api.ibkr.com/sso/AuthenticateSSODH?ACTION=INIT
+18:13:51.685 DEBUG vert.x-eventloop-thread-0 SsoService           : sso init reponse: <ib_auth_res>
+<dh_params>
+<hash>SHA-1</hash>
+<p>99cab625761e9eea97e997696f2671903a4d542bc6b783ec39e7c2c204302377bc0464392b3ca9542e4225fbe98c37e24d542e0f76e872b7f4514b9b8c309c61</p>
+<g>cf278b6ddacd6946a66a29e030124e59b6064ea86a94271db6b1afe1c29de156193f808f60e9c749dbbd4a614ac4ce44d3809587cd7f11f8b34a2a08d35c851b</g>
+<A>84f9b1944da0c2cb7c6c7bc6afd43e1e8233bcbd2d1b5bd270cd37b65624e6e586beb0fae5fc50034048fe78b72e8822a5f2330c6bc15326ad13fcb51a323da5</A>
+<challenge>d1d6744cd3f6e1f431b0b453951418276dff4589</challenge>
+<info></info>
+</dh_params>
+</ib_auth_res>
+
+18:13:51.686 DEBUG vert.x-eventloop-thread-0 SsoService           : p 99cab625761e9eea97e997696f2671903a4d542bc6b783ec39e7c2c204302377bc0464392b3ca9542e4225fbe98c37e24d542e0f76e872b7f4514b9b8c309c61
+18:13:51.687 DEBUG vert.x-eventloop-thread-0 SsoService           : K d0ccbfbbbd9e15f8a46ab77c3a2c0c68b5ebb144
+18:13:51.687 DEBUG vert.x-eventloop-thread-0 SsoService           : chlRes 3af2a958ec081fdfc1d96e8fbe99fedf530434d5
+18:13:51.687 DEBUG vert.x-eventloop-thread-0 SsoService           : B 8967e9595fab300f6ae5eef7e7e1dbf98ac11385965ddc3d82f4b063896d81369ffa4f8a8ac1558ab2a95261ecef704283e94c470d74e16c7b9daa22b65f5396
+18:13:51.865 INFO  vert.x-eventloop-thread-0 SsoService           : sso complete url status=200, url=https://api.ibkr.com/sso/AuthenticateSSODH?ACTION=COMPLETE&B=8967e9595fab300f6ae5eef7e7e1dbf98ac11385965ddc3d82f4b063896d81369ffa4f8a8ac1558ab2a95261ecef704283e94c470d74e16c7b9daa22b65f5396&CHRESPONSE=3af2a958ec081fdfc1d96e8fbe99fedf530434d5
+18:13:51.866 DEBUG vert.x-eventloop-thread-0 SsoService           : challenge reply:
+<ib_auth_res>
+<dh_params>
+<enc>AES</enc>
+<einfo>698941ed88836fc76c35a28aa9a32de0</einfo>
+<info></info>
+</dh_params>
+</ib_auth_res>
+
+18:13:51.866 DEBUG vert.x-eventloop-thread-0 BaseServiceProxy     : forward event ON_SSODH_COMPLETED, payload none
+18:13:51.866 DEBUG vert.x-eventloop-thread-0 GatewayHttpProxy     : delaying authentication for 3000
+18:13:54.956 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/iserver/auth/status,200|88ms
+18:13:54.957 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : status {"authenticated":true,"competing":false,"connected":true,"message":"","MAC":"98:F2:B3:23:BF:A0","fail":""}
+18:13:54.960 INFO  vert.x-eventloop-thread-0 ClientPortalService  : process auth status {"authenticated":true,"competing":false,"connected":true,"message":"","MAC":"98:F2:B3:23:BF:A0","fail":""}
+18:13:55.044 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/iserver/accounts,200|82ms
+18:13:55.046 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : iserver accounts {"accounts":["U2645415"],"acctProps":{"U2645415":{"hasChildAccounts":false,"supportsCashQty":true,"supportsFractions":false}},"aliases":{"U2645415":"U2645415"},"chartPeriods":{"STK":["*"],"CFD":["*"],"OPT":["2h","1d","2d","1w","1m"],"FOP":["2h","1d","2d","1w","1m"],"WAR":["*"],"IOPT":["*"],"FUT":["*"],"CASH":["*"],"IND":["*"],"BOND":["*"],"FUND":["*"],"CMDTY":["*"],"PHYSS":["*"],"CRYPTO":["*"]},"selectedAccount":"U2645415","allowFeatures":{"showGFIS":true,"allowFXConv":true,"allowTypeAhead":true,"snapshotRefreshTimeout":30,"liteUser":false,"showWebNews":true,"research":true,"debugPnl":true,"showTaxOpt":true,"showImpactDashboard":false,"allowedAssetTypes":"STK,CFD,OPT,FOP,WAR,FUT,BAG,CASH,IND,BOND,BILL,FUND,SLB,News,CMDTY,IOPT,ICU,ICS,PHYSS,CRYPTO"},"serverInfo":{"serverName":null,"serverVersion":"Build 10.10.3y, Dec 20, 2021 4:49:54 PM"},"sessionId":"61c16e88.0000008f"}
+18:14:01.813 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/tickle,200|90ms
+18:14:01.816 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : tickle {"session":"a35965cc09c422b599f5f88b26a35b1b","ssoExpires":0,"collission":false,"userId":38195256,"iserver":{"authStatus":{"authenticated":true,"competing":false,"connected":true,"message":"","MAC":"98:F2:B3:23:BF:A0"}}}
+18:14:31.804 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/tickle,200|82ms
+18:14:31.806 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : tickle {"session":"a35965cc09c422b599f5f88b26a35b1b","ssoExpires":570048,"collission":false,"userId":38195256,"iserver":{"authStatus":{"authenticated":true,"competing":false,"connected":true,"message":"","MAC":"98:F2:B3:23:BF:A0"}}}
+18:15:01.803 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/tickle,200|81ms
+18:15:01.804 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : tickle {"session":"a35965cc09c422b599f5f88b26a35b1b","ssoExpires":540048,"collission":false,"userId":38195256,"iserver":{"authStatus":{"authenticated":true,"competing":false,"connected":true,"message":"","MAC":"98:F2:B3:23:BF:A0"}}}
+18:15:31.811 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/tickle,200|89ms
+18:15:31.815 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : tickle {"session":"a35965cc09c422b599f5f88b26a35b1b","ssoExpires":510044,"collission":false,"userId":38195256,"iserver":{"authStatus":{"authenticated":true,"competing":false,"connected":true,"message":"","MAC":"98:F2:B3:23:BF:A0"}}}
+18:16:01.809 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/tickle,200|87ms
+18:16:01.811 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : tickle {"session":"a35965cc09c422b599f5f88b26a35b1b","ssoExpires":480047,"collission":false,"userId":38195256,"iserver":{"authStatus":{"authenticated":true,"competing":false,"connected":true,"message":"","MAC":"98:F2:B3:23:BF:A0"}}}
+18:16:31.882 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/tickle,200|159ms
+18:16:31.886 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : tickle {"session":"a35965cc09c422b599f5f88b26a35b1b","ssoExpires":449968,"collission":false,"userId":38195256,"iserver":{"authStatus":{"authenticated":true,"competing":false,"connected":true,"message":"","MAC":"98:F2:B3:23:BF:A0"}}}
+18:16:38.327 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Login?forwardTo=22&RL=1&ip2loc=US,200|99ms
+18:16:38.328 INFO  vert.x-eventloop-thread-0 CookieManager        : set cookies [XYZAB_AM.LOGIN=""; Domain=.ibkr.com; Path=/;Secure;SameSite=None, XYZAB=""; Domain=.ibkr.com; Path=/;Secure;SameSite=None, URL_PARAM="forwardTo=22&RL=1&ip2loc=US"; Version=1; Domain=.ibkr.com; Path=/;Secure;HttpOnly, JSESSIONID=4FEB574078629B90CC76FB5E02D2CAB5.ny5wwwdam2-internet; Path=/sso; HttpOnly;Secure;SameSite=None]
+18:16:38.329 DEBUG vert.x-eventloop-thread-0 BaseServiceProxy     : Remapping Set-cookies [XYZAB_AM.LOGIN=""; Domain=.ibkr.com; Path=/;Secure;SameSite=None, XYZAB=""; Domain=.ibkr.com; Path=/;Secure;SameSite=None, URL_PARAM="forwardTo=22&RL=1&ip2loc=US"; Version=1; Domain=.ibkr.com; Path=/;Secure;HttpOnly, JSESSIONID=4FEB574078629B90CC76FB5E02D2CAB5.ny5wwwdam2-internet; Path=/sso; HttpOnly;Secure;SameSite=None] -> 
+18:16:38.479 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Templates/otp-responsive.css?1640128598300,200|119ms
+18:16:38.569 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /scripts/common/js/jquery-ui-1.12.1/jquery-ui.min.js,200|113ms
+18:16:38.576 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /scripts/common/js/bootstrap-4.3.1/bootstrap.bundle.min.js,200|116ms
+18:16:38.580 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /scripts/common/js/switchery/switchery.min.js,200|109ms
+18:16:38.587 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /scripts/common/js/jquery-3.4.1/jquery.min.js,200|133ms
+18:16:38.592 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /scripts/common/js/bootstrap-switch-3.3.2/bootstrap-switch.min.js,200|120ms
+18:16:38.665 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /scripts/common/js/switchery/switchery-init.js,200|182ms
+18:16:38.666 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /scripts/common/js/icheck-1.0.2/icheck.min.js,200|84ms
+18:16:38.683 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/CombineFiles,200|90ms
+18:16:38.686 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /scripts/common/js/icheck-1.0.2/icheck-init.js,200|103ms
+18:16:38.715 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /images/2015/btn-app-apple.png,200|23ms
+18:16:38.746 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /images/2015/btn-app-google.png,200|26ms
+18:16:38.773 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /images/2015/btn-app-tws.png,200|23ms
+18:16:38.789 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/CombineFiles,200|96ms
+18:16:38.807 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /images/2015/button_discover_apis.png,200|31ms
+18:16:39.100 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /fonts/sourcesanspro-regular-webfont.woff2,200|101ms
+18:16:40.831 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Authenticator?88467,200|147ms
+18:16:42.058 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Authenticator?43725,200|88ms
+18:16:42.153 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Authenticator?57794,200|89ms
+18:16:42.195 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /fonts/sourcesanspro-semibold-webfont.woff2,304|21ms
+18:16:42.259 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Authenticator?89328,200|81ms
+18:16:46.411 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/portfolio/U2645415/positions/0,200|76ms
+18:16:47.370 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Authenticator?44202,200|84ms
+18:16:52.464 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Authenticator?84150,200|82ms
+18:16:57.579 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Authenticator?31665,200|97ms
+18:17:01.808 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/tickle,200|86ms
+18:17:01.809 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : tickle {"session":"a35965cc09c422b599f5f88b26a35b1b","ssoExpires":420046,"collission":false,"userId":38195256,"iserver":{"authStatus":{"authenticated":true,"competing":false,"connected":true,"message":"","MAC":"98:F2:B3:23:BF:A0"}}}
+18:17:02.685 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Authenticator?70629,200|86ms
+18:17:07.782 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Authenticator?89740,200|79ms
+18:17:12.884 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Authenticator?85600,200|87ms
+18:17:17.977 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Authenticator?34462,200|81ms
+18:17:23.083 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Authenticator?16440,200|87ms
+18:17:28.185 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Authenticator?24815,200|81ms
+18:17:31.813 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/tickle,200|91ms
+18:17:31.815 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : tickle {"session":"a35965cc09c422b599f5f88b26a35b1b","ssoExpires":390045,"collission":false,"userId":38195256,"iserver":{"authStatus":{"authenticated":true,"competing":false,"connected":true,"message":"","MAC":"98:F2:B3:23:BF:A0"}}}
+18:17:33.301 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Authenticator?55390,200|87ms
+18:17:38.409 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Authenticator?22801,200|89ms
+18:17:43.519 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Authenticator?66763,200|87ms
+18:17:48.627 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Authenticator?40067,200|90ms
+18:17:53.755 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Authenticator?77633,200|96ms
+18:17:58.874 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Authenticator?28647,200|84ms
+18:18:01.808 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/tickle,200|86ms
+18:18:01.808 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : tickle {"session":"a35965cc09c422b599f5f88b26a35b1b","ssoExpires":360047,"collission":false,"userId":38195256,"iserver":{"authStatus":{"authenticated":true,"competing":false,"connected":true,"message":"","MAC":"98:F2:B3:23:BF:A0"}}}
+18:18:03.977 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Authenticator?73924,200|80ms
+18:18:09.079 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Authenticator?893,200|85ms
+18:18:11.414 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/portfolio/U2645415/positions/0,200|80ms
+18:18:14.184 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Authenticator?69782,200|88ms
+18:18:19.302 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Authenticator?6178,200|103ms
+18:18:24.393 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Authenticator?80896,200|80ms
+18:18:29.500 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Authenticator?87682,200|89ms
+18:18:30.675 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/portfolio/U2645415/positions/0,200|88ms
+18:18:31.843 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/tickle,200|119ms
+18:18:31.844 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : tickle {"session":"a35965cc09c422b599f5f88b26a35b1b","ssoExpires":330044,"collission":false,"userId":38195256,"iserver":{"authStatus":{"authenticated":true,"competing":false,"connected":true,"message":"","MAC":"98:F2:B3:23:BF:A0"}}}
+18:18:34.608 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Authenticator?51530,200|85ms
+18:18:39.713 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Authenticator?83885,200|83ms
+18:18:44.825 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Authenticator?18453,200|89ms
+18:18:49.938 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Authenticator?30872,200|93ms
+18:18:51.620 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/ping,200|82ms
+18:18:51.622 INFO  vert.x-eventloop-thread-0 SsoService           : sso ping {"result": "true"}
+18:18:55.089 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Authenticator?28083,200|127ms
+18:19:00.283 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Authenticator?70566,200|172ms
+18:19:01.811 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/tickle,200|89ms
+18:19:01.814 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : tickle {"session":"a35965cc09c422b599f5f88b26a35b1b","ssoExpires":300048,"collission":false,"userId":38195256,"iserver":{"authStatus":{"authenticated":true,"competing":false,"connected":true,"message":"","MAC":"98:F2:B3:23:BF:A0"}}}
+18:19:05.411 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Authenticator?52149,200|103ms
+18:19:10.527 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Authenticator?90343,200|92ms
+18:19:15.654 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Authenticator?20862,200|90ms
+18:19:20.758 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Authenticator?64289,200|80ms
+18:19:25.909 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Authenticator?38736,200|133ms
+18:19:31.042 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Authenticator?33814,200|88ms
+18:19:31.803 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/tickle,200|81ms
+18:19:31.805 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : tickle {"session":"a35965cc09c422b599f5f88b26a35b1b","ssoExpires":270053,"collission":false,"userId":38195256,"iserver":{"authStatus":{"authenticated":true,"competing":false,"connected":true,"message":"","MAC":"98:F2:B3:23:BF:A0"}}}
+18:19:36.153 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Authenticator?8023,200|88ms
+18:19:41.261 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Authenticator?44691,200|87ms
+18:20:01.798 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/tickle,200|76ms
+18:20:01.799 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : tickle {"session":"a35965cc09c422b599f5f88b26a35b1b","ssoExpires":240051,"collission":false,"userId":38195256,"iserver":{"authStatus":{"authenticated":true,"competing":false,"connected":true,"message":"","MAC":"98:F2:B3:23:BF:A0"}}}
+18:20:31.808 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/tickle,200|85ms
+18:20:31.810 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : tickle {"session":"a35965cc09c422b599f5f88b26a35b1b","ssoExpires":210045,"collission":false,"userId":38195256,"iserver":{"authStatus":{"authenticated":true,"competing":false,"connected":true,"message":"","MAC":"98:F2:B3:23:BF:A0"}}}
+18:21:01.797 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/tickle,200|75ms
+18:21:01.798 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : tickle {"session":"a35965cc09c422b599f5f88b26a35b1b","ssoExpires":180053,"collission":false,"userId":38195256,"iserver":{"authStatus":{"authenticated":true,"competing":false,"connected":true,"message":"","MAC":"98:F2:B3:23:BF:A0"}}}
+18:21:26.016 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/portfolio/U2645415/positions/0,200|84ms
+18:21:31.799 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/tickle,200|77ms
+18:21:31.800 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : tickle {"session":"a35965cc09c422b599f5f88b26a35b1b","ssoExpires":150048,"collission":false,"userId":38195256,"iserver":{"authStatus":{"authenticated":true,"competing":false,"connected":true,"message":"","MAC":"98:F2:B3:23:BF:A0"}}}
+18:22:01.812 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/tickle,200|90ms
+18:22:01.812 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : tickle {"session":"a35965cc09c422b599f5f88b26a35b1b","ssoExpires":120050,"collission":false,"userId":38195256,"iserver":{"authStatus":{"authenticated":true,"competing":false,"connected":true,"message":"","MAC":"98:F2:B3:23:BF:A0"}}}
+18:22:31.807 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/tickle,200|83ms
+18:22:31.809 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : tickle {"session":"a35965cc09c422b599f5f88b26a35b1b","ssoExpires":90049,"collission":false,"userId":38195256,"iserver":{"authStatus":{"authenticated":true,"competing":false,"connected":true,"message":"","MAC":"98:F2:B3:23:BF:A0"}}}
+18:23:01.804 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/tickle,200|82ms
+18:23:01.805 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : tickle {"session":"a35965cc09c422b599f5f88b26a35b1b","ssoExpires":60047,"collission":false,"userId":38195256,"iserver":{"authStatus":{"authenticated":true,"competing":false,"connected":true,"message":"","MAC":"98:F2:B3:23:BF:A0"}}}
+18:23:29.840 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/portfolio/U2645415/positions/0,200|85ms
+18:23:31.879 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/tickle,200|158ms
+18:23:31.879 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : tickle {"session":"a35965cc09c422b599f5f88b26a35b1b","ssoExpires":29978,"collission":false,"userId":38195256,"iserver":{"authStatus":{"authenticated":true,"competing":false,"connected":true,"message":"","MAC":"98:F2:B3:23:BF:A0"}}}
+18:23:51.629 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/ping,200|92ms
+18:23:51.629 INFO  vert.x-eventloop-thread-0 SsoService           : sso ping {"result": "true"}
+18:24:01.799 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/tickle,200|78ms
+18:24:01.800 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : tickle {"session":"a35965cc09c422b599f5f88b26a35b1b","ssoExpires":51,"collission":false,"userId":38195256,"iserver":{"authStatus":{"authenticated":true,"competing":false,"connected":true,"message":"","MAC":"98:F2:B3:23:BF:A0"}}}
+18:24:08.086 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/portfolio/U2645415/positions/0,200|96ms
+18:24:31.957 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/tickle,200|234ms
+18:24:31.959 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : tickle {"session":"a35965cc09c422b599f5f88b26a35b1b","ssoExpires":0,"collission":false,"userId":38195256,"iserver":{"authStatus":{"authenticated":true,"competing":false,"connected":true,"message":"","MAC":"98:F2:B3:23:BF:A0"}}}
+18:25:01.833 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/tickle,401|112ms
+18:25:01.835 WARN  vert.x-eventloop-thread-0 BaseServiceProxy     : failed /v1/api/tickle | reason Access Denied
+18:25:01.835 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : tickle null
+18:25:01.836 ERROR vert.x-eventloop-thread-0 ClientPortalService  : tickle cp session failed {}
+io.vertx.core.impl.NoStackTraceThrowable: Access Denied
+18:25:01.837 DEBUG vert.x-eventloop-thread-0 BaseServiceProxy     : cancel timer ClientPortalService 2
+18:25:01.838 DEBUG vert.x-eventloop-thread-0 BaseServiceProxy     : forward event ON_CP_TICKLE_FAILED, payload none
+18:25:02.032 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/sso/validate?gw=1,401|193ms
+18:25:02.036 WARN  vert.x-eventloop-thread-0 BaseServiceProxy     : failed /v1/api/sso/validate?gw=1 | reason Access Denied
+18:25:02.036 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : portal validate response: null
+18:25:02.036 ERROR vert.x-eventloop-thread-0 GatewayHttpProxy     : authentication to cp failed, retry 1
+io.vertx.core.impl.NoStackTraceThrowable: Access Denied
+18:25:02.048 DEBUG vert.x-eventloop-thread-0 BaseServiceProxy     : forward event CP_LOGIN_FAILED, payload none
+18:25:02.048 INFO  vert.x-eventloop-thread-0 GatewayHttpProxy     : Unhandled event CP_LOGIN_FAILED
+18:25:05.203 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/sso/validate?gw=1,401|153ms
+18:25:05.204 WARN  vert.x-eventloop-thread-0 BaseServiceProxy     : failed /v1/api/sso/validate?gw=1 | reason Access Denied
+18:25:05.204 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : portal validate response: null
+18:25:05.205 ERROR vert.x-eventloop-thread-0 GatewayHttpProxy     : authentication to cp failed, retry 2
+io.vertx.core.impl.NoStackTraceThrowable: Access Denied
+18:25:05.205 DEBUG vert.x-eventloop-thread-0 BaseServiceProxy     : forward event CP_LOGIN_FAILED, payload none
+18:25:05.205 INFO  vert.x-eventloop-thread-0 GatewayHttpProxy     : Unhandled event CP_LOGIN_FAILED
+18:25:08.326 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/sso/validate?gw=1,401|120ms
+18:25:08.329 WARN  vert.x-eventloop-thread-0 BaseServiceProxy     : failed /v1/api/sso/validate?gw=1 | reason Access Denied
+18:25:08.330 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : portal validate response: null
+18:25:08.330 ERROR vert.x-eventloop-thread-0 GatewayHttpProxy     : authentication to cp failed, retry 3
+io.vertx.core.impl.NoStackTraceThrowable: Access Denied
+18:25:08.330 DEBUG vert.x-eventloop-thread-0 BaseServiceProxy     : forward event CP_LOGIN_FAILED, payload none
+18:25:08.330 INFO  vert.x-eventloop-thread-0 GatewayHttpProxy     : Unhandled event CP_LOGIN_FAILED
+18:25:11.450 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/sso/validate?gw=1,401|118ms
+18:25:11.450 WARN  vert.x-eventloop-thread-0 BaseServiceProxy     : failed /v1/api/sso/validate?gw=1 | reason Access Denied
+18:25:11.450 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : portal validate response: null
+18:25:11.450 ERROR vert.x-eventloop-thread-0 GatewayHttpProxy     : authentication to cp failed, retry 4
+io.vertx.core.impl.NoStackTraceThrowable: Access Denied
+18:25:11.451 DEBUG vert.x-eventloop-thread-0 BaseServiceProxy     : forward event CP_LOGIN_FAILED, payload none
+18:25:11.451 INFO  vert.x-eventloop-thread-0 GatewayHttpProxy     : Unhandled event CP_LOGIN_FAILED
+18:25:14.569 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/sso/validate?gw=1,401|117ms
+18:25:14.569 WARN  vert.x-eventloop-thread-0 BaseServiceProxy     : failed /v1/api/sso/validate?gw=1 | reason Access Denied
+18:25:14.570 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : portal validate response: null
+18:25:14.571 ERROR vert.x-eventloop-thread-0 GatewayHttpProxy     : authentication to cp failed, retry 5
+io.vertx.core.impl.NoStackTraceThrowable: Access Denied
+18:25:14.571 ERROR vert.x-eventloop-thread-0 GatewayHttpProxy     : giving up ...
+18:25:14.571 DEBUG vert.x-eventloop-thread-0 BaseServiceProxy     : forward event CP_LOGIN_FAILED, payload none
+18:25:14.571 INFO  vert.x-eventloop-thread-0 GatewayHttpProxy     : Unhandled event CP_LOGIN_FAILED
+18:25:24.112 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/portfolio/U2645415/positions/0,401|110ms
+18:25:46.447 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/portfolio/U2645415/positions/0,401|111ms
+18:26:02.194 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/portfolio/U2645415/positions/0,401|208ms
+18:26:06.391 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Login?forwardTo=22&RL=1&ip2loc=US,200|197ms
+18:26:06.396 INFO  vert.x-eventloop-thread-0 CookieManager        : set cookies [XYZAB_AM.LOGIN=""; Domain=.ibkr.com; Path=/;Secure;SameSite=None, XYZAB=""; Domain=.ibkr.com; Path=/;Secure;SameSite=None, URL_PARAM="forwardTo=22&RL=1&ip2loc=US"; Version=1; Domain=.ibkr.com; Path=/;Secure;HttpOnly, JSESSIONID=A9046F3496500263AC8E58E36A5EB348.ny5wwwdam2-internet; Path=/sso; HttpOnly;Secure;SameSite=None]
+18:26:06.401 DEBUG vert.x-eventloop-thread-0 BaseServiceProxy     : Remapping Set-cookies [XYZAB_AM.LOGIN=""; Domain=.ibkr.com; Path=/;Secure;SameSite=None, XYZAB=""; Domain=.ibkr.com; Path=/;Secure;SameSite=None, URL_PARAM="forwardTo=22&RL=1&ip2loc=US"; Version=1; Domain=.ibkr.com; Path=/;Secure;HttpOnly, JSESSIONID=A9046F3496500263AC8E58E36A5EB348.ny5wwwdam2-internet; Path=/sso; HttpOnly;Secure;SameSite=None] -> 
+18:26:06.616 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Templates/otp-responsive.css?1640129166355,200|133ms
+18:26:06.757 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /scripts/common/js/bootstrap-switch-3.3.2/bootstrap-switch.min.js,200|144ms
+18:26:06.832 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /scripts/common/js/bootstrap-4.3.1/bootstrap.bundle.min.js,200|220ms
+18:26:06.870 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /scripts/common/js/switchery/switchery-init.js,200|242ms
+18:26:06.989 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /scripts/common/js/icheck-1.0.2/icheck-init.js,200|122ms
+18:26:07.006 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /scripts/common/js/icheck-1.0.2/icheck.min.js,200|246ms
+18:26:07.164 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/CombineFiles,200|290ms
+18:26:07.383 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /scripts/common/js/jquery-ui-1.12.1/jquery-ui.min.js,200|773ms
+18:26:07.400 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /scripts/common/js/switchery/switchery.min.js,200|786ms
+18:26:07.438 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /scripts/common/js/jquery-3.4.1/jquery.min.js,200|838ms
+18:26:07.461 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /images/2015/btn-app-apple.png,200|25ms
+18:26:07.488 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /images/2015/btn-app-google.png,200|20ms
+18:26:07.490 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /images/2015/btn-app-tws.png,200|20ms
+18:26:07.519 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /images/2015/button_discover_apis.png,200|24ms
+18:26:07.597 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/CombineFiles,200|106ms
+18:26:08.006 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /fonts/sourcesanspro-regular-webfont.woff2,200|160ms
+18:26:12.470 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Authenticator?39999,200|153ms
+18:26:14.125 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Authenticator?84236,200|166ms
+18:26:15.422 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Authenticator?68083,200|97ms
+18:26:15.522 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Authenticator?4073,200|93ms
+18:26:15.567 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /fonts/sourcesanspro-semibold-webfont.woff2,200|25ms
+18:26:15.627 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Authenticator?85231,200|82ms
+18:26:20.739 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Authenticator?94955,200|97ms
+18:26:20.929 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/Dispatcher,302|154ms
+18:26:20.930 INFO  vert.x-eventloop-thread-0 CookieManager        : set cookies [USERID=38195256; Domain=.ibkr.com; Path=/;Secure;SameSite=None, REGION=us; Domain=.ibkr.com; Path=/;Secure;HttpOnly;SameSite=None, USERID=38195256; Domain=.interactiveadvisors.com; Path=/; Secure;Secure;SameSite=None, REGION=us; Domain=.interactiveadvisors.com; Path=/; Secure;Secure;HttpOnly;SameSite=None, XYZAB_AM.LOGIN=a58ce69466a8660edfed729ec18a2f4195f6f0f4; Domain=.interactiveadvisors.com; Path=/; Secure;Secure;SameSite=None, XYZAB=a58ce69466a8660edfed729ec18a2f4195f6f0f4; Domain=.interactiveadvisors.com; Path=/; Secure;Secure;SameSite=None]
+18:26:20.934 DEBUG vert.x-eventloop-thread-0 BaseServiceProxy     : Remapping Set-cookies [USERID=38195256; Domain=.ibkr.com; Path=/;Secure;SameSite=None, REGION=us; Domain=.ibkr.com; Path=/;Secure;HttpOnly;SameSite=None, USERID=38195256; Domain=.interactiveadvisors.com; Path=/; Secure;Secure;SameSite=None, REGION=us; Domain=.interactiveadvisors.com; Path=/; Secure;Secure;HttpOnly;SameSite=None, XYZAB_AM.LOGIN=a58ce69466a8660edfed729ec18a2f4195f6f0f4; Domain=.interactiveadvisors.com; Path=/; Secure;Secure;SameSite=None, XYZAB=a58ce69466a8660edfed729ec18a2f4195f6f0f4; Domain=.interactiveadvisors.com; Path=/; Secure;Secure;SameSite=None] -> 
+18:26:20.942 INFO  vert.x-eventloop-thread-0 GatewayHttpProxy     : Client login succeeds
+18:26:20.943 INFO  vert.x-eventloop-thread-0 AmService            : authenticating with AM https://api.ibkr.com/AccountManagement/OneBarAuthentication?json=1
+18:26:21.045 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /AccountManagement/OneBarAuthentication?json=1,404|101ms
+18:26:21.047 WARN  vert.x-eventloop-thread-0 BaseServiceProxy     : failed /AccountManagement/OneBarAuthentication?json=1 | reason <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL /AccountManagement/OneBarAuthentication was not found on this server.</p>
+<p>Additionally, a 404 Not Found
+error was encountered while trying to use an ErrorDocument to handle the request.</p>
+</body></html>
+
+18:26:21.049 ERROR vert.x-eventloop-thread-0 AmService            : am authentication failed
+io.vertx.core.impl.NoStackTraceThrowable: <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL /AccountManagement/OneBarAuthentication was not found on this server.</p>
+<p>Additionally, a 404 Not Found
+error was encountered while trying to use an ErrorDocument to handle the request.</p>
+</body></html>
+
+18:26:21.051 WARN  vert.x-eventloop-thread-0 BaseServiceProxy     : failed /AccountManagement/OneBarAuthentication?json=1 | reason 404
+18:26:21.052 ERROR vert.x-eventloop-thread-0 AmService            : am authentication failed
+io.vertx.core.impl.NoStackTraceThrowable: 404
+18:26:21.075 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/sso/validate?gw=1,200|132ms
+18:26:21.080 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : portal validate response: {"SFT":"5.2a","LOGIN_TYPE":1,"LANDING_APP":"PORTAL-US","IS_PENDING_APPLICANT":false,"SF_ENABLED":true,"AUTH_TIME":1640129178485,"CREDENTIAL":"matt0120","SF_CONFIG":"5.2a","USER_NAME":"matt0120","CREDENTIAL_TYPE":0,"RESULT":true,"IS_FREE_TRIAL":false,"IP":"71.232.181.176","USER_ID":38195256,"EXPIRES":1640129181061,"TOKEN":"a58ce69466a8660edfed729ec18a2f4195f6f0f4","took":46,"features":{"env":"PROD","wlms":true,"realtime":true,"bond":true,"optionChains":true,"calendar":true,"newMf":true}}
+18:26:21.086 INFO  vert.x-eventloop-thread-0 GatewayHttpProxy     : authenticated to cp
+18:26:21.088 DEBUG vert.x-eventloop-thread-0 BaseServiceProxy     : cancel timer SsoService 3
+18:26:21.088 DEBUG vert.x-eventloop-thread-0 BaseServiceProxy     : start timer 300000 SsoService
+18:26:21.168 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/one/user,200|82ms
+18:26:21.172 INFO  vert.x-eventloop-thread-0 ClientPortalService  : get user reply {"ispaper":false,"islite":false,"has2fa":true,"username":"matt0120","features":{"env":"PROD","wlms":true,"realtime":true,"bond":true,"optionChains":true,"calendar":true,"newMf":true},"applicants":[{"id":4200771,"type":"INDIVIDUAL","entityId":68984081,"businessType":"INDEPENDENT","legalCountry":{"name":"United States","alpha3":"USA"},"nlcode":"en"}],"uar":{"portfolioAnalyst":true,"userInfo":true,"messageCenter":true,"accountDetails":true,"tradingRestrictions":false,"tws":true,"fyi":true,"voting":true,"forum":true,"recentTransactions":true},"accts":{"U2645415":{"clearingStatus":"O","openDate":1536984000000,"isFunded":true,"tradingPermissions":["OPT","FUT","FOP","BILL","WAR","STK","BOND","CASH","COMB"],"isFAClient":false}},"props":{"readOnlySession":null,"isIBAMClient":false},"firstApprovedDate":1537156800000}
+18:26:21.234 INFO  vert.x-eventloop-thread-0 SsoService           : sso init status=200, url=https://api.ibkr.com/sso/AuthenticateSSODH?ACTION=INIT
+18:26:21.239 DEBUG vert.x-eventloop-thread-0 SsoService           : sso init reponse: <ib_auth_res>
+<dh_params>
+<hash>SHA-1</hash>
+<p>8092375e813678fe04278d945cb6b09ce9fdf9f55d5f6ef8ac86e1ff0ac7b6554f790022a8e789e4b8326d69dc857189760ab3895c9146e96a1e9d8617fdef3f</p>
+<g>affb35cc5e8112f4eb9c0125a4fde692362ad2e9a105b06c473d78e09809483567ac0e7cf2202e98fe9096c0aae3114251ce252442bf0bb49bbe0e008fac201b</g>
+<A>25898f77ba8e5c4817a0e02b20fb81fbef346ed00647db2fe7a202a4825ff97d967f02cb4f3a99251248a8d2c08153f72209ef54689d66cf3412e310e16aab2c</A>
+<challenge>187943bd583586147ffa49c396c20aa3aad70f56</challenge>
+<info></info>
+</dh_params>
+</ib_auth_res>
+
+18:26:21.249 DEBUG vert.x-eventloop-thread-0 SsoService           : p 8092375e813678fe04278d945cb6b09ce9fdf9f55d5f6ef8ac86e1ff0ac7b6554f790022a8e789e4b8326d69dc857189760ab3895c9146e96a1e9d8617fdef3f
+18:26:21.251 DEBUG vert.x-eventloop-thread-0 SsoService           : K d6d2404411351ad62a36b4beffc8437bf40fa185
+18:26:21.252 DEBUG vert.x-eventloop-thread-0 SsoService           : chlRes 2c90dd5139c0f71d0e3252c49ee474d72925932a
+18:26:21.254 DEBUG vert.x-eventloop-thread-0 SsoService           : B 2f44136bb40be4ce18b31439d341920125c5a91a0dc745cfbdc213fc2e33fc8fa5b97731a055a748d8e85af193762dee3485aa62bd3fb737c6e83b4977bb1795
+18:26:21.401 INFO  vert.x-eventloop-thread-0 SsoService           : sso complete url status=200, url=https://api.ibkr.com/sso/AuthenticateSSODH?ACTION=COMPLETE&B=2f44136bb40be4ce18b31439d341920125c5a91a0dc745cfbdc213fc2e33fc8fa5b97731a055a748d8e85af193762dee3485aa62bd3fb737c6e83b4977bb1795&CHRESPONSE=2c90dd5139c0f71d0e3252c49ee474d72925932a
+18:26:21.402 DEBUG vert.x-eventloop-thread-0 SsoService           : challenge reply:
+<ib_auth_res>
+<dh_params>
+<enc>AES</enc>
+<einfo>-379c59d31a548355f3b92177c7f5cd84</einfo>
+<info></info>
+</dh_params>
+</ib_auth_res>
+
+18:26:21.404 DEBUG vert.x-eventloop-thread-0 BaseServiceProxy     : forward event ON_SSODH_COMPLETED, payload none
+18:26:21.404 DEBUG vert.x-eventloop-thread-0 GatewayHttpProxy     : delaying authentication for 3000
+18:26:23.944 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/portfolio/U2645415/positions/0,200|142ms
+18:26:24.498 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/iserver/auth/status,200|92ms
+18:26:24.500 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : status {"authenticated":true,"competing":false,"connected":true,"message":"","MAC":"98:F2:B3:23:BF:A0","fail":""}
+18:26:24.502 INFO  vert.x-eventloop-thread-0 ClientPortalService  : process auth status {"authenticated":true,"competing":false,"connected":true,"message":"","MAC":"98:F2:B3:23:BF:A0","fail":""}
+18:26:24.504 DEBUG vert.x-eventloop-thread-0 BaseServiceProxy     : start timer 30000 ClientPortalService
+18:26:24.596 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/iserver/accounts,200|93ms
+18:26:24.596 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : iserver accounts {"accounts":["U2645415"],"acctProps":{"U2645415":{"hasChildAccounts":false,"supportsCashQty":true,"supportsFractions":false}},"aliases":{"U2645415":"U2645415"},"chartPeriods":{"STK":["*"],"CFD":["*"],"OPT":["2h","1d","2d","1w","1m"],"FOP":["2h","1d","2d","1w","1m"],"WAR":["*"],"IOPT":["*"],"FUT":["*"],"CASH":["*"],"IND":["*"],"BOND":["*"],"FUND":["*"],"CMDTY":["*"],"PHYSS":["*"],"CRYPTO":["*"]},"selectedAccount":"U2645415","allowFeatures":{"showGFIS":true,"allowFXConv":true,"allowTypeAhead":true,"snapshotRefreshTimeout":30,"liteUser":false,"showWebNews":true,"research":true,"debugPnl":true,"showTaxOpt":true,"showImpactDashboard":false,"allowedAssetTypes":"STK,CFD,OPT,FOP,WAR,FUT,BAG,CASH,IND,BOND,BILL,FUND,SLB,News,CMDTY,IOPT,ICU,ICS,PHYSS,CRYPTO"},"serverInfo":{"serverName":null,"serverVersion":"Build 10.10.3y, Dec 20, 2021 4:49:54 PM"},"sessionId":"61c16e88.0000008f"}
+18:26:54.593 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/tickle,200|84ms
+18:26:54.595 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : tickle {"session":"4647fc0445e0b779a04e90b49df65042","ssoExpires":566486,"collission":false,"userId":38195256,"iserver":{"authStatus":{"authenticated":true,"competing":false,"connected":true,"message":"","MAC":"98:F2:B3:23:BF:A0"}}}
+18:27:24.597 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/tickle,200|88ms
+18:27:24.598 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : tickle {"session":"4647fc0445e0b779a04e90b49df65042","ssoExpires":536483,"collission":false,"userId":38195256,"iserver":{"authStatus":{"authenticated":true,"competing":false,"connected":true,"message":"","MAC":"98:F2:B3:23:BF:A0"}}}
+18:27:54.596 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/tickle,200|86ms
+18:27:54.597 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : tickle {"session":"4647fc0445e0b779a04e90b49df65042","ssoExpires":506485,"collission":false,"userId":38195256,"iserver":{"authStatus":{"authenticated":true,"competing":false,"connected":true,"message":"","MAC":"98:F2:B3:23:BF:A0"}}}
+18:28:24.584 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/tickle,200|74ms
+18:28:24.585 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : tickle {"session":"4647fc0445e0b779a04e90b49df65042","ssoExpires":476494,"collission":false,"userId":38195256,"iserver":{"authStatus":{"authenticated":true,"competing":false,"connected":true,"message":"","MAC":"98:F2:B3:23:BF:A0"}}}
+18:28:54.603 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/tickle,200|94ms
+18:28:54.604 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : tickle {"session":"4647fc0445e0b779a04e90b49df65042","ssoExpires":446479,"collission":false,"userId":38195256,"iserver":{"authStatus":{"authenticated":true,"competing":false,"connected":true,"message":"","MAC":"98:F2:B3:23:BF:A0"}}}
+18:29:24.587 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/tickle,200|77ms
+18:29:24.588 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : tickle {"session":"4647fc0445e0b779a04e90b49df65042","ssoExpires":416493,"collission":false,"userId":38195256,"iserver":{"authStatus":{"authenticated":true,"competing":false,"connected":true,"message":"","MAC":"98:F2:B3:23:BF:A0"}}}
+18:29:26.196 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/portfolio/U2645415/positions/0,200|96ms
+18:29:54.588 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/tickle,200|78ms
+18:29:54.590 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : tickle {"session":"4647fc0445e0b779a04e90b49df65042","ssoExpires":386492,"collission":false,"userId":38195256,"iserver":{"authStatus":{"authenticated":true,"competing":false,"connected":true,"message":"","MAC":"98:F2:B3:23:BF:A0"}}}
+18:30:25.449 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/tickle,200|940ms
+18:30:25.450 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : tickle {"session":"4647fc0445e0b779a04e90b49df65042","ssoExpires":355650,"collission":false,"userId":38195256,"iserver":{"authStatus":{"authenticated":true,"competing":false,"connected":true,"message":"","MAC":"98:F2:B3:23:BF:A0"}}}
+18:30:54.591 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/tickle,200|81ms
+18:30:54.593 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : tickle {"session":"4647fc0445e0b779a04e90b49df65042","ssoExpires":326491,"collission":false,"userId":38195256,"iserver":{"authStatus":{"authenticated":true,"competing":false,"connected":true,"message":"","MAC":"98:F2:B3:23:BF:A0"}}}
+18:31:21.177 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/ping,200|82ms
+18:31:21.178 INFO  vert.x-eventloop-thread-0 SsoService           : sso ping {"result": "true"}
+18:31:24.606 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/tickle,200|97ms
+18:31:24.607 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : tickle {"session":"4647fc0445e0b779a04e90b49df65042","ssoExpires":296477,"collission":false,"userId":38195256,"iserver":{"authStatus":{"authenticated":true,"competing":false,"connected":true,"message":"","MAC":"98:F2:B3:23:BF:A0"}}}
+18:31:54.677 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/tickle,200|167ms
+18:31:54.681 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : tickle {"session":"4647fc0445e0b779a04e90b49df65042","ssoExpires":266443,"collission":false,"userId":38195256,"iserver":{"authStatus":{"authenticated":true,"competing":false,"connected":true,"message":"","MAC":"98:F2:B3:23:BF:A0"}}}
+18:32:02.529 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/portfolio/U2645415/positions/0,200|87ms
+18:32:24.751 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/tickle,200|240ms
+18:32:24.754 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : tickle {"session":"4647fc0445e0b779a04e90b49df65042","ssoExpires":236413,"collission":false,"userId":38195256,"iserver":{"authStatus":{"authenticated":true,"competing":false,"connected":true,"message":"","MAC":"98:F2:B3:23:BF:A0"}}}
+18:32:42.489 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/portfolio/U2645415/positions/0,200|90ms
+18:32:54.609 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/tickle,200|98ms
+18:32:54.610 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : tickle {"session":"4647fc0445e0b779a04e90b49df65042","ssoExpires":206473,"collission":false,"userId":38195256,"iserver":{"authStatus":{"authenticated":true,"competing":false,"connected":true,"message":"","MAC":"98:F2:B3:23:BF:A0"}}}
+18:33:24.604 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/tickle,200|94ms
+18:33:24.604 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : tickle {"session":"4647fc0445e0b779a04e90b49df65042","ssoExpires":176479,"collission":false,"userId":38195256,"iserver":{"authStatus":{"authenticated":true,"competing":false,"connected":true,"message":"","MAC":"98:F2:B3:23:BF:A0"}}}
+18:33:30.079 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/portfolio/U2645415/positions/0,200|102ms
+18:33:45.829 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/portfolio/U2645415/positions/0,200|228ms
+18:33:54.644 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/tickle,200|134ms
+18:33:54.646 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : tickle {"session":"4647fc0445e0b779a04e90b49df65042","ssoExpires":146438,"collission":false,"userId":38195256,"iserver":{"authStatus":{"authenticated":true,"competing":false,"connected":true,"message":"","MAC":"98:F2:B3:23:BF:A0"}}}
+18:34:24.594 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/tickle,200|84ms
+18:34:24.596 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : tickle {"session":"4647fc0445e0b779a04e90b49df65042","ssoExpires":116487,"collission":false,"userId":38195256,"iserver":{"authStatus":{"authenticated":true,"competing":false,"connected":true,"message":"","MAC":"98:F2:B3:23:BF:A0"}}}
+18:34:54.598 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/tickle,200|87ms
+18:34:54.602 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : tickle {"session":"4647fc0445e0b779a04e90b49df65042","ssoExpires":86487,"collission":false,"userId":38195256,"iserver":{"authStatus":{"authenticated":true,"competing":false,"connected":true,"message":"","MAC":"98:F2:B3:23:BF:A0"}}}
+18:35:24.593 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/tickle,200|83ms
+18:35:24.593 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : tickle {"session":"4647fc0445e0b779a04e90b49df65042","ssoExpires":56489,"collission":false,"userId":38195256,"iserver":{"authStatus":{"authenticated":true,"competing":false,"connected":true,"message":"","MAC":"98:F2:B3:23:BF:A0"}}}
+18:35:54.593 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/tickle,200|83ms
+18:35:54.594 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : tickle {"session":"4647fc0445e0b779a04e90b49df65042","ssoExpires":26487,"collission":false,"userId":38195256,"iserver":{"authStatus":{"authenticated":true,"competing":false,"connected":true,"message":"","MAC":"98:F2:B3:23:BF:A0"}}}
+18:36:21.179 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /sso/ping,200|84ms
+18:36:21.180 INFO  vert.x-eventloop-thread-0 SsoService           : sso ping {"result": "true"}
+18:36:24.585 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/tickle,200|75ms
+18:36:24.586 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : tickle {"session":"4647fc0445e0b779a04e90b49df65042","ssoExpires":0,"collission":false,"userId":38195256,"iserver":{"authStatus":{"authenticated":true,"competing":false,"connected":true,"message":"","MAC":"98:F2:B3:23:BF:A0"}}}
+18:36:54.620 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/tickle,200|109ms
+18:36:54.622 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : tickle {"session":"4647fc0445e0b779a04e90b49df65042","ssoExpires":570007,"collission":false,"userId":38195256,"iserver":{"authStatus":{"authenticated":true,"competing":false,"connected":true,"message":"","MAC":"98:F2:B3:23:BF:A0"}}}
+18:37:24.593 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/tickle,200|83ms
+18:37:24.597 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : tickle {"session":"4647fc0445e0b779a04e90b49df65042","ssoExpires":540034,"collission":false,"userId":38195256,"iserver":{"authStatus":{"authenticated":true,"competing":false,"connected":true,"message":"","MAC":"98:F2:B3:23:BF:A0"}}}
+18:37:54.600 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/tickle,200|89ms
+18:37:54.602 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : tickle {"session":"4647fc0445e0b779a04e90b49df65042","ssoExpires":510022,"collission":false,"userId":38195256,"iserver":{"authStatus":{"authenticated":true,"competing":false,"connected":true,"message":"","MAC":"98:F2:B3:23:BF:A0"}}}
+18:38:24.592 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/tickle,200|81ms
+18:38:24.593 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : tickle {"session":"4647fc0445e0b779a04e90b49df65042","ssoExpires":480034,"collission":false,"userId":38195256,"iserver":{"authStatus":{"authenticated":true,"competing":false,"connected":true,"message":"","MAC":"98:F2:B3:23:BF:A0"}}}
+18:38:54.594 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/tickle,200|83ms
+18:38:54.595 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : tickle {"session":"4647fc0445e0b779a04e90b49df65042","ssoExpires":450034,"collission":false,"userId":38195256,"iserver":{"authStatus":{"authenticated":true,"competing":false,"connected":true,"message":"","MAC":"98:F2:B3:23:BF:A0"}}}
+18:39:24.602 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/tickle,200|92ms
+18:39:24.603 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : tickle {"session":"4647fc0445e0b779a04e90b49df65042","ssoExpires":420026,"collission":false,"userId":38195256,"iserver":{"authStatus":{"authenticated":true,"competing":false,"connected":true,"message":"","MAC":"98:F2:B3:23:BF:A0"}}}
+18:39:54.605 INFO  vert.x-eventloop-thread-0 BaseServiceProxy     : -> GET /v1/api/tickle,200|94ms
+18:39:54.605 DEBUG vert.x-eventloop-thread-0 ClientPortalService  : tickle {"session":"4647fc0445e0b779a04e90b49df65042","ssoExpires":390022,"collission":false,"userId":38195256,"iserver":{"authStatus":{"authenticated":true,"competing":false,"connected":true,"message":"","MAC":"98:F2:B3:23:BF:A0"}}}

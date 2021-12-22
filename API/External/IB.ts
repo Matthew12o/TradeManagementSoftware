@@ -73,6 +73,7 @@ class IB_API {
     Order: Order;
     MarketData: MarketData;
     PortfolioAnalyst: PortfolioAnalyst;
+    Portfolio: Portfolio;
     isActive: boolean;
     constructor(PORT=8080) {
         this.PORT = PORT;
@@ -85,8 +86,9 @@ class IB_API {
         this.Order = new Order(this.baseURL);
         this.MarketData = new MarketData(this.baseURL);
         this.PortfolioAnalyst = new PortfolioAnalyst(this.baseURL);
+        this.Portfolio = new Portfolio(this.baseURL);
         this.isActive = false;
-        this.checkIfActive();
+        //this.checkIfActive();
     };
 
     checkIfActive(): void {
@@ -209,7 +211,7 @@ class Portfolio {
             initial_payload = {...initial_payload, ...{ period : period }};
         };
         const payload = { body: initial_payload }
-        return await postRequest(`${this.url}${url}`, payload);
+        return await getRequest(`${this.url}${url}`, payload);
     };
 
     PositionByContractID = async (account_id: string, contract_id: string) => {
